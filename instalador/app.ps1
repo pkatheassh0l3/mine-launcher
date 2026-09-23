@@ -312,6 +312,22 @@ function Get-HookCommand {
     return '"' + ($exe -replace '\\', '/') + '" -auto'
 }
 
+
+# Icono del perfil (el que se ve en el launcher). Devuelve la ruta en la caché del launcher o $null.
+function Get-InstanceIconPath($dataDir) {
+    $src = $env:TFC_INSTANCE_ICON
+    if (-not $src -or -not (Test-Path -LiteralPath $src)) { $src = Join-Path $HelperDir 'instance_icon.png' }
+    if (-not (Test-Path -LiteralPath $src)) { return $null }
+    $sha = (Get-FileHash -LiteralPath $src -Algorithm SHA1).Hash.ToLowerInvariant()
+    $dir = Join-Path $dataDir 'caches\icons'
+    [void](New-Item -ItemType Directory -Force -Path $dir)
+    $dest = Join-Path $dir "$sha.png"
+    if (-not (Test-Path -LiteralPath $dest)) { Copy-Item -LiteralPath $src -Destination $dest -Force }
+    return $dest
+}
+$IconBackground = '{"type":"linear-top-down-gradient","top_color":"#0B9F21","bottom_color":"#4FD24B"}'
+$IconSymbol = 'mr_pack'
+
 # Aplica RAM + argumentos de Java + auto-actualizar al perfil en el launcher.
 # Soporta el formato antiguo (tabla profiles) y el nuevo (instances + instance_launch_overrides).
 # $onlyIfDefault: no pisar lo que el jugador haya puesto a mano. Devuelve $true si el perfil ya está listo.
@@ -350,6 +366,16 @@ function Set-LauncherSettings($inst, [bool]$onlyIfDefault) {
                 try { [void][TfcSqlite]::Scalar($db, "SELECT jsonb('{}')") } catch { $val = Q $json }   # SQLite antiguo: guardar como texto
                 $n = [TfcSqlite]::Exec($db, "UPDATE instance_launch_overrides SET overrides = $val WHERE instance_id = $(Q $id)")
                 if ($n -eq 0) { $n = [TfcSqlite]::Exec($db, "INSERT INTO instance_launch_overrides (instance_id, overrides) VALUES ($(Q $id), $val)") }
+                $icon = Get-InstanceIconPath $l.DataDir
+                if ($icon) {
+                    $iconCond = ''
+                    if ($onlyIfDefault) { $iconCond = ' AND icon_path IS NULL' }
+                    $ic = [TfcSqlite]::Exec($db, "UPDATE instances SET icon_path = $(Q $icon) WHERE id = $(Q $id)$iconCond")
+                    if ($ic -gt 0 -and [int]([TfcSqlite]::Scalar($db, "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='instance_icon_configs'")) -gt 0) {
+                        [void][TfcSqlite]::Exec($db, "DELETE FROM instance_icon_configs WHERE instance_id = $(Q $id)")
+                        [void][TfcSqlite]::Exec($db, "INSERT INTO instance_icon_configs (instance_id, background, symbol) VALUES ($(Q $id), $(Q $IconBackground), $(Q $IconSymbol))")
+                    }
+                }
             } else {
                 $cond = ''
                 if ($onlyIfDefault) { $cond = ' AND override_mc_memory_max IS NULL' }
@@ -357,6 +383,12 @@ function Set-LauncherSettings($inst, [bool]$onlyIfDefault) {
                 $exists = [TfcSqlite]::Scalar($db, "SELECT count(*) FROM profiles WHERE path = $(Q $inst.Name) AND install_stage = 'installed'")
                 if ([int]$exists -eq 0) { return $false }
                 [void][TfcSqlite]::Exec($db, "UPDATE profiles SET override_mc_memory_max = $mb, override_extra_launch_args = $(Q $jvmJson) WHERE path = $(Q $inst.Name)$cond")
+                $icon = Get-InstanceIconPath $l.DataDir
+                if ($icon) {
+                    $iconCond = ''
+                    if ($onlyIfDefault) { $iconCond = ' AND icon_path IS NULL' }
+                    [void][TfcSqlite]::Exec($db, "UPDATE profiles SET icon_path = $(Q $icon) WHERE path = $(Q $inst.Name)$iconCond")
+                }
                 if ($hook) {
                     [void][TfcSqlite]::Exec($db, "UPDATE profiles SET override_hook_pre_launch = $(Q $hook) WHERE path = $(Q $inst.Name) AND (override_hook_pre_launch IS NULL OR override_hook_pre_launch = '' OR override_hook_pre_launch LIKE '%TFC-Create.exe%')")
                 }

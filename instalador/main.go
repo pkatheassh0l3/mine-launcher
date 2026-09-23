@@ -18,6 +18,9 @@ var appScript []byte
 //go:embed logo.png
 var logoPng []byte
 
+//go:embed instance_icon.png
+var instanceIcon []byte
+
 func msgBox(text string) {
 	user32 := syscall.NewLazyDLL("user32.dll")
 	mb := user32.NewProc("MessageBoxW")
@@ -40,6 +43,8 @@ func main() {
 	}
 	logo := filepath.Join(dir, "logo.png")
 	_ = os.WriteFile(logo, logoPng, 0o644)
+	instIcon := filepath.Join(dir, "instance_icon.png")
+	_ = os.WriteFile(instIcon, instanceIcon, 0o644)
 
 	ps := filepath.Join(os.Getenv("SystemRoot"), "System32", "WindowsPowerShell", "v1.0", "powershell.exe")
 	args := []string{"-NoProfile", "-ExecutionPolicy", "Bypass", "-STA", "-File", script}
@@ -48,6 +53,7 @@ func main() {
 	cmd.Env = append(os.Environ(),
 		"TFC_SELF="+exe,
 		"TFC_LOGO="+logo,
+		"TFC_INSTANCE_ICON="+instIcon,
 		"TFC_ARGS="+strings.Join(os.Args[1:], " "))
 	cmd.SysProcAttr = &syscall.SysProcAttr{HideWindow: true, CreationFlags: 0x08000000} // CREATE_NO_WINDOW
 	if err := cmd.Run(); err != nil {
