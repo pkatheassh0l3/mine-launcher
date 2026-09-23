@@ -1,0 +1,304 @@
+{
+  "_ayuda": "Mods extra y ajustes de cada gama. 'catalog' = mods de rendimiento (fijados a una version concreta). 'options' cambia lineas de options.txt. 'configs' reemplaza texto en archivos de config.",
+  "packId": "tfc-create",
+  "title": "TFC Create",
+  "assetPrefix": "TFC-Create_",
+  "markerName": "tfc-create-pack.json",
+  "minecraft": "1.21.1",
+  "neoforgeFallback": "21.1.250",
+  "includeFolders": [
+    "config",
+    "defaultconfigs",
+    "kubejs"
+  ],
+  "catalog": {
+    "sodium": {
+      "project": "AANobbMI",
+      "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
+      "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+      "sha512": "4f537696af95411e9daf15795fb5fcbc49913d488a96fa912fa8f1d7db408710995e8a1461190f3cd0f8217bf9e35e9539176592428ed587ca2d7aa84450a390",
+      "size": 1292934,
+      "clientOnly": true
+    },
+    "ferrite-core": {
+      "project": "uXXizFIs",
+      "path": "mods/ferritecore-7.0.3-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
+      "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+      "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+      "size": 121559,
+      "clientOnly": false
+    },
+    "modernfix": {
+      "project": "nmDcB62a",
+      "path": "mods/modernfix-neoforge-5.27.24+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/5HLHxQ2F/modernfix-neoforge-5.27.24%2Bmc1.21.1.jar",
+      "sha1": "1fe7f8b4176e86507cc8ed5460b6acdd3dac5529",
+      "sha512": "da13fa15b2c96a74a7d5f8ea94ea404c96237b97d52c9a77e7e34ac918d28c40760a68cf3897691b317d5119ab9b85035142c3624108b13dda3516c340b96131",
+      "size": 604333,
+      "clientOnly": false
+    },
+    "immediatelyfast": {
+      "project": "5ZwdcRci",
+      "path": "mods/ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/OUpXxw4n/ImmediatelyFast-NeoForge-1.6.14%2B1.21.1.jar",
+      "sha1": "fee59af2f39c66d09c4c09f441c799e76af70f97",
+      "sha512": "7d1c2e6ce306f4bb9aa155f64ba87732dc2443d57fde249467a99e0ed90fec89a706252888b97f882efbc55d6044971519db704125f27ae53cd9ae40424f9b2c",
+      "size": 365195,
+      "clientOnly": true
+    },
+    "entityculling": {
+      "project": "NNAgCjsB",
+      "path": "mods/entityculling-neoforge-1.11.2-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/8w8FfUPs/entityculling-neoforge-1.11.2-mc1.21.1.jar",
+      "sha1": "2f723582d44b60b41d701a797846eaa45a3fef58",
+      "sha512": "dbb40066796ea54bfe902251ccbe743770e3fa9da555fa762da56b3f0427d4a24d3790a8c224519955185a8d1e17fbad462cd314c3acb998b9fc2c8fec257f7a",
+      "size": 1510018,
+      "clientOnly": true
+    },
+    "lithium": {
+      "project": "gvQqBUqZ",
+      "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/DDUrRVCA/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+      "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+      "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+      "size": 774220,
+      "clientOnly": false
+    },
+    "dynamic-fps": {
+      "project": "LQ3K71Q1",
+      "path": "mods/dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/T238FZpQ/dynamic-fps-3.11.4%2Bminecraft-1.21.0-neoforge.jar",
+      "sha1": "35b17e95b2b65930116ccc83e0cc358ac1bfcf9e",
+      "sha512": "8eb18a280b265e598540306275b51a165836f4b14c6c703b6ced11fcac50bfab439e4deb69e222f62614a9f15fa0ef58e5bd84e20e37ae57755d9c2f8b134057",
+      "size": 220193,
+      "clientOnly": true
+    },
+    "badoptimizations": {
+      "project": "g96Z4WVZ",
+      "path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/S2qthD5S/BadOptimizations-2.4.1-1.21.1.jar",
+      "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+      "sha512": "2b66428bd98bd5ec0e09f2ec6af801cefb7b9b99cc4f0993daeaffe8d0ccc5ee0c2a73e9f38d4f92540ead0181704d2c9e946837ec05cf710fc3b20fce3b0cac",
+      "size": 283566,
+      "clientOnly": true
+    },
+    "clumps": {
+      "project": "Wnxd13zP",
+      "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/jo7lDoK4/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c",
+      "sha512": "314d8d8e640d73041f27e0f3f2cad7aad8b4c77dbd7fb31700ef7760362261f77085eed5289555c725d99c3f47a114e7290cd608f39c9f0f12ef74958463bdcc",
+      "size": 18382,
+      "clientOnly": false
+    },
+    "moreculling": {
+      "project": "51shyZVL",
+      "path": "mods/moreculling-neoforge-1.21.1-1.0.10.jar",
+      "url": "https://cdn.modrinth.com/data/51shyZVL/versions/5M4T2FfG/moreculling-neoforge-1.21.1-1.0.10.jar",
+      "sha1": "7e2d906031fdba883649eef6ef48a4dbdbb0f6cf",
+      "sha512": "64b6d1c71b7251915a35d93ddfb2a0a44851c9962b081fc8a7bb9458a19cb1ce6efb8eeef447bb7217c67010ed7e903d2bed8ed6d166053cacc3f8fb6d2df3d4",
+      "size": 335699,
+      "clientOnly": true
+    },
+    "cloth-config": {
+      "project": "9s6osm5g",
+      "path": "mods/cloth-config-15.0.140-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
+      "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+      "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d",
+      "size": 1163890,
+      "clientOnly": false
+    },
+    "sodium-extra": {
+      "project": "PtjYWJkn",
+      "path": "mods/sodium-extra-neoforge-0.9.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/ufpcXU9c/sodium-extra-neoforge-0.9.4%2Bmc1.21.1.jar",
+      "sha1": "75f9c202e8384cb5de039cdcc47d5e1c8fde8fe5",
+      "sha512": "b930a9c6364bdbac42da7175f9fa71360053cd046d2f1e9a99d712e5942299882bfb585e5b661490b791e219b5dd6b9f064fb94f169d7a32a9934c1dc2b85edf",
+      "size": 472060,
+      "clientOnly": true
+    },
+    "reeses-sodium-options": {
+      "project": "Bh37bMuy",
+      "path": "mods/reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Bh37bMuy/versions/XjF2IkL8/reeses-sodium-options-neoforge-2.2.4%2Bmc1.21.1.jar",
+      "sha1": "e9e6d101b31acb51539141937ad5b069ff2ccc4d",
+      "sha512": "a99d41a41ca83376c4fa29ed22a99e98288a7e9a4749fbf6d3724b9804b8e66648e267c6851a53d040069fdc2d889f8205cbb444bee10a35be840d13fc9ed477",
+      "size": 258894,
+      "clientOnly": true
+    },
+    "iris": {
+      "project": "YL57xq9U",
+      "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
+      "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+      "sha512": "33fddb430e16222902eac75b8b3d57c381b0f3cc729f3b56c4628df12ca108f23a0b11e2feb167923d6d14d1fc7e8ee1a977ec421b19d1951bdca74c4092b9c5",
+      "size": 2540723,
+      "clientOnly": true
+    },
+    "distanthorizons": {
+      "project": "uCdwusMi",
+      "path": "mods/DistantHorizons-3.3.2-1.21.1-fabric-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/Ez3cx7Yd/DistantHorizons-3.3.2-1.21.1-fabric-neoforge.jar",
+      "sha1": "d18b0829416ec6948102524b6e913e5bc73ae402",
+      "sha512": "758d9591bb63a7851d368b6439135ec35ceb3b22e35723fca26433c4069be87c4098a23e8fc590be61903ac92e6ae1e3e1adf5beb744e6226c1fe70dd1933011",
+      "size": 28224156,
+      "clientOnly": true
+    },
+    "complementary-reimagined": {
+      "project": "HVnmMxH1",
+      "path": "shaderpacks/ComplementaryReimagined_r5.9.3.zip",
+      "url": "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip",
+      "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6",
+      "sha512": "45304b1d7862afdb2177b7e6226fc9c6737911d17a4ad46cc9c519ca4deb935f05072cd337cd8b19a15bb8062b57b54eceec7bdee4cd572d94858e2946d37d85",
+      "size": 553397,
+      "clientOnly": true
+    }
+  },
+  "tiers": {
+    "baja": {
+      "name": "TFC Create - Gama Baja",
+      "extras": [
+        "sodium",
+        "ferrite-core",
+        "modernfix",
+        "immediatelyfast",
+        "entityculling",
+        "lithium",
+        "dynamic-fps",
+        "badoptimizations",
+        "clumps",
+        "moreculling",
+        "cloth-config",
+        "sodium-extra",
+        "reeses-sodium-options"
+      ],
+      "options": {
+        "renderDistance": "6",
+        "simulationDistance": "5",
+        "graphicsMode": "0",
+        "ao": "false",
+        "biomeBlendRadius": "0",
+        "mipmapLevels": "0",
+        "particles": "2",
+        "renderClouds": "\"false\"",
+        "entityShadows": "false",
+        "entityDistanceScaling": "0.5",
+        "maxFps": "60",
+        "enableVsync": "false",
+        "menuBackgroundBlurriness": "0"
+      },
+      "configs": {
+        "flywheel-client.toml": [
+          [
+            "lightSmoothness = \"SMOOTH\"",
+            "lightSmoothness = \"FLAT\""
+          ]
+        ],
+        "sable-client.toml": [
+          [
+            "sub_level_dynamic_shading = true",
+            "sub_level_dynamic_shading = false"
+          ],
+          [
+            "sub_level_water_occlusion = true",
+            "sub_level_water_occlusion = false"
+          ]
+        ],
+        "tfc-client.toml": [
+          [
+            "enableWindParticles = true",
+            "enableWindParticles = false"
+          ]
+        ]
+      }
+    },
+    "media": {
+      "name": "TFC Create - Gama Media",
+      "extras": [
+        "sodium",
+        "ferrite-core",
+        "modernfix",
+        "immediatelyfast",
+        "entityculling",
+        "lithium",
+        "dynamic-fps",
+        "badoptimizations",
+        "clumps",
+        "moreculling",
+        "cloth-config",
+        "sodium-extra",
+        "reeses-sodium-options"
+      ],
+      "options": {
+        "renderDistance": "10",
+        "simulationDistance": "8",
+        "graphicsMode": "1",
+        "ao": "true",
+        "biomeBlendRadius": "1",
+        "mipmapLevels": "2",
+        "particles": "1",
+        "renderClouds": "\"fast\"",
+        "entityShadows": "true",
+        "entityDistanceScaling": "0.75",
+        "maxFps": "120",
+        "enableVsync": "true",
+        "menuBackgroundBlurriness": "3"
+      },
+      "configs": {
+        "flywheel-client.toml": [
+          [
+            "lightSmoothness = \"SMOOTH\"",
+            "lightSmoothness = \"TRI_LINEAR\""
+          ]
+        ]
+      }
+    },
+    "alta": {
+      "name": "TFC Create - Gama Alta",
+      "extras": [
+        "sodium",
+        "ferrite-core",
+        "modernfix",
+        "immediatelyfast",
+        "entityculling",
+        "lithium",
+        "dynamic-fps",
+        "badoptimizations",
+        "clumps",
+        "moreculling",
+        "cloth-config",
+        "sodium-extra",
+        "reeses-sodium-options",
+        "iris",
+        "distanthorizons",
+        "complementary-reimagined"
+      ],
+      "options": {
+        "renderDistance": "16",
+        "simulationDistance": "10",
+        "graphicsMode": "1",
+        "ao": "true",
+        "biomeBlendRadius": "3",
+        "mipmapLevels": "4",
+        "particles": "0",
+        "renderClouds": "\"true\"",
+        "entityShadows": "true",
+        "entityDistanceScaling": "1.0",
+        "maxFps": "260",
+        "enableVsync": "false",
+        "menuBackgroundBlurriness": "5"
+      },
+      "configs": {
+        "sable-client.toml": [
+          [
+            "sub_level_skylight_shadows = false",
+            "sub_level_skylight_shadows = true"
+          ]
+        ]
+      }
+    }
+  }
+}
