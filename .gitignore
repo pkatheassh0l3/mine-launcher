@@ -1,3 +1,4 @@
 # Archivos generados al publicar (se suben al release, no al repo)
 publicar/salida/
 *.mrpack
+instalador/*.syso

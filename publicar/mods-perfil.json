@@ -1,0 +1,149 @@
+{
+  "_ayuda": "Mods que se instalan en tu perfil de origen con Sincronizar-Perfil.bat",
+  "mods": [
+    {
+      "name": "kubejs",
+      "filename": "kubejs-neoforge-2101.7.2-build.377.jar",
+      "url": "https://cdn.modrinth.com/data/umyGl7zF/versions/THIGFPwf/kubejs-neoforge-2101.7.2-build.377.jar",
+      "sha1": "7313fcd99318834c642ee9f3a05ed7fd7bcb6ef4"
+    },
+    {
+      "name": "rhino",
+      "filename": "rhino-2101.2.7-build.85.jar",
+      "url": "https://cdn.modrinth.com/data/sk9knFPE/versions/cQ4POTah/rhino-2101.2.7-build.85.jar",
+      "sha1": "3c8d34c7efe9e42fc90506acbf9fc842d36f9a42"
+    },
+    {
+      "name": "almostunified",
+      "filename": "almostunified-neoforge-1.21.1-1.4.2.jar",
+      "url": "https://cdn.modrinth.com/data/sdaSaQEz/versions/e8iYxxI3/almostunified-neoforge-1.21.1-1.4.2.jar",
+      "sha1": "f9a58fa95780f4b045d30559c1fdaedaa7f0fba3"
+    },
+    {
+      "name": "woodencog",
+      "filename": "woodencog-1.2.19-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Dh6v8Snj/versions/iX6qLxlr/woodencog-1.2.19-1.21.1.jar",
+      "sha1": "fb80069d684ef9aeece18eed1b74cc1dbdc0c222"
+    },
+    {
+      "name": "tfcreate-compat",
+      "filename": "tfcreate-1.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/iaP7zFj9/versions/Kzhwzley/tfcreate-1.0.1.jar",
+      "sha1": "599924ae3da7c300fbfa6a75518a003a4f05d97e"
+    },
+    {
+      "name": "jei",
+      "filename": "jei-1.21.1-neoforge-19.51.0.418.jar",
+      "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/ufHUqt9b/jei-1.21.1-neoforge-19.51.0.418.jar",
+      "sha1": "d19552586f686eae4ef5e7199f31604d1d3cfca7"
+    },
+    {
+      "name": "jade",
+      "filename": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar",
+      "sha1": "88ee316e68900080b017f60c12162e2731924cf8"
+    },
+    {
+      "name": "jade-addons-forge",
+      "filename": "JadeAddons-1.21.1-NeoForge-6.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/xuDOzCLy/versions/ZHjXkd1n/JadeAddons-1.21.1-NeoForge-6.1.1.jar",
+      "sha1": "6c50a845ac3d336fa88e6466c36aa8b3815ca5c5"
+    },
+    {
+      "name": "jade-sable-compat",
+      "filename": "sablejade-1.3.0.jar",
+      "url": "https://cdn.modrinth.com/data/jCrJ4iGH/versions/cxUohR7A/sablejade-1.3.0.jar",
+      "sha1": "beb78d81a4d5768780c8566fa869ced5dbe08263"
+    },
+    {
+      "name": "mouse-tweaks",
+      "filename": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc"
+    },
+    {
+      "name": "controlling",
+      "filename": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "url": "https://cdn.modrinth.com/data/xv94TkTM/versions/FaNppCJJ/Controlling-neoforge-1.21.1-19.0.5.jar",
+      "sha1": "8a34424fc1428778be2fdbfa4da67b21b70bcbfe"
+    },
+    {
+      "name": "searchables",
+      "filename": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "url": "https://cdn.modrinth.com/data/fuuu3xnx/versions/iEE85X0w/Searchables-neoforge-1.21.1-1.0.2.jar",
+      "sha1": "5b8a0b43a474c066371b2e16f9bfb88622552a74"
+    },
+    {
+      "name": "inventory-profiles-next",
+      "filename": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/O7RBXm3n/versions/vjuNnHLv/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "sha1": "b09d7c0820c233ea34af54d0a3ab7ed510b32dcc"
+    },
+    {
+      "name": "libipn",
+      "filename": "libIPN-neoforge-1.21.1-6.6.3.jar",
+      "url": "https://cdn.modrinth.com/data/onSQdWhM/versions/BGe4KMlE/libIPN-neoforge-1.21.1-6.6.3.jar",
+      "sha1": "baab9e8cae3d2b77b5e172b5694e465ee9f30d4a"
+    },
+    {
+      "name": "terrafirmacraft-anvilhelper",
+      "filename": "TerraFirmaCraftAnvilHelper-1.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/WWgiFJZZ/versions/o8IZuees/TerraFirmaCraftAnvilHelper-1.0.1.jar",
+      "sha1": "37656d30f040b5c860d84b82d531bb45baaebce1"
+    },
+    {
+      "name": "gravestone-mod",
+      "filename": "gravestone-neoforge-1.21.1-1.0.40.jar",
+      "url": "https://cdn.modrinth.com/data/RYtXKJPr/versions/rMGJpjaM/gravestone-neoforge-1.21.1-1.0.40.jar",
+      "sha1": "97230b93af34ac6581ed36b0cc98f6b16b06c04e"
+    },
+    {
+      "name": "simple-voice-chat",
+      "filename": "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/2s7zUspF/voicechat-neoforge-1.21.1-2.6.22.jar",
+      "sha1": "3b2001d8df61fe6dc03dcd5f5cd4a8f49821feb0"
+    },
+    {
+      "name": "toast-control",
+      "filename": "ToastControl-1.21.1-9.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/CnOG2wlS/versions/jXHDAUrd/ToastControl-1.21.1-9.0.1.jar",
+      "sha1": "47f9b3eb9e499996c77a7567c85e6bb9d3d51be8"
+    },
+    {
+      "name": "placebo",
+      "filename": "Placebo-1.21.1-9.9.2.jar",
+      "url": "https://cdn.modrinth.com/data/tCkE8p2N/versions/1Ypo4tf4/Placebo-1.21.1-9.9.2.jar",
+      "sha1": "d44335094cf2db64998cb3ee31e58d8c01e80b4a"
+    },
+    {
+      "name": "fastworkbench",
+      "filename": "FastWorkbench-1.21.1-9.1.3.jar",
+      "url": "https://cdn.modrinth.com/data/5NYPwQRn/versions/IwciHwPN/FastWorkbench-1.21.1-9.1.3.jar",
+      "sha1": "cfe55dc815979028d2a2211e26115dbd02273f87"
+    },
+    {
+      "name": "fastfurnace",
+      "filename": "FastFurnace-1.21.1-9.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/9X0318ev/versions/pqj92Yco/FastFurnace-1.21.1-9.0.1.jar",
+      "sha1": "cb77b3bc40bb598cfc50773d491c9e1af06d3833"
+    },
+    {
+      "name": "trashslot",
+      "filename": "trashslot-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/vRYk0bv7/versions/HY8Ybozd/trashslot-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "ce09d0128e6a7d225e731e1307f9c1deddac209a"
+    },
+    {
+      "name": "balm",
+      "filename": "balm-neoforge-1.21.1-21.0.65.jar",
+      "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/KgypwTqX/balm-neoforge-1.21.1-21.0.65.jar",
+      "sha1": "69e0b3b69dd23c132e85b7e82310f45ae96b263d"
+    },
+    {
+      "name": "sable-tfc-currents",
+      "filename": "sable_tfc_currents-1.0.0.jar",
+      "url": "https://cdn.modrinth.com/data/DXDVBfHi/versions/Ol77lc03/sable_tfc_currents-1.0.0.jar",
+      "sha1": "604ed3e26808d239988ac531d5da39a3e37528b1"
+    }
+  ]
+}

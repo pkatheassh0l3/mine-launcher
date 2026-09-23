@@ -114,8 +114,9 @@ try {
     }
     Log "Mods desde Modrinth: $($baseFiles.Count)   Incluidos en el pack: $($localJars.Count)"
 
-    # ---------- Instalador con el repo ya puesto ----------
-    $installer = (Read-Text (Join-Path $Here 'plantilla-instalador.bat')).Replace('__REPO__', $Repo)
+    # ---------- Instalador (.exe ya compilado) ----------
+    $exeSrc = Join-Path $Here 'Instalar-TFC-Create.exe'
+    if (-not (Test-Path -LiteralPath $exeSrc)) { throw "Falta el instalador: $exeSrc" }
 
     $OutDir = Join-Path $Here "salida\v$Version"
     [void](New-Item -ItemType Directory -Force -Path $OutDir)
@@ -172,12 +173,21 @@ try {
                 }
                 Add-Text $zip 'overrides/options.txt' $opts
             }
+            # archivos fijos de la gama (p.ej. shader activado)
+            $tierFiles = @{}
+            if ($t.files) {
+                foreach ($tf in $t.files.PSObject.Properties) {
+                    $tierFiles[$tf.Name] = $true
+                    Add-Text $zip "overrides/$($tf.Name)" ([string]$tf.Value)
+                }
+            }
             # carpetas de configuración
             foreach ($folder in $cfg.includeFolders) {
                 $fp = Join-Path $Source $folder
                 if (-not (Test-Path -LiteralPath $fp)) { continue }
                 foreach ($file in (Get-ChildItem -LiteralPath $fp -Recurse -File)) {
                     $rel = $folder + '/' + ($file.FullName.Substring($fp.Length + 1) -replace '\\', '/')
+                    if ($tierFiles.ContainsKey($rel)) { continue }
                     $repl = $null
                     if ($folder -eq 'config' -and $t.configs) { $repl = $t.configs.PSObject.Properties[$file.Name] }
                     if ($repl) {
@@ -196,8 +206,8 @@ try {
         Log ("  {0}  ({1:N1} MB)" -f (Split-Path -Leaf $out), ((Get-Item -LiteralPath $out).Length / 1MB))
         $assets += $out
     }
-    $instPath = Join-Path $OutDir "Instalar-$($cfg.assetPrefix.TrimEnd('_')).bat"
-    [IO.File]::WriteAllText($instPath, ($installer -replace "`r?`n", "`r`n"), $Utf8)
+    $instPath = Join-Path $OutDir 'Instalar-TFC-Create.exe'
+    Copy-Item -LiteralPath $exeSrc -Destination $instPath -Force
     $assets += $instPath
     [IO.File]::WriteAllText($verFile, $Version, $Utf8)
 
@@ -208,7 +218,7 @@ try {
         Log 'Subiendo a GitHub con gh...'
         & gh release create "v$Version" @assets --repo $Repo --title "$($cfg.title) v$Version" --notes $Notes
         if ($LASTEXITCODE -ne 0) { throw 'gh no pudo crear el release (¿has hecho "gh auth login"?).' }
-        Msg "¡Publicado! v$Version ya está en GitHub.`nLos jugadores la recibirán al abrir 'Actualizar $($cfg.title)'." | Out-Null
+        Msg "¡Publicado! v$Version ya está en GitHub.`nLos jugadores la recibirán al abrir el acceso directo '$($cfg.title)'." | Out-Null
     } else {
         if ($Gui) {
             Start-Process explorer.exe $OutDir

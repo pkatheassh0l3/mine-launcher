@@ -15,7 +15,7 @@ Todo sale de tu perfil de Modrinth:
    Arrastra **los 4 archivos** a *Attach binaries* y pulsa **Publish release**.
 
 Enlace para repartir:
-https://github.com/pkatheassh0l3/mine-launcher/releases/latest/download/Instalar-TFC-Create.bat
+https://github.com/pkatheassh0l3/mine-launcher/releases/latest/download/Instalar-TFC-Create.exe
 
 ## Sacar una actualización
 
@@ -30,8 +30,8 @@ Truco: con [GitHub CLI](https://cli.github.com) instalado y `gh auth login` hech
 
 | Archivo | Para qué sirve |
 |---|---|
-| `Publicar-Actualizacion.bat` | Genera las 3 gamas y el instalador, y crea el release |
-| `plantilla-instalador.bat` | Base del instalador (el script de publicación le pone el repo) |
+| `Publicar-Actualizacion.bat` | Genera las 3 gamas y crea el release |
+| `Instalar-TFC-Create.exe` | El instalador visual que se sube a cada release |
 | `tiers.json` | Mods de rendimiento y ajustes de cada gama |
 | `repo.txt` / `perfil-origen.txt` | Tu repositorio y la ruta de tu perfil |
 
@@ -40,3 +40,8 @@ Truco: con [GitHub CLI](https://cli.github.com) instalado y `gh auth login` hech
 - Los mods de rendimiento (Sodium, Iris, Distant Horizons…) van en `tiers.json`, no en tu perfil. Si también los tienes en el perfil, se ignoran.
 - Los mods que no están en Modrinth (Millénaire, FTB…) van metidos dentro del pack.
 - Al actualizar, las configs de la carpeta `config` de los jugadores se sobrescriben, pero su `options.txt` no se toca.
+
+## El instalador (.exe)
+
+El código está en `instalador/`: la interfaz es `app.ps1` (ventana WPF) y `main.go` es un pequeño lanzador que la incrusta junto con el icono.
+Para recompilarlo después de cambiar algo: `instalador/build.sh` (Linux o WSL, con Go y `binutils-mingw-w64`).

@@ -5,8 +5,8 @@ Viene en 3 versiones optimizadas según tu PC.
 
 ## Instalación
 
-1. **[Descarga el instalador](https://github.com/pkatheassh0l3/mine-launcher/releases/latest/download/Instalar-TFC-Create.bat)** y ábrelo con doble clic.
-   Si Windows te avisa, pulsa *Más información* → *Ejecutar de todas formas*.
+1. **[Descarga el instalador](https://github.com/pkatheassh0l3/mine-launcher/releases/latest/download/Instalar-TFC-Create.exe)** y ábrelo.
+   Si Windows muestra "Windows protegió su PC", pulsa *Más información* → *Ejecutar de todas formas* (el instalador no está firmado).
 2. Si no tienes [Modrinth App](https://modrinth.com/app) o [Migurinth](https://github.com/MiguVT/migurinth/releases/latest), te lleva a descargarlo. Instálalo, ábrelo una vez y vuelve a abrir el instalador.
 3. El instalador mira tu PC y te recomienda una versión:
 
@@ -16,11 +16,11 @@ Viene en 3 versiones optimizadas según tu PC.
    | Gama media | 16 GB de RAM, gráfica antigua | 8 GB |
    | Gama alta | 32 GB de RAM, gráfica tipo RTX 3060 (con shaders y Distant Horizons) | 10–12 GB |
 
-4. Confirma la instalación en el launcher y pon la RAM de la tabla en: perfil → Ajustes → **Java y memoria**.
+4. Pulsa **Instalar**, confirma en el launcher y pon la RAM de la tabla en: perfil → Ajustes → **Java y memoria**.
 
 ## Actualizar
 
-Abre el acceso directo **"Actualizar TFC Create"** del escritorio. Si hay una versión nueva, se descarga sola. Tus mundos y tus ajustes se conservan.
+Abre el acceso directo **"TFC Create"** del escritorio (o del menú Inicio). Si hay una versión nueva, se descarga sola. Tus mundos y tus ajustes se conservan.
 
 ## Problemas frecuentes
 

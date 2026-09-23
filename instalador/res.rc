@@ -1,0 +1,24 @@
+1 ICON "icon.ico"
+1 24 "app.manifest"
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "0C0A04B0"
+    BEGIN
+      VALUE "CompanyName", "pkatheassh0l3"
+      VALUE "FileDescription", "TFC Create - Instalador del modpack"
+      VALUE "FileVersion", "1.0.0"
+      VALUE "InternalName", "TFC-Create"
+      VALUE "OriginalFilename", "Instalar-TFC-Create.exe"
+      VALUE "ProductName", "TFC Create"
+      VALUE "ProductVersion", "1.0.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0C0A, 1200
+  END
+END
