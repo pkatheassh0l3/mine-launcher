@@ -245,25 +245,50 @@ $SqliteSig = @"
 using System;
 using System.Runtime.InteropServices;
 public static class TfcSqlite {
-    [DllImport("winsqlite3.dll", CharSet = CharSet.Unicode)] public static extern int sqlite3_open16(string filename, out IntPtr db);
-    [DllImport("winsqlite3.dll")] public static extern int sqlite3_exec(IntPtr db, byte[] sql, IntPtr cb, IntPtr arg, out IntPtr errmsg);
-    [DllImport("winsqlite3.dll")] public static extern int sqlite3_busy_timeout(IntPtr db, int ms);
-    [DllImport("winsqlite3.dll")] public static extern int sqlite3_changes(IntPtr db);
-    [DllImport("winsqlite3.dll")] public static extern int sqlite3_close(IntPtr db);
+    [DllImport("winsqlite3.dll", CharSet = CharSet.Unicode)] static extern int sqlite3_open16(string filename, out IntPtr db);
+    [DllImport("winsqlite3.dll")] static extern int sqlite3_close(IntPtr db);
+    [DllImport("winsqlite3.dll")] static extern int sqlite3_busy_timeout(IntPtr db, int ms);
+    [DllImport("winsqlite3.dll")] static extern int sqlite3_changes(IntPtr db);
+    [DllImport("winsqlite3.dll", CharSet = CharSet.Unicode)] static extern int sqlite3_prepare16_v2(IntPtr db, string sql, int nByte, out IntPtr stmt, IntPtr tail);
+    [DllImport("winsqlite3.dll")] static extern int sqlite3_step(IntPtr stmt);
+    [DllImport("winsqlite3.dll")] static extern IntPtr sqlite3_column_text16(IntPtr stmt, int col);
+    [DllImport("winsqlite3.dll")] static extern int sqlite3_finalize(IntPtr stmt);
+    [DllImport("winsqlite3.dll")] static extern IntPtr sqlite3_errmsg16(IntPtr db);
+
+    public static IntPtr Open(string path) {
+        IntPtr db;
+        if (sqlite3_open16(path, out db) != 0) throw new Exception("No se pudo abrir " + path);
+        sqlite3_busy_timeout(db, 8000);
+        return db;
+    }
+    public static void Close(IntPtr db) { sqlite3_close(db); }
+    static string Err(IntPtr db) { return Marshal.PtrToStringUni(sqlite3_errmsg16(db)); }
+    // Devuelve la primera columna de la primera fila (o null)
+    public static string Scalar(IntPtr db, string sql) {
+        IntPtr st;
+        if (sqlite3_prepare16_v2(db, sql, -1, out st, IntPtr.Zero) != 0) throw new Exception(Err(db));
+        try {
+            int rc = sqlite3_step(st);
+            if (rc == 100) { IntPtr p = sqlite3_column_text16(st, 0); return p == IntPtr.Zero ? null : Marshal.PtrToStringUni(p); }
+            if (rc == 101) return null;
+            throw new Exception(Err(db));
+        } finally { sqlite3_finalize(st); }
+    }
+    // Ejecuta y devuelve filas modificadas
+    public static int Exec(IntPtr db, string sql) {
+        IntPtr st;
+        if (sqlite3_prepare16_v2(db, sql, -1, out st, IntPtr.Zero) != 0) throw new Exception(Err(db));
+        try {
+            int rc = sqlite3_step(st);
+            if (rc != 101 && rc != 100) throw new Exception(Err(db));
+        } finally { sqlite3_finalize(st); }
+        return sqlite3_changes(db);
+    }
 }
 "@
-function Invoke-LauncherSql([string]$db, [string]$sql) {
-    if (-not ('TfcSqlite' -as [type])) { Add-Type -TypeDefinition $SqliteSig }
-    $h = [IntPtr]::Zero
-    if ([TfcSqlite]::sqlite3_open16($db, [ref]$h) -ne 0) { throw 'No se pudo abrir la base de datos del launcher.' }
-    try {
-        [void][TfcSqlite]::sqlite3_busy_timeout($h, 8000)
-        $err = [IntPtr]::Zero
-        $rc = [TfcSqlite]::sqlite3_exec($h, [Text.Encoding]::UTF8.GetBytes($sql + [char]0), [IntPtr]::Zero, [IntPtr]::Zero, [ref]$err)
-        if ($rc -ne 0) { throw "Error de SQLite ($rc)" }
-        return [TfcSqlite]::sqlite3_changes($h)
-    } finally { [void][TfcSqlite]::sqlite3_close($h) }
-}
+function Use-Sqlite { if (-not ('TfcSqlite' -as [type])) { Add-Type -TypeDefinition $SqliteSig } }
+function Q([string]$v) { return "'" + $v.Replace("'", "''") + "'" }
+
 function Get-TierMemoryMB([string]$tier) {
     $mb = [int]$Tiers[$tier].MemMB
     $total = 0
@@ -281,29 +306,64 @@ function Get-JvmArgs([string]$tier) {
              '-XX:G1MixedGCCountTarget=4', '-XX:InitiatingHeapOccupancyPercent=15', '-XX:G1MixedGCLiveThresholdPercent=90',
              '-XX:G1RSetUpdatingPauseTimePercent=5', '-XX:SurvivorRatio=32', '-XX:MaxTenuringThreshold=1', '-XX:+PerfDisableSharedMem')
 }
-# Devuelve $true si se aplicó. $onlyIfDefault: no pisar lo que el jugador haya cambiado a mano.
+function Get-HookCommand {
+    $exe = Join-Path $HelperDir 'TFC-Create.exe'
+    if (-not (Test-Path -LiteralPath $exe)) { return $null }
+    return '"' + ($exe -replace '\\', '/') + '" -auto'
+}
+
+# Aplica RAM + argumentos de Java + auto-actualizar al perfil en el launcher.
+# Soporta el formato antiguo (tabla profiles) y el nuevo (instances + instance_launch_overrides).
+# $onlyIfDefault: no pisar lo que el jugador haya puesto a mano. Devuelve $true si el perfil ya está listo.
 function Set-LauncherSettings($inst, [bool]$onlyIfDefault) {
     try {
         $l = @($script:Launchers | Where-Object { $_.Name -eq $inst.Launcher }) | Select-Object -First 1
         if (-not $l) { return $false }
-        $db = Join-Path $l.DataDir 'app.db'
-        if (-not (Test-Path -LiteralPath $db)) { return $false }
-        $name = $inst.Name.Replace("'", "''")
+        $dbPath = Join-Path $l.DataDir 'app.db'
+        if (-not (Test-Path -LiteralPath $dbPath)) { return $false }
+        Use-Sqlite
         $mb = Get-TierMemoryMB $inst.Tier
-        $jvm = (ConvertTo-Json -InputObject @(Get-JvmArgs $inst.Tier) -Compress).Replace("'", "''")
-        $cond = ''
-        if ($onlyIfDefault) { $cond = ' AND override_mc_memory_max IS NULL' }
-        $n = Invoke-LauncherSql $db ("UPDATE profiles SET override_mc_memory_max = $mb, override_extra_launch_args = '$jvm' " +
-                                     "WHERE path = '$name' AND install_stage = 'installed'$cond;")
-        # Actualizar solo al pulsar Jugar (si el jugador no tiene ya otro comando puesto)
-        $exe = Join-Path $HelperDir 'TFC-Create.exe'
-        if (Test-Path -LiteralPath $exe) {
-            $hook = ('"' + ($exe -replace '\\', '/') + '" -auto').Replace("'", "''")
-            [void](Invoke-LauncherSql $db ("UPDATE profiles SET override_hook_pre_launch = '$hook' " +
-                                           "WHERE path = '$name' AND install_stage = 'installed' AND (override_hook_pre_launch IS NULL OR override_hook_pre_launch = '' OR override_hook_pre_launch LIKE '%TFC-Create.exe%');"))
-        }
-        if ($n -gt 0) { Log "Ajustes del launcher aplicados a '$($inst.Name)': $mb MB" }
-        return ($n -gt 0 -or $onlyIfDefault)
+        $jvm = @(Get-JvmArgs $inst.Tier)
+        $hook = Get-HookCommand
+        $db = [TfcSqlite]::Open($dbPath)
+        try {
+            $newSchema = [int]([TfcSqlite]::Scalar($db, "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='instance_launch_overrides'")) -gt 0
+            if ($newSchema) {
+                $id = [TfcSqlite]::Scalar($db, "SELECT id FROM instances WHERE path = $(Q $inst.Name) AND install_stage = 'installed'")
+                if (-not $id) { return $false }
+                $cur = $null; $canRead = $true
+                try { $cur = [TfcSqlite]::Scalar($db, "SELECT json(overrides) FROM instance_launch_overrides WHERE instance_id = $(Q $id)") } catch { $canRead = $false }
+                if (-not $canRead -and $onlyIfDefault) { return $true }   # no sé leerlo: no toco nada en actualizaciones
+                $o = [ordered]@{}
+                if ($cur) { ($cur | ConvertFrom-Json).PSObject.Properties | ForEach-Object { $o[$_.Name] = $_.Value } }
+                $hasMem = $o.Contains('memory') -and $o['memory'] -and $o['memory'].maximum
+                if (-not ($onlyIfDefault -and $hasMem)) { $o['memory'] = [ordered]@{ maximum = $mb } }
+                $hasArgs = $o.Contains('extra_launch_args') -and $o['extra_launch_args']
+                if (-not ($onlyIfDefault -and $hasArgs)) { $o['extra_launch_args'] = $jvm }
+                $hooks = [ordered]@{ pre_launch = $null; wrapper = $null; post_exit = $null }
+                if ($o.Contains('hooks') -and $o['hooks']) { $o['hooks'].PSObject.Properties | ForEach-Object { $hooks[$_.Name] = $_.Value } }
+                if ($hook -and ((-not $hooks['pre_launch']) -or ([string]$hooks['pre_launch']) -like '*TFC-Create.exe*')) { $hooks['pre_launch'] = $hook }
+                $o['hooks'] = $hooks
+                if (-not $o.Contains('visible_tabs')) { $o['visible_tabs'] = [ordered]@{ files = $true; worlds = $true; screenshots = $false } }
+                $json = ConvertTo-Json -InputObject $o -Depth 10 -Compress
+                $val = "jsonb($(Q $json))"
+                try { [void][TfcSqlite]::Scalar($db, "SELECT jsonb('{}')") } catch { $val = Q $json }   # SQLite antiguo: guardar como texto
+                $n = [TfcSqlite]::Exec($db, "UPDATE instance_launch_overrides SET overrides = $val WHERE instance_id = $(Q $id)")
+                if ($n -eq 0) { $n = [TfcSqlite]::Exec($db, "INSERT INTO instance_launch_overrides (instance_id, overrides) VALUES ($(Q $id), $val)") }
+            } else {
+                $cond = ''
+                if ($onlyIfDefault) { $cond = ' AND override_mc_memory_max IS NULL' }
+                $jvmJson = ConvertTo-Json -InputObject $jvm -Compress
+                $exists = [TfcSqlite]::Scalar($db, "SELECT count(*) FROM profiles WHERE path = $(Q $inst.Name) AND install_stage = 'installed'")
+                if ([int]$exists -eq 0) { return $false }
+                [void][TfcSqlite]::Exec($db, "UPDATE profiles SET override_mc_memory_max = $mb, override_extra_launch_args = $(Q $jvmJson) WHERE path = $(Q $inst.Name)$cond")
+                if ($hook) {
+                    [void][TfcSqlite]::Exec($db, "UPDATE profiles SET override_hook_pre_launch = $(Q $hook) WHERE path = $(Q $inst.Name) AND (override_hook_pre_launch IS NULL OR override_hook_pre_launch = '' OR override_hook_pre_launch LIKE '%TFC-Create.exe%')")
+                }
+            }
+        } finally { [TfcSqlite]::Close($db) }
+        Log "Ajustes del launcher aplicados a '$($inst.Name)'"
+        return $true
     } catch { Log "No se pudieron aplicar los ajustes del launcher: $($_.Exception.Message)"; return $false }
 }
 
@@ -643,7 +703,9 @@ function Select-Tier([string]$tier) {
         if ($k -eq $tier) { $c.BorderBrush = $conv.ConvertFromString('#3FA35F'); $c.Background = $conv.ConvertFromString('#1F2E24') }
         else { $c.BorderBrush = $conv.ConvertFromString('#2E343D'); $c.Background = $conv.ConvertFromString('#1F2329') }
     }
-    $script:W.BtnInstall.Content = "Instalar $($Tiers[$tier].Title.ToLower())"
+    $inst = @($script:Instances | Where-Object { $_.Tier -eq $tier }) | Select-Object -First 1
+    if ($inst) { $script:W.BtnInstall.Content = "Actualizar / reparar $($Tiers[$tier].Title.ToLower())" }
+    else { $script:W.BtnInstall.Content = "Instalar $($Tiers[$tier].Title.ToLower())" }
 }
 
 function Show-TierPage {
@@ -680,6 +742,9 @@ function Start-Check {
     $latest = ConvertTo-Ver $script:Rel.tag_name
     $script:Instances = @(Get-Instances $script:Launchers)
     $script:Outdated = @($script:Instances | Where-Object { (ConvertTo-Ver $_.Version) -lt $latest })
+    # Perfiles ya instalados: poner RAM/Java/auto-actualizar si el jugador no los ha tocado
+    Install-Helper
+    foreach ($i in $script:Instances) { [void](Set-LauncherSettings $i $true) }
 
     if ($script:Outdated.Count -gt 0) {
         $script:W.UpdTitle.Text = "¡Hay una actualización! ($($script:Rel.tag_name))"
@@ -703,6 +768,19 @@ function Do-Install {
     $l = @($script:Launchers | Where-Object { $_.Installed -and $_.Name -eq $lname }) | Select-Object -First 1
     if (-not $l) { $l = @($script:Launchers | Where-Object Installed)[0] }
     $script:UsedLauncher = $l
+    $existing = @($script:Instances | Where-Object { $_.Tier -eq $tier -and $_.Launcher -eq $l.Name }) | Select-Object -First 1
+    if ($existing) {
+        # Ya existe esa gama: se actualiza/repara el MISMO perfil, no se crea otro
+        $script:W.ProgTitle.Text = "Actualizando $($existing.Name)"
+        Show-Page 'PageProgress'
+        Update-Instance $existing $script:Rel 0 100
+        Install-Helper
+        [void](Set-LauncherSettings $existing $true)
+        $script:W.DoneTitle.Text = "¡Perfil actualizado! ($($script:Rel.tag_name))"
+        $script:W.DoneText.Text = "Ya tenías la $($Tiers[$tier].Title.ToLower()) instalada en el perfil `"$($existing.Name)`", así que la he actualizado y reparado ahí mismo. No se ha creado ningún perfil nuevo.`n`nTus mundos y ajustes se conservan."
+        Show-Page 'PageDone'
+        return
+    }
     $asset = Get-Asset $script:Rel $tier
     if (-not $asset) { throw "La versión $($script:Rel.tag_name) no incluye la $($Tiers[$tier].Title.ToLower())." }
 
@@ -747,7 +825,7 @@ function Check-Installed([bool]$manual) {
         $script:W.DoneTitle.Text = $head
         if ($applied) {
             $gb = [Math]::Round((Get-TierMemoryMB $script:WaitTier) / 1024, 1)
-            $script:W.DoneText.Text = "Todo configurado automáticamente:`n  • Memoria para el juego: $gb GB`n  • Ajustes de Java optimizados`n  • Se actualiza solo cada vez que pulses Jugar`n`nSi $lname estaba abierto y no ves los cambios, ciérralo y vuelve a abrirlo."
+            $script:W.DoneText.Text = "Todo configurado automáticamente:`n  • Memoria para el juego: $gb GB`n  • Ajustes de Java optimizados`n  • Se actualiza solo cada vez que pulses Jugar`n`nImportante: cierra $lname del todo y vuelve a abrirlo para que cargue estos ajustes."
         } else {
             $script:W.DoneText.Text = "Último paso, muy importante: dale memoria al juego.`nEn $lname abre el perfil → Ajustes (engranaje) → Java y memoria, y pon $ram.`n`nPara actualizar en el futuro, abre el acceso directo `"TFC Create`" del escritorio."
         }
