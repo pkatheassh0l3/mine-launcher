@@ -5,7 +5,7 @@ Viene en 3 versiones optimizadas según tu PC.
 
 ## Instalación
 
-1. **[Descarga el instalador](blob:https://github.com/48a127d2-83f1-4d67-a7cf-34939a48bdac)** y ábrelo.
+1. **[Descarga el instalador](https://github.com/48a127d2-83f1-4d67-a7cf-34939a48bdac)** y ábrelo.
    Si Windows muestra "Windows protegió su PC", pulsa *Más información* → *Ejecutar de todas formas* (el instalador no está firmado).
 2. Si no tienes [Modrinth App](https://modrinth.com/app) o [Migurinth](https://github.com/MiguVT/migurinth/releases/latest), te lleva a descargarlo. Instálalo, ábrelo una vez y vuelve a abrir el instalador.
 3. El instalador mira tu PC y te recomienda una versión:
