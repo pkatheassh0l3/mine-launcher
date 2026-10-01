@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+eclipse/
+run/
+
+# Loom
+.architectury-transformer/

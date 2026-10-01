@@ -1,0 +1,42 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.marcsanzdev.chestseparators.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractContainerMenuAccessor",
+    "BlockDropMixin",
+    "BlockEntityComponentMixin",
+    "BlockEntityMixin",
+    "ChestBoatEntityMixin",
+    "DoubleInventoryMixin",
+    "HopperBlockEntityMixin",
+    "LootableContainerBlockEntityMixin",
+    "ScreenHandlerClickMixin",
+    "ScreenHandlerSwapFilterMixin",
+    "ScreenHandlerWhitelistMixin",
+    "ShulkerBoxBlockEntityMixin",
+    "ShulkerBoxBlockMixin",
+    "ShulkerBoxSlotMixin",
+    "SimpleInventoryMixin",
+    "SlotWhitelistMixin",
+    "StorageMinecartEntityMixin"
+  ],
+  "client": [
+    "client.ChestInteractionMixin",
+    "client.ChestLidAccessor",
+    "client.CreativeInventoryScreenAccessor",
+    "client.CreativeSlotAccessor",
+    "client.EnderChestLidAccessor",
+    "client.GenericContainerScreenMixin",
+    "client.HandledScreenAccessor",
+    "client.LevelRendererMixin",
+    "client.RecipeBookWidgetInvoker",
+    "client.ShulkerAnimationAccessor",
+    "client.StatusEffectsDisplayMixin",
+    "WorldMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

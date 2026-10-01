@@ -1,10 +1,11 @@
 # ==========================================================================
-#  TFC Create - Instalador / actualizador visual (WPF)
+#  Ascension - Instalador / actualizador visual (WPF)
 #  Lo ejecuta TFC-Create.exe. Funciona con Modrinth App y Migurinth.
 # ==========================================================================
 $Repo        = 'pkatheassh0l3/mine-launcher'
 $PackId      = 'tfc-create'
-$PackTitle   = 'TFC Create'
+$PackTitle   = 'Ascension'
+$ContentRevision = 'ascension-eras-2026-09-28'
 $MarkerName  = 'tfc-create-pack.json'
 $AssetPrefix = 'TFC-Create_'
 $HelperDir   = Join-Path $env:LOCALAPPDATA 'tfc-create-pack'
@@ -16,9 +17,11 @@ $ProgressPreference = 'SilentlyContinue'
 try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
 $Tiers = [ordered]@{
+    patata = @{ Title = 'PC patata'; Ram = '4 GB (4096 MB)'; MemMB = 4096; Region = '8M' }
     baja  = @{ Title = 'Gama baja';  Ram = '4 GB (4096 MB)';  MemMB = 4096;  Region = '8M' }
-    media = @{ Title = 'Gama media'; Ram = '8 GB (8192 MB)';  MemMB = 8192;  Region = '8M' }
-    alta  = @{ Title = 'Gama alta';  Ram = '10 GB (10240 MB)'; MemMB = 10240; Region = '16M' }
+    intermedia = @{ Title = 'Intermedia 8 GB'; Ram = '4 GB (4096 MB)'; MemMB = 4096; Region = '8M' }
+    media = @{ Title = 'Gama media'; Ram = '6 GB (6144 MB)';  MemMB = 6144;  Region = '8M' }
+    alta  = @{ Title = 'Gama alta - RTX 3060'; Ram = '8 GB (8192 MB)'; MemMB = 8192; Region = '8M' }
 }
 
 $script:Ui = $false
@@ -55,6 +58,11 @@ function ConvertTo-Ver([string]$v) {
     try { return [version]($parts[0..([Math]::Min(3, $parts.Count - 1))] -join '.') } catch { return [version]'0.0' }
 }
 function Download([string]$url, [string]$dest, [double]$pctFrom = 0, [double]$pctTo = 100, [string]$label = '') {
+    if ($url.StartsWith('file:', [StringComparison]::OrdinalIgnoreCase)) {
+        Copy-Item -LiteralPath ([uri]$url).LocalPath -Destination $dest -Force
+        Set-Progress $pctTo 'Paquete local preparado' $label
+        return
+    }
     $req = [Net.HttpWebRequest]::Create($url)
     $req.UserAgent = "$PackId-installer"; $req.AllowAutoRedirect = $true; $req.Timeout = 60000
     $resp = $req.GetResponse()
@@ -116,7 +124,8 @@ function Get-Instances($launchers) {
             if (-not (Test-Path -LiteralPath $m)) { continue }
             try {
                 $j = [IO.File]::ReadAllText($m, [Text.Encoding]::UTF8) | ConvertFrom-Json
-                if ($j.packId -eq $PackId) {
+                # Las partidas del antiguo pack TFC no se migran a otro conjunto de mods.
+                if ($j.packId -eq $PackId -and $j.contentRevision -eq $ContentRevision) {
                     $list += [pscustomobject]@{ Launcher = $l.Name; Path = $dir.FullName; Name = $dir.Name
                                                 Tier = $j.tier; Version = $j.version; Marker = $j }
                 }
@@ -136,7 +145,8 @@ function Get-Hardware {
         $_ -notmatch 'Radeon\(TM\)\s*Graphics|Vega\s*\d+\s*Graphics|Radeon\s*\d+M' })
     if ($ram -ge 24 -and $strong.Count -gt 0) { $tier = 'alta' }
     elseif ($ram -ge 12 -and $dedicated.Count -gt 0) { $tier = 'media' }
-    else { $tier = 'baja' }
+    elseif ($ram -ge 8 -and $dedicated.Count -gt 0) { $tier = 'intermedia' }
+    else { $tier = 'patata' }
     $gpuText = 'no detectada'
     if ($gpus.Count -gt 0) { $gpuText = $gpus -join ', ' }
     [pscustomobject]@{ Ram = $ram; Gpu = $gpuText; Tier = $tier }
@@ -144,6 +154,19 @@ function Get-Hardware {
 
 # ======================= GitHub =======================
 function Get-LatestRelease {
+    if ($env:TFC_SELF) {
+        $localRoot = Split-Path -Parent $env:TFC_SELF
+        $manifest = Join-Path $localRoot 'versiones.json'
+        if (Test-Path -LiteralPath $manifest) {
+            $rel = Get-Content -LiteralPath $manifest -Raw -Encoding UTF8 | ConvertFrom-Json
+            foreach ($asset in $rel.assets) {
+                $path = Join-SafePath $localRoot $asset.name
+                if ((Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash -ne $asset.sha256) { throw "Paquete local dañado: $($asset.name)" }
+                $asset | Add-Member -NotePropertyName browser_download_url -NotePropertyValue ([uri]$path).AbsoluteUri -Force
+            }
+            return $rel
+        }
+    }
     Invoke-RestMethod -Uri "https://api.github.com/repos/$Repo/releases/latest" -UseBasicParsing `
         -Headers @{ 'User-Agent' = "$PackId-installer"; 'Accept' = 'application/vnd.github+json' }
 }
@@ -153,6 +176,7 @@ function Get-Asset($rel, [string]$tier) {
 
 # ======================= Actualizar =======================
 function Update-InstanceFromPack($inst, [string]$mrpack, [double]$from = 0, [double]$to = 100) {
+    if ($inst.Marker.contentRevision -ne $ContentRevision) { throw 'Este perfil pertenece al pack antiguo. Instala Ascension como un perfil nuevo.' }
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $root = $inst.Path
     $zip = [IO.Compression.ZipFile]::OpenRead($mrpack)
@@ -161,6 +185,11 @@ function Update-InstanceFromPack($inst, [string]$mrpack, [double]$from = 0, [dou
         if (-not $entry) { throw 'El paquete no tiene modrinth.index.json' }
         $sr = New-Object IO.StreamReader($entry.Open(), [Text.Encoding]::UTF8)
         $idx = $sr.ReadToEnd() | ConvertFrom-Json; $sr.Close()
+        $markerEntry = $zip.GetEntry("overrides/$MarkerName")
+        if (-not $markerEntry) { throw 'Falta el identificador de la actualización.' }
+        $sr = New-Object IO.StreamReader($markerEntry.Open(), [Text.Encoding]::UTF8)
+        try { $incoming = $sr.ReadToEnd() | ConvertFrom-Json } finally { $sr.Close() }
+        if ($incoming.packId -ne $PackId -or $incoming.contentRevision -ne $ContentRevision -or $incoming.tier -ne $inst.Tier) { throw 'El paquete no corresponde a este perfil de Ascension.' }
 
         $files = @($idx.files | Where-Object { -not ($_.env -and $_.env.client -eq 'unsupported') })
         $overrides = @($zip.Entries | Where-Object { $_.FullName -match '^(client-)?overrides/' -and $_.Name })
@@ -435,7 +464,7 @@ function Run-Auto {
 $Xaml = @'
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="TFC Create" Width="860" Height="590" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"
+        Title="Ascension" Width="1100" Height="590" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"
         Background="#15171B" FontFamily="Segoe UI" Foreground="#E9E7E3" UseLayoutRounding="True">
   <Window.Resources>
     <Style x:Key="Btn" TargetType="Button">
@@ -539,8 +568,8 @@ $Xaml = @'
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
           <Image x:Name="Logo" Width="68" Height="68" Margin="0,0,18,0"/>
           <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="TFC CREATE" FontSize="32" FontWeight="Black" Foreground="White"/>
-            <TextBlock Text="Modpack · Minecraft 1.21.1 · NeoForge" FontSize="13.5" Foreground="#DCE9DA"/>
+            <TextBlock Text="ASCENSION" FontSize="32" FontWeight="Black" Foreground="White"/>
+            <TextBlock Text="Modpack · Minecraft 1.21.1 · NeoForge" FontSize="12.5" Foreground="#DCE9DA"/>
           </StackPanel>
         </StackPanel>
         <TextBlock x:Name="VersionTag" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="13" Foreground="#E8F2E4"/>
@@ -578,15 +607,37 @@ $Xaml = @'
           <TextBlock Style="{StaticResource H1}" Text="Elige la versión para tu PC"/>
           <TextBlock x:Name="HwText" Style="{StaticResource P}"/>
         </StackPanel>
-        <UniformGrid Grid.Row="1" Columns="3" Margin="0,0,-14,0">
+        <UniformGrid Grid.Row="1" Columns="5" Margin="0,0,-14,0">
+          <Border x:Name="CardPatata" Style="{StaticResource Card}" Tag="patata">
+            <StackPanel>
+              <Border x:Name="BadgePatata" Background="#3FA35F" CornerRadius="6" Padding="8,2" HorizontalAlignment="Left" Margin="0,0,0,10" Visibility="Hidden">
+                <TextBlock Text="RECOMENDADA" FontSize="11" FontWeight="Bold" Foreground="White"/>
+              </Border>
+              <TextBlock Text="PC patata" FontSize="18" FontWeight="Bold" Foreground="White"/>
+              <TextBlock Text="Gráfica integrada" TextWrapping="Wrap" FontSize="13" Foreground="#8FD18A" Margin="0,2,0,12"/>
+              <TextBlock Style="{StaticResource P}" FontSize="12.5" Text="• Texturas F8thful 8×8&#10;• Visión de 4 chunks&#10;• Sin shaders&#10;• Mismos mods y servidor"/>
+              <TextBlock Text="Memoria: 4 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
+            </StackPanel>
+          </Border>
           <Border x:Name="CardBaja" Style="{StaticResource Card}" Tag="baja">
             <StackPanel>
               <Border x:Name="BadgeBaja" Background="#3FA35F" CornerRadius="6" Padding="8,2" HorizontalAlignment="Left" Margin="0,0,0,10" Visibility="Hidden">
                 <TextBlock Text="RECOMENDADA" FontSize="11" FontWeight="Bold" Foreground="White"/>
               </Border>
-              <TextBlock Text="Gama baja" FontSize="21" FontWeight="Bold" Foreground="White"/>
-              <TextBlock Text="8 GB RAM · sin gráfica dedicada" FontSize="13" Foreground="#8FD18A" Margin="0,2,0,12"/>
-              <TextBlock Style="{StaticResource P}" FontSize="13.5" Text="• Distancia de visión 6&#10;• Gráficos rápidos&#10;• Máximo rendimiento"/>
+              <TextBlock Text="Gama baja" FontSize="18" FontWeight="Bold" Foreground="White"/>
+              <TextBlock Text="8 GB RAM · ajustes ligeros" TextWrapping="Wrap" FontSize="13" Foreground="#8FD18A" Margin="0,2,0,12"/>
+              <TextBlock Style="{StaticResource P}" FontSize="12.5" Text="• Distancia de visión 6&#10;• Sin shaders&#10;• Mismas eras y misiones"/>
+              <TextBlock Text="Memoria: 4 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
+            </StackPanel>
+          </Border>
+          <Border x:Name="CardIntermedia" Style="{StaticResource Card}" Tag="intermedia">
+            <StackPanel>
+              <Border x:Name="BadgeIntermedia" Background="#3FA35F" CornerRadius="6" Padding="8,2" HorizontalAlignment="Left" Margin="0,0,0,10" Visibility="Hidden">
+                <TextBlock Text="RECOMENDADA" FontSize="11" FontWeight="Bold" Foreground="White"/>
+              </Border>
+              <TextBlock Text="Intermedia 8 GB" FontSize="18" FontWeight="Bold" Foreground="White"/>
+              <TextBlock Text="8 GB RAM · gráfica dedicada" TextWrapping="Wrap" FontSize="13" Foreground="#80C4D4" Margin="0,2,0,12"/>
+              <TextBlock Style="{StaticResource P}" FontSize="12.5" Text="• Distancia de visión 8&#10;• Sin shaders, más detalle&#10;• Mismas eras y misiones"/>
               <TextBlock Text="Memoria: 4 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
             </StackPanel>
           </Border>
@@ -595,10 +646,10 @@ $Xaml = @'
               <Border x:Name="BadgeMedia" Background="#3FA35F" CornerRadius="6" Padding="8,2" HorizontalAlignment="Left" Margin="0,0,0,10" Visibility="Hidden">
                 <TextBlock Text="RECOMENDADA" FontSize="11" FontWeight="Bold" Foreground="White"/>
               </Border>
-              <TextBlock Text="Gama media" FontSize="21" FontWeight="Bold" Foreground="White"/>
-              <TextBlock Text="16 GB RAM · gráfica antigua" FontSize="13" Foreground="#E0C36A" Margin="0,2,0,12"/>
-              <TextBlock Style="{StaticResource P}" FontSize="13.5" Text="• Distancia de visión 10&#10;• Gráficos detallados&#10;• Equilibrado"/>
-              <TextBlock Text="Memoria: 8 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
+              <TextBlock Text="Gama media" FontSize="18" FontWeight="Bold" Foreground="White"/>
+              <TextBlock Text="12–16 GB RAM · gráfica dedicada" TextWrapping="Wrap" FontSize="13" Foreground="#E0C36A" Margin="0,2,0,12"/>
+              <TextBlock Style="{StaticResource P}" FontSize="12.5" Text="• Distancia de visión 10&#10;• Shaders en calidad baja&#10;• Mismas eras y misiones"/>
+              <TextBlock Text="Memoria: 6 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
             </StackPanel>
           </Border>
           <Border x:Name="CardAlta" Style="{StaticResource Card}" Tag="alta">
@@ -606,10 +657,10 @@ $Xaml = @'
               <Border x:Name="BadgeAlta" Background="#3FA35F" CornerRadius="6" Padding="8,2" HorizontalAlignment="Left" Margin="0,0,0,10" Visibility="Hidden">
                 <TextBlock Text="RECOMENDADA" FontSize="11" FontWeight="Bold" Foreground="White"/>
               </Border>
-              <TextBlock Text="Gama alta" FontSize="21" FontWeight="Bold" Foreground="White"/>
-              <TextBlock Text="32 GB RAM · RTX 3060 o similar" FontSize="13" Foreground="#E88F6A" Margin="0,2,0,12"/>
-              <TextBlock Style="{StaticResource P}" FontSize="13.5" Text="• Distancia de visión 16&#10;• Shaders (Iris)&#10;• Distant Horizons"/>
-              <TextBlock Text="Memoria: 10-12 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
+              <TextBlock Text="Gama alta" FontSize="18" FontWeight="Bold" Foreground="White"/>
+              <TextBlock Text="32 GB RAM · RTX 3060 o similar" TextWrapping="Wrap" FontSize="13" Foreground="#E88F6A" Margin="0,2,0,12"/>
+              <TextBlock Style="{StaticResource P}" FontSize="12.5" Text="• Distancia de visión 14&#10;• Shaders en calidad alta&#10;• Mismas eras y misiones"/>
+              <TextBlock Text="Memoria: 8 GB" FontSize="13" Foreground="#8A919B" Margin="0,12,0,0"/>
             </StackPanel>
           </Border>
         </UniformGrid>
@@ -728,7 +779,7 @@ function Open-Launcher {
 
 function Select-Tier([string]$tier) {
     $script:SelTier = $tier
-    $map = @{ baja = 'CardBaja'; media = 'CardMedia'; alta = 'CardAlta' }
+    $map = @{ patata = 'CardPatata'; baja = 'CardBaja'; intermedia = 'CardIntermedia'; media = 'CardMedia'; alta = 'CardAlta' }
     $conv = New-Object System.Windows.Media.BrushConverter
     foreach ($k in $map.Keys) {
         $c = $script:W[$map[$k]]
@@ -744,7 +795,8 @@ function Show-TierPage {
     $hw = $script:Hw
     $script:W.HwText.Text = "Tu PC: $($hw.Ram) GB de RAM · Gráfica: $($hw.Gpu).  Te marcamos la recomendada, pero puedes elegir otra."
     $script:W.BadgeBaja.Visibility = 'Hidden'; $script:W.BadgeMedia.Visibility = 'Hidden'; $script:W.BadgeAlta.Visibility = 'Hidden'
-    switch ($hw.Tier) { 'baja' { $script:W.BadgeBaja.Visibility = 'Visible' } 'media' { $script:W.BadgeMedia.Visibility = 'Visible' } 'alta' { $script:W.BadgeAlta.Visibility = 'Visible' } }
+    $script:W.BadgePatata.Visibility = 'Hidden'; $script:W.BadgeIntermedia.Visibility = 'Hidden'
+    switch ($hw.Tier) { 'patata' { $script:W.BadgePatata.Visibility = 'Visible' } 'baja' { $script:W.BadgeBaja.Visibility = 'Visible' } 'intermedia' { $script:W.BadgeIntermedia.Visibility = 'Visible' } 'media' { $script:W.BadgeMedia.Visibility = 'Visible' } 'alta' { $script:W.BadgeAlta.Visibility = 'Visible' } }
     Select-Tier $hw.Tier
     $inst = @($script:Launchers | Where-Object Installed)
     $script:W.LauncherBox.Items.Clear()
@@ -908,7 +960,7 @@ function Run-Gui {
         }
     } catch { }
 
-    foreach ($c in 'CardBaja', 'CardMedia', 'CardAlta') {
+    foreach ($c in 'CardPatata', 'CardBaja', 'CardIntermedia', 'CardMedia', 'CardAlta') {
         $script:W[$c].Add_MouseLeftButtonUp({ param($s, $e) Select-Tier ([string]$s.Tag) })
     }
     $script:W.BtnGetModrinth.Add_Click({ Start-Process 'https://modrinth.com/app' })
@@ -939,3 +991,5 @@ if (-not $env:TFC_NO_MAIN) {
         }
     }
 }
+
+

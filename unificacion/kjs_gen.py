@@ -38,7 +38,15 @@ def food(item, hunger, sat, decay, water=0, **nut):
     for k, v in nut.items():
         if v: d[k] = v
     ns, path = item.split(':')
+    if ns in DISABLED_FOOD_MODS:
+        # Desactivado: mantener el archivo (para pisar versiones antiguas) pero sin efecto
+        d = {"neoforge:conditions": [{"type": "neoforge:false"}], "ingredient": {"item": item},
+             "hunger": 0, "saturation": 0, "decay_modifier": 0}
     dump(f'data/unificado/tfc/food/{ns}/{path}.json', d)
+
+# Spawn mete su comida en el inventario creativo de una forma que choca con TFC:
+# con datos de comida TFC el juego crashea al abrir el creativo ("same item stack twice").
+DISABLED_FOOD_MODS = ['spawn']
 
 RAW = dict(hunger=2, sat=0.5, decay=3.0)
 def raw_meat(i, p=1.5): food(i, 2, 0.5, 3.0, protein=p)

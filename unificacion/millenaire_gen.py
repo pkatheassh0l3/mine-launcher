@@ -103,3 +103,57 @@ for root, _, fs in os.walk(SRC):
             dump(os.path.join(OUT, rel), nd); files_written += 1
 print('ficheros:', files_written)
 for k, v in changes.most_common(): print(v, k)
+
+# ================= Biomas: que las aldeas aparezcan en mundos TFC =================
+# Millénaire solo genera aldeas en biomas vanilla (bosque, llanura, desierto...), que no existen en TFC.
+# Creamos etiquetas con los biomas de TFC equivalentes por relieve y se las añadimos a cada tipo de aldea.
+TFC_TAGS = {
+ 'llanuras':  ['plains','burren_plains','doline_plains','cenote_plains','shilin_plains','tower_karst_plains','drumlins','knob_and_kettle'],
+ 'colinas':   ['hills','rolling_hills','highlands','cenote_rolling_hills','doline_rolling_hills','cenote_hills','doline_hills','shilin_hills','tower_karst_hills'],
+ 'montanas':  ['old_mountains','highlands','plateau'],
+ 'desierto':  ['grassy_dunes','dune_sea','salt_flats','coastal_dunes'],
+ 'badlands':  ['badlands','mesas','buttes','burren_badlands','hoodoos'],
+ 'mesetas':   ['plateau','plateau_wide','rocky_plateau','burren_plateau','cenote_plateau','doline_plateau'],
+ 'pantanos':  ['lowlands','salt_marsh','mud_flats'],
+ 'bosque':    ['plains','rolling_hills','hills','lowlands'],
+ 'frio':      ['patterned_ground','inverted_patterned_ground','ice_sheet_edge','drumlins','knob_and_kettle'],
+}
+VANILLA_TO_TFC = {
+ '#c:is_plains':['llanuras'], '#c:is_hill':['colinas'], '#c:is_mountain':['montanas'], 'minecraft:jagged_peaks':['montanas'], 'minecraft:grove':['montanas'],
+ '#c:is_desert':['desierto'], 'minecraft:desert':['desierto'], '#c:is_badlands':['badlands'],
+ '#c:is_savanna':['mesetas','llanuras'], 'minecraft:savanna':['mesetas'], 'minecraft:windswept_savanna':['mesetas'],
+ '#c:is_swamp':['pantanos'], 'minecraft:swamp':['pantanos'], 'minecraft:mangrove_swamp':['pantanos'],
+ '#c:is_jungle':['pantanos','bosque'], 'minecraft:jungle':['pantanos'], 'minecraft:sparse_jungle':['pantanos'], 'minecraft:bamboo_jungle':['pantanos'],
+ '#c:is_forest':['bosque'], '#c:is_birch_forest':['bosque'], '#c:is_dark_forest':['bosque'], '#millenaire:is_temperate_forest':['bosque'],
+ '#c:is_taiga':['bosque','colinas'], 'minecraft:taiga':['bosque'], 'minecraft:dark_forest':['bosque'], 'minecraft:forest':['bosque'],
+ 'minecraft:birch_forest':['bosque'], 'minecraft:old_growth_birch_forest':['bosque'],
+ '#millenaire:is_cherry_grove':['colinas'], '#millenaire:is_meadow':['colinas'],
+ '#c:is_snowy':['frio'], '#c:is_snowy_plains':['frio'], '#c:is_cold':['frio'], 'minecraft:snowy_plains':['frio'],
+ 'minecraft:snowy_taiga':['frio'], 'minecraft:snowy_slopes':['frio'], 'minecraft:frozen_river':['frio'],
+}
+TFC_BIOMES = set(l.strip() for l in open('/tmp/claude-0/unify/tfc_biomes.txt'))
+KJS = '/tmp/claude-0/unify/out/kubejs/data/unificado/tags/worldgen/biome'
+os.makedirs(KJS, exist_ok=True)
+for name, biomes in TFC_TAGS.items():
+    for b in biomes: assert b in TFC_BIOMES, b
+    json.dump({'replace': False, 'values': [{'id': 'tfc:' + b, 'required': False} for b in biomes]},
+              open(os.path.join(KJS, f'tfc_{name}.json'), 'w'), indent=2)
+nv = 0
+for root, _, fs in os.walk(os.path.join(SRC, 'cultures')):
+    if not root.endswith('/villages'): continue
+    for f in fs:
+        if not f.endswith('.json'): continue
+        rel = os.path.relpath(os.path.join(root, f), SRC)
+        outp = os.path.join(OUT, rel)
+        d = load(outp) if os.path.exists(outp) else load(os.path.join(root, f))
+        tags = d.get('biome_tags')
+        if not tags: continue
+        extra = []
+        for t in tags:
+            for n in VANILLA_TO_TFC.get(t, []):
+                tt = f'#unificado:tfc_{n}'
+                if tt not in tags and tt not in extra: extra.append(tt)
+        if extra:
+            d['biome_tags'] = tags + extra
+            dump(outp, d); nv += 1
+print('aldeas con biomas TFC:', nv)

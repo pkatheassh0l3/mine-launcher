@@ -1,33 +1,38 @@
-# TFC Create: modpack para Minecraft 1.21.1 (NeoForge)
+# Ascension — Minecraft 1.21.1 / NeoForge
 
-Modpack de supervivencia con **TerraFirmaCraft**, **Create** (con Aeronautics y Steam 'n' Rails), **Millénaire**, **Farmer's Delight** y muchos animales nuevos.
-Viene en 3 versiones optimizadas según tu PC.
+Cinco versiones con los mismos mods de contenido, nueve eras, 126 misiones personalizadas y 16 hitos obligatorios. Incluyen las mejoras QoL, la retirada de las flechas de inventario y del antiguo libro de Millénaire.
 
-## Instalación
+| Versión | RAM para el juego | Visión | Shaders |
+|---|---:|---:|---|
+| PC patata | 4096 MB | 4 chunks | Sin shaders; texturas F8thful 8x8 |
+| Baja | 4096 MB | 6 chunks | Desactivados; sin Iris |
+| Intermedia 8 GB | 4096 MB | 8 chunks | Sin shaders; detalle intermedio |
+| Media | 6144 MB | 10 chunks | Complementary Reimagined r5.5.1 LOW |
+| Alta / RTX 3060 | 8192 MB | 14 chunks | Complementary Reimagined r5.5.1 HIGH |
 
-1. **[Descarga el instalador](https://github.com/pkatheassh0l3/mine-launcher/releases/latest/download/Instalar-TFC-Create.exe)** y ábrelo.
-   Si Windows muestra "Windows protegió su PC", pulsa *Más información* → *Ejecutar de todas formas* (el instalador no está firmado).
-2. Si no tienes [Modrinth App](https://modrinth.com/app) o [Migurinth](https://github.com/MiguVT/migurinth/releases/latest), te lleva a descargarlo. Instálalo, ábrelo una vez y vuelve a abrir el instalador.
-3. El instalador mira tu PC y te recomienda una versión:
+## Instalar
 
-   | Versión | PC | RAM que hay que dar al juego |
-   |---|---|---|
-   | Gama baja | 8 GB de RAM, sin tarjeta gráfica | 4 GB |
-   | Gama media | 16 GB de RAM, gráfica antigua | 8 GB |
-   | Gama alta | 32 GB de RAM, gráfica tipo RTX 3060 (con shaders y Distant Horizons) | 10–12 GB |
+Abre `Instalar-TFC-Create.exe` desde la carpeta de la versión preparada en `publicar/salida`, junto a `versiones.json` y los cinco `.mrpack`. Selecciona una gama y confirma la importación en Modrinth App o Migurinth. El instalador intenta aplicar la memoria automáticamente; si el launcher no lo permite, te indicará cómo ajustarla.
 
-4. Pulsa **Instalar**, confirma en el launcher y pon la RAM de la tabla en: perfil → Ajustes → **Java y memoria**.
+También puedes importar un `.mrpack` directamente y asignar la RAM de la tabla manualmente. Se necesita Java 21. La versión ligera conserva todos los mods de contenido y no garantiza fluidez en cualquier ordenador.
 
-## Actualizar
+El instalador usa los paquetes locales si encuentra `versiones.json` junto al ejecutable; si no, consulta la última release de GitHub. Los nombres `TFC-Create_baja/media/alta.mrpack` y el nombre del ejecutable se mantienen por compatibilidad con la distribución.
 
-Abre el acceso directo **"TFC Create"** del escritorio (o del menú Inicio). Si hay una versión nueva, se descarga sola. Tus mundos y tus ajustes se conservan.
+## Partidas y actualizaciones
 
-## Problemas frecuentes
+Esta edición se instala en perfiles nuevos **Ascension**. El antiguo TFC Create usa otro conjunto de mods: sus perfiles y mundos no se actualizan automáticamente a Ascension. No copies un mundo de TerraFirmaCraft a esta edición sin una comprobación específica de compatibilidad.
 
-- **Va lento o se cierra:** comprueba la RAM asignada, o prueba una gama más baja.
-- **Gama alta: falla al activar shaders:** desactiva Iris en el perfil (la versión de Iris compatible todavía está en beta).
-- **Física rara en barcos o dirigibles:** desactiva Lithium en el perfil.
+Las posteriores actualizaciones de los perfiles Ascension conservan mundos y ajustes personales. Las cinco gamas pueden usar el mismo servidor preparado para Ascension.
 
----
+## Estado
 
-<sub>Para el autor: cómo publicar actualizaciones → [PUBLICAR.md](PUBLICAR.md)</sub>
+Paquetes probados a 1080p en Ryzen 5 7600, RTX 3060 y 32 GB de RAM, con 4/6/8 GB asignados. No se incluyen partidas ni datos personales. La actualización está preparada localmente; debe publicarse una release para distribuirla desde GitHub.
+
+Para preparar o publicar versiones: [PUBLICAR.md](PUBLICAR.md).
+
+## Actualización 2026.10.1 — instalador para amigos
+
+La distribución actual tiene cinco opciones: PC patata, Baja, Intermedia, Media y Alta. Todas incluyen Absolute Order ascension.12. PC patata conserva los mods de contenido y añade F8thful 8x8, visión de 4 chunks, simulación de 4, sin shaders y 4 GB asignados. Descarga las texturas directamente desde Modrinth y las activa en perfiles nuevos.
+
+La carpeta lista para compartir está en `publicar/salida/v2026.10.1`: conserva el ejecutable, versiones.json y los cinco .mrpack juntos. Se ha probado la instalación y actualización con perfiles temporales, conservando mundos y ajustes; no es una prueba de FPS en hardware de gama baja. La release remota no se ha publicado.
+

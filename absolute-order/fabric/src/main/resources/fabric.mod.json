@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "chestseparators",
+  "version": "${version}",
+  "name": "Absolute Order",
+  "description": "Custom chest auto-sorter with visual separators and per-slot filters.",
+  "authors": ["marcsanz-dev"],
+  "icon": "assets/chestseparators/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.marcsanzdev.chestseparators.fabric.AbsoluteOrderFabric"
+    ],
+    "client": [
+      "io.github.marcsanzdev.chestseparators.fabric.AbsoluteOrderClientFabric"
+    ],
+    "modmenu": [
+      "io.github.marcsanzdev.chestseparators.fabric.ModMenuIntegration"
+    ],
+    "rei_client": [
+      "io.github.marcsanzdev.chestseparators.compat.ChestSeparatorsReiPlugin"
+    ]
+  },
+  "mixins": [
+    "absoluteorder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "*",
+    "java": ">=21",
+    "fabric-api": "*",
+    "architectury": "*",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

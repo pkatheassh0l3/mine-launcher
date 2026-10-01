@@ -1,0 +1,31 @@
+architectury {
+    common rootProject.enabled_platforms.split(',')
+}
+
+dependencies {
+    // We depend on Fabric Loader here to use the Fabric @Environment annotations,
+    // which get remapped to the correct annotations on each platform.
+    // Do NOT use other classes from Fabric Loader.
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    // Architectury API (common).
+    modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
+
+    // Cloth Config API for the config screen — compile-only here; each platform ships the real impl.
+    // The me.shedaniel.clothconfig2.api.* classes are platform-agnostic, so the Fabric artifact's API is
+    // used to compile common. Exclude the fabric loader/api so nothing Fabric-specific leaks in.
+    modCompileOnly("me.shedaniel.cloth:cloth-config-fabric:$rootProject.cloth_config_version") {
+        exclude group: "net.fabricmc"
+        exclude group: "net.fabricmc.fabric-api"
+    }
+
+    // Recipe-viewer compat APIs — compile-only (users provide the runtime mod). The API classes are
+    // platform-agnostic; the exclusion-zone plugins live in common and work on both loaders.
+    modCompileOnly("dev.emi:emi-fabric:${rootProject.emi_version}:api") { transitive = false }
+    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:$rootProject.rei_version") {
+        transitive = false
+    }
+}
+
+dependencies { testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'; testRuntimeOnly 'org.junit.platform:junit-platform-launcher' }
+test { useJUnitPlatform() }

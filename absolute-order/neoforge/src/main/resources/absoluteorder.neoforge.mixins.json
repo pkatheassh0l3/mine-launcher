@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.marcsanzdev.chestseparators.neoforge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["SophisticatedSlotMixin", "SophisticatedInventoryMixin", "SophisticatedSettingsAccessor", "SophisticatedMenuMixin"],
+  "client": ["JeiToggleMixin", "JeiInputMixin", "JeiRenderMixin"],
+  "injectors": {"defaultRequire": 1}
+}

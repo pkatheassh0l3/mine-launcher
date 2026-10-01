@@ -2,3 +2,5 @@
 publicar/salida/
 *.mrpack
 instalador/*.syso
+
+/publicar/copias-instalador/

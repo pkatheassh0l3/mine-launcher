@@ -1,0 +1,50 @@
+{
+  "game_versions": [
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8"
+  ],
+  "loaders": [
+    "minecraft"
+  ],
+  "environment": "unknown",
+  "id": "QCxNma2Y",
+  "project_id": "ZrW0og1b",
+  "author_id": "QiK5OouK",
+  "featured": false,
+  "name": "F8thful",
+  "version_number": "1.13.0",
+  "changelog": "Adds support for 1.21.6, 1.21.7, and 1.21.8\n\nUpdated to the 1.21.6 menu panorama\n\nFixes broken chicken, mooshroom, and cow models when using OptiFine",
+  "changelog_url": null,
+  "date_published": "2025-08-16T22:58:32.110275Z",
+  "downloads": 131893,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "W1BMsgVX",
+      "hashes": {
+        "sha512": "acdcaa5a49af826f26ddaa5afd042e43fdb699edbd7cab62a1edfc16d26ac80f30c3bd33207b2105609ec975ad9340f0949fc25cb4b3bf2b6155c18b972f6b3b",
+        "sha1": "f67690c56c5ac07b75a787e13223a2f0f8a023ac"
+      },
+      "url": "https://cdn.modrinth.com/data/ZrW0og1b/versions/QCxNma2Y/F8thful.zip",
+      "filename": "F8thful.zip",
+      "primary": true,
+      "size": 6244835,
+      "file_type": null
+    }
+  ],
+  "dependencies": []
+}
