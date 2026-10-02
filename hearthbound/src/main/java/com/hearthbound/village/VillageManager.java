@@ -77,10 +77,14 @@ public final class VillageManager {
         for (Village v : new ArrayList<>(data.all())) {
             ServerLevel level = server.getLevel(v.dimension);
             if (level == null || !level.isLoaded(v.center)) continue;
+            VillageRepairs.confirm(level, v, data);
             boolean playersNear = anyPlayerNear(level, v.center, 160);
             if (!playersNear && !HBConfig.GROW_WITHOUT_PLAYERS.get()) continue;
             try {
-                if (t % HBConfig.CONSTRUCTION_INTERVAL.get() == 0) constructStep(level, v, data);
+                if (t % HBConfig.CONSTRUCTION_INTERVAL.get() == 0) {
+                    VillageRepairs.step(level, v, data);
+                    constructStep(level, v, data);
+                }
                 if (t % HBConfig.ECONOMY_INTERVAL.get() == 0) economy(level, v, data);
                 if (t % 100 == 7) {
                     daily(level, v, data);

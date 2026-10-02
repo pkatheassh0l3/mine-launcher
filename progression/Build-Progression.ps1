@@ -17,6 +17,8 @@ foreach($id in $registry.items){
   $matches=if($pattern.StartsWith('@')){($id -split ':')[0] -eq $pattern.Substring(1)}else{$id -like $pattern}
   if($matches -and $ages[$age].order -gt $ages[$best].order){$best=$age}
  }}
+ if ($id -like 'palegardenbackport:*resin*') { $best='stone' }
+ if ($id -eq 'palegardenbackport:creaking_heart') { $best='iron' }
  $assigned[$id]=$best
 }
 # Every mod item has exactly one effective era, avoiding lower-era previews for higher-tier items.
@@ -28,7 +30,7 @@ foreach($age in $ages.Keys){
 $showcase=@{
  wood=@('minecraft:crafting_table','minecraft:chest','farmersdelight:cabbage','farmersdelight:rice','moredelight:wooden_knife','ramadandelight:chickpea','veggiesdelight:broccoli','stackedblocks:stacked_oak_logs','crittersandcompanions:silk','ribbits:swamp_daisy')
  stone=@('minecraft:stone_pickaxe','minecraft:furnace','farmersdelight:flint_knife','farmersdelight:cutting_board','farmersdelight:stove','moredelight:stone_knife')
- copper=@('minecraft:copper_pickaxe','create:andesite_alloy','create:shaft','create:cogwheel','create:large_cogwheel','create:water_wheel','create:andesite_casing','create:wrench','ramadandelight:copper_fanous')
+ copper=@('minecraft:copper_pickaxe','create:andesite_alloy','create:shaft','create:cogwheel','create:large_cogwheel','create:water_wheel','create:andesite_casing','create:wrench','ramadandelight:copper_fanous','waystones:waystone')
  chainmail=@('minecraft:chainmail_chestplate','sophisticatedbackpacks:backpack','sophisticatedbackpacks:copper_backpack','spawn:casting_net','crittersandcompanions:pearl_necklace_1')
  iron=@('minecraft:iron_pickaxe','farmersdelight:iron_knife','farmersdelight:cooking_pot','create:mechanical_press','create:mechanical_mixer','create:millstone','create:encased_fan','create:belt_connector','sophisticatedbackpacks:iron_backpack','sophisticatedbackpacks:gold_backpack','naturalist:capture_net','crittersandcompanions:grappling_hook','spawn:blue_footed_boots')
  diamond=@('minecraft:diamond_pickaxe','farmersdelight:diamond_knife','sophisticatedbackpacks:diamond_backpack','sophisticatedbackpacks:advanced_pickup_upgrade','sophisticatedbackpacks:stack_upgrade_tier_2','sophisticatedbackpacks:stack_upgrade_tier_3','crittersandcompanions:diamond_dragonfly_armor','crittersandcompanions:pearl_necklace_2')
@@ -53,4 +55,6 @@ foreach($age in $ages.Keys){
 $rows=foreach($id in $registry.items | Sort-Object){[pscustomobject]@{Item=$id;Mod=$id.Split(':')[0];Era=$assigned[$id];Order=$ages[$assigned[$id]].order}}
 $rows|Export-Csv "$PSScriptRoot/item-eras.csv" -NoTypeInformation -Encoding utf8
 $rows|Group-Object Era|ForEach-Object {"$($_.Name): $($_.Count) items"}
+
+
 

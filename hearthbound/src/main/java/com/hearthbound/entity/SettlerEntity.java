@@ -833,6 +833,10 @@ public class SettlerEntity extends PathfinderMob {
             cooldown = 160 + random.nextInt(160);
             boolean night = level().isNight();
             BlockPos t = night ? home : work;
+            if (!night && role() == Role.BUILDER && level() instanceof ServerLevel serverLevel) {
+                var village = com.hearthbound.village.VillageData.get(serverLevel.getServer()).get(villageId());
+                if (village != null && !village.repairs.isEmpty()) t = village.repairs.keySet().iterator().next();
+            }
             if (t == null) t = villageCenter;
             if (t.distSqr(blockPosition()) < 25) return false;
             target = t;

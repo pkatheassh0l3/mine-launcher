@@ -1,0 +1,44 @@
+{
+  "game_versions": [
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "environment": "client_and_server",
+  "id": "6Z6MQ6os",
+  "project_id": "LOpKHB2A",
+  "author_id": "WE4nCeiO",
+  "featured": false,
+  "name": "21.1.46+neoforge-1.21.1",
+  "version_number": "21.1.46+neoforge-1.21.1",
+  "changelog": "- Added `/waystones cooldown <targets> add <identifier> <seconds>` and `/waystones cooldown <targets> set <identifier> <seconds>` commands\n- Fixed bound scrolls showing \"invalid\" for players who have not activated the target\n- Fixed lack of error message when warp requirement block scrolls from teleporting\n- Fixed scrolls costing XP when they shouldn't\n",
+  "changelog_url": null,
+  "date_published": "2026-09-25T06:00:14.558396Z",
+  "downloads": 33910,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "B4caeo8u",
+      "hashes": {
+        "sha1": "75718161662d9ec957ba22e10e497788ec1687ba",
+        "sha512": "ca90b58d884d4bc2b08a870484ae7ede397e71d31eaaf01ff2603ad498d584763e099c2094e57031522385339705d2c011ed4910bf36efae688e64935b49ece9"
+      },
+      "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/6Z6MQ6os/waystones-neoforge-1.21.1-21.1.46.jar",
+      "filename": "waystones-neoforge-1.21.1-21.1.46.jar",
+      "primary": true,
+      "size": 1223229,
+      "file_type": null
+    }
+  ],
+  "dependencies": [
+    {
+      "version_id": null,
+      "project_id": "MBAkmtvl",
+      "file_name": null,
+      "dependency_type": "required"
+    }
+  ]
+}

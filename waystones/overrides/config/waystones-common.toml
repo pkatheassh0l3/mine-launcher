@@ -1,0 +1,8 @@
+[general]
+defaultVisibility = "GLOBAL"
+allowedVisibilities = ["GLOBAL"]
+allowEveryoneToManageGlobalWaystones = true
+
+[worldGen]
+chunksBetweenWildWaystones = 0
+spawnInVillages = "DISABLED"

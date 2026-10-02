@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    "F": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "waystones:mossy_waystone"
+  },
+  "pattern": [
+    "SCS",
+    "SFS",
+    "SCS"
+  ]
+}

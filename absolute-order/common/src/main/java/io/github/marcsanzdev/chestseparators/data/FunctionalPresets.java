@@ -34,6 +34,8 @@ public final class FunctionalPresets {
     public static Purpose classify(ItemInfo item) {
         String path = item.id().substring(item.id().indexOf(':') + 1);
         if (path.equals("fermented_spider_eye")) return Purpose.ALCHEMY;
+        if (path.equals("resin_clump")) return Purpose.MOB_DROPS;
+        if (path.equals("creaking_heart")) return Purpose.UTILITIES;
         if (path.equals("bone_meal")) return Purpose.NATURE;
         if (Set.of("rotten_flesh", "spider_eye").contains(path)) return Purpose.MOB_DROPS;
         if (item.kind() == Kind.FOOD || tagged(item, "foods", "food", "cooking_ingredients", "flours", "dough", "milk", "eggs")

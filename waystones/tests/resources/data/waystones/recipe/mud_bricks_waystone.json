@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "item": "minecraft:mud_bricks"
+    },
+    "F": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "waystones:mud_bricks_waystone"
+  },
+  "pattern": [
+    "SCS",
+    "SFS",
+    "SCS"
+  ]
+}

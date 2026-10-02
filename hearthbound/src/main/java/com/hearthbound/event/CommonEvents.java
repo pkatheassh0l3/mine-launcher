@@ -48,6 +48,7 @@ public final class CommonEvents {
 
     public static void register(IEventBus bus) {
         bus.addListener(VillageManager::onServerTick);
+        bus.addListener(net.neoforged.bus.api.EventPriority.LOWEST, com.hearthbound.village.VillageRepairs::onExplosion);
         bus.addListener(CommonEvents::playerTick);
         bus.addListener(CommonEvents::login);
         bus.addListener(CommonEvents::respawn);

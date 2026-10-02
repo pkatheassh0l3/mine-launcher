@@ -1,0 +1,37 @@
+{
+  "game_versions": [
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "environment": "client_and_server",
+  "id": "6e8GCrLb",
+  "project_id": "kkmrDlKT",
+  "author_id": "oB0UcvPI",
+  "featured": false,
+  "name": "4.1.0.8 for NeoForge 1.21.1",
+  "version_number": "4.1.0.8",
+  "changelog": "```\nfix: handle uninitialized parameter list (#198)\n",
+  "changelog_url": null,
+  "date_published": "2025-01-05T04:27:50.603937Z",
+  "downloads": 2881357,
+  "version_type": "beta",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "amREAR9D",
+      "hashes": {
+        "sha1": "744394d979b422be560babf9df7a6800ede9ac5b",
+        "sha512": "9d4b2a1be5139c0fb2fad92ed21805b17d9e83b6ea48e637e018bb14063c1823a206390755dbfe8d025c20fd62ac11cdd84db53ddb956dabaeda01bff57bac50"
+      },
+      "url": "https://cdn.modrinth.com/data/kkmrDlKT/versions/6e8GCrLb/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "filename": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "primary": true,
+      "size": 120365,
+      "file_type": null
+    }
+  ],
+  "dependencies": []
+}

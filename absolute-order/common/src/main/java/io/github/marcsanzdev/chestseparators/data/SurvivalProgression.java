@@ -12,6 +12,8 @@ public final class SurvivalProgression {
     }
     public static int score(ItemInfo item) {
         String p = item.id().substring(item.id().indexOf(':') + 1);
+        if (has(p, "creaking_heart", "resin")) return 190;
+        if (has(p, "pale_oak", "pale_moss", "pale_hanging_moss", "eyeblossom", "pale_pumpkin", "pale_jack")) return 145;
         // Stage * 100 + acquisition difficulty. Check rare variants before their common materials.
         if (has(p, "netherite", "nether_star", "beacon", "elytra", "dragon", "shulker", "end_crystal", "heavy_core", "mace", "enchanted_golden_apple")) return 450;
         if (has(p, "echo_shard", "recovery_compass", "totem", "trident", "wither", "ancient_debris", "smithing_template", "music_disc", "sponge")) return 390;

@@ -1,0 +1,35 @@
+{
+  "order": 3,
+  "title": "ascension.age.chainmail",
+  "subtitle": "ascension.age.chainmail.subtitle",
+  "icon": "minecraft:chainmail_chestplate",
+  "color": "#9DA8B6",
+  "locks": {
+    "items": [
+      "crittersandcompanions:pearl_necklace_1",
+      "sophisticatedbackpacks:backpack",
+      "sophisticatedbackpacks:copper_backpack",
+      "sophisticatedbackpacks:stack_downgrade_tier_1",
+      "sophisticatedbackpacks:stack_downgrade_tier_2",
+      "sophisticatedbackpacks:stack_downgrade_tier_3",
+      "spawn:casting_net",
+      "minecraft:chainmail_helmet",
+      "minecraft:chainmail_chestplate",
+      "minecraft:chainmail_leggings",
+      "minecraft:chainmail_boots",
+      "minecraft:shield",
+      "minecraft:bucket",
+      "minecraft:water_bucket",
+      "minecraft:lava_bucket",
+      "minecraft:shears",
+      "minecraft:flint_and_steel"
+    ]
+  },
+  "showcase": [
+    "minecraft:chainmail_chestplate",
+    "sophisticatedbackpacks:backpack",
+    "sophisticatedbackpacks:copper_backpack",
+    "spawn:casting_net",
+    "crittersandcompanions:pearl_necklace_1"
+  ]
+}

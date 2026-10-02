@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="MIT"
+[[mods]]
+modId="ascension_pale_compat"
+version="1.0.0"
+displayName="Ascension: Pale Garden Integration"
+[[dependencies.ascension_pale_compat]]
+modId="palegardenbackport"
+type="required"
+versionRange="[1.0.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.ascension_pale_compat]]
+modId="terrablender"
+type="required"
+versionRange="[4.1,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.ascension_pale_compat]]
+modId="mr_pale_gardenremastered"
+type="required"
+versionRange="[1-v1.3.4]"
+ordering="AFTER"
+side="BOTH"

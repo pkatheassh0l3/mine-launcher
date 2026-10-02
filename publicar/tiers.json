@@ -10,32 +10,32 @@
   "tiers": {
     "baja": {
       "name": "Ascension - Bajos-recursos",
-      "package": "paquetes-base-crecimiento/Ascension-Bajos-recursos.mrpack",
-      "sha256": "D86279D60200FBDA16EFD7B7F931782A933166108D6045ECCD29D538DA95E2B6",
+      "package": "paquetes-base-pale-oficial/Ascension-Bajos-recursos.mrpack",
+      "sha256": "59764BF9AA4D190DB7E03B9207FED1BB3BDB357B08CEDF609C2E7354D04B9883",
       "memoryMB": 4096
     },
     "intermedia": {
       "name": "Ascension - Intermedia 8 GB",
-      "package": "paquetes-base-crecimiento/Ascension-Intermedia-8GB.mrpack",
-      "sha256": "0F18AE2268339F1ED5A5C0D5C1C2146303B401DC2B6B48B0FE58F92198E4A72C",
+      "package": "paquetes-base-pale-oficial/Ascension-Intermedia-8GB.mrpack",
+      "sha256": "8E868DED29C97660FFFF246F10D6955D4EB80B0A7FF2F42838AA956EA7761E93",
       "memoryMB": 4096
     },
     "media": {
       "name": "Ascension - Gama-media",
-      "package": "paquetes-base-crecimiento/Ascension-Gama-media.mrpack",
-      "sha256": "7A3EE7F06C42946F99786A88F938C43593A194CC53FC17C6C25D69E24965FC5B",
+      "package": "paquetes-base-pale-oficial/Ascension-Gama-media.mrpack",
+      "sha256": "850C843AC67D697D6F2C6E289E8786FD30612CE0A8E2B509058C35E60BE497AD",
       "memoryMB": 6144
     },
     "alta": {
       "name": "Ascension - RTX-3060",
-      "package": "paquetes-base-crecimiento/Ascension-RTX-3060.mrpack",
-      "sha256": "46A66B4C2AA7452D79514EB38607182E847B96D423CB8913B6AA538CA8B54216",
+      "package": "paquetes-base-pale-oficial/Ascension-RTX-3060.mrpack",
+      "sha256": "537473987D520C63FB4A42F9DD4D994F3AEDD63DECA9698C58DFD4E15BB99224",
       "memoryMB": 8192
     },
     "patata": {
       "name": "Ascension - PC patata",
-      "package": "paquetes-base-crecimiento/Ascension-PC-patata.mrpack",
-      "sha256": "EC1A1CCB988570B12F1E40158952FD34900913B8637879A7425A5BD1DD9D7C56",
+      "package": "paquetes-base-pale-oficial/Ascension-PC-patata.mrpack",
+      "sha256": "CF166E8FF7B8CC05E09DF509C851EDCAE5AFB8B44D3363E40664918AB23553EB",
       "memoryMB": 4096
     }
   }

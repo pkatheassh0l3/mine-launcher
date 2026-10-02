@@ -1,0 +1,45 @@
+{
+  "game_versions": [
+    "1.21",
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "environment": "client_only_server_optional",
+  "id": "Q1tuMQBB",
+  "project_id": "1bokaNcj",
+  "author_id": "ANNqL3WC",
+  "featured": false,
+  "name": "Xaero's Minimap 26.5.0",
+  "version_number": "neoforge-1.21.1-26.5.0",
+  "changelog": "[Read changelogs](https://chocolateminecraft.com/update.php?mod_id=0)",
+  "changelog_url": null,
+  "date_published": "2026-09-10T11:37:53.816631Z",
+  "downloads": 227726,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "Lr0fl9rw",
+      "hashes": {
+        "sha512": "0fde1066dd922ac0796d166ba1bf1b843873b8d8563da3a08777df54bb377ff6466096650c730ad1b96e0aecf2d8974cd87c32165edf6a30f6653840c3f99abf",
+        "sha1": "7553dddbe478d1c8c15198090217e723d27f79c4"
+      },
+      "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/Q1tuMQBB/xaerominimap-neoforge-1.21.1-26.5.0.jar",
+      "filename": "xaerominimap-neoforge-1.21.1-26.5.0.jar",
+      "primary": true,
+      "size": 2185559,
+      "file_type": null
+    }
+  ],
+  "dependencies": [
+    {
+      "version_id": null,
+      "project_id": "gF3BGWvG",
+      "file_name": null,
+      "dependency_type": "optional"
+    }
+  ]
+}

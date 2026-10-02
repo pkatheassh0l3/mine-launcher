@@ -34,7 +34,7 @@ public final class SurvivalRows {
             }
         }
         if (purpose == Purpose.BUILDING || purpose == Purpose.NATURE || purpose == Purpose.WOOD || purpose == Purpose.STONE) {
-            for (String material : List.of("dark_oak", "pale_oak", "oak", "spruce", "birch", "jungle", "acacia", "mangrove", "cherry", "bamboo", "crimson", "warped", "deepslate", "blackstone", "sandstone", "quartz", "granite", "diorite", "andesite", "tuff", "calcite", "basalt", "prismarine", "purpur", "end_stone", "nether_brick", "mud", "copper", "glass", "wool", "concrete", "terracotta", "ice", "snow", "sand", "gravel", "stone", "brick", "log", "planks", "leaves", "sapling", "seed", "seeds", "flower", "dye", "coral", "mushroom"))
+            for (String material : List.of("dark_oak", "pale_oak", "pale_moss", "pale_hanging_moss", "resin", "eyeblossom", "oak", "spruce", "birch", "jungle", "acacia", "mangrove", "cherry", "bamboo", "crimson", "warped", "deepslate", "blackstone", "sandstone", "quartz", "granite", "diorite", "andesite", "tuff", "calcite", "basalt", "prismarine", "purpur", "end_stone", "nether_brick", "mud", "copper", "glass", "wool", "concrete", "terracotta", "ice", "snow", "sand", "gravel", "stone", "brick", "log", "planks", "leaves", "sapling", "seed", "seeds", "flower", "dye", "coral", "mushroom"))
                 if (token(path, material)) return material;
         }
         if (purpose == Purpose.FOOD) {

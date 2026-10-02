@@ -7,6 +7,8 @@ function Inspect-Jar($z,$name){
  $meta=$z.GetEntry('META-INF/neoforge.mods.toml');if(!$meta){$meta=$z.GetEntry('META-INF/mods.toml')}
  if($meta){
   $r=[IO.StreamReader]::new($meta.Open());try{$t=$r.ReadToEnd()}finally{$r.Dispose()}
+  $inline=[regex]::Match($t,'(?ms)^\s*mods\s*=\s*\[(.*?)\]')
+  foreach($m in [regex]::Matches($inline.Groups[1].Value,'modId\s*=\s*[''"]([^''"]+)[''"]')){$ids[$m.Groups[1].Value]=$true}
   foreach($section in [regex]::Matches($t,'(?ms)^\[\[(?<kind>[^\]]+)\]\](?<body>.*?)(?=^\[|\z)')){
    $body=$section.Groups['body'].Value;$id=[regex]::Match($body,'(?m)^\s*modId\s*=\s*"([^"]+)"').Groups[1].Value
    if($section.Groups['kind'].Value -eq 'mods' -and $id){$ids[$id]=$true}

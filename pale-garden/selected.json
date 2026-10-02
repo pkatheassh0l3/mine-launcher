@@ -1,0 +1,57 @@
+{
+  "game_versions": [
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "1.21.10",
+    "1.21.11",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+  ],
+  "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+  ],
+  "environment": "server_only",
+  "id": "o1GhaHBR",
+  "project_id": "A77QDmkY",
+  "author_id": "ACSZqOO2",
+  "featured": false,
+  "name": "The Pale Garden Remastered v1.3.4",
+  "version_number": "v1.3.4+mod",
+  "changelog": "Patch Notes:\n- Added support for `1.20.5 - 26.2`.",
+  "changelog_url": null,
+  "date_published": "2026-07-09T12:51:11.8631Z",
+  "downloads": 6255,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "IwsvU1hA",
+      "hashes": {
+        "sha512": "c207a58175220ed70f1f3c9876d7b8d848d3aee636a0f72f9e8c0f2d2d293f8f43f2a28fdcba826a4030bb91bbf0d0f8fc54e17536796a9ffb610dcd91e13e3e",
+        "sha1": "f7486e5d0507445b755d21835ceda50ebdb909e9"
+      },
+      "url": "https://cdn.modrinth.com/data/A77QDmkY/versions/o1GhaHBR/pale-garden-remastered-v1.3.4.jar",
+      "filename": "pale-garden-remastered-v1.3.4.jar",
+      "primary": true,
+      "size": 500323,
+      "file_type": null
+    }
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ascension_waystones"
+version="1.0.0"
+displayName="Ascension · Rutas"
+description='''Public Waystones travel map with search, dimension filters and a copper-themed interface.'''
+[[dependencies.ascension_waystones]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+side="CLIENT"
+[[dependencies.ascension_waystones]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+side="CLIENT"
+[[dependencies.ascension_waystones]]
+modId="waystones"
+type="required"
+versionRange="[21.1.46,21.2)"
+side="CLIENT"
+[[dependencies.ascension_waystones]]
+modId="balm"
+type="required"
+versionRange="[21.0.39,)"
+side="CLIENT"

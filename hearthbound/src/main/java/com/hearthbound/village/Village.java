@@ -37,6 +37,7 @@ public final class Village {
     public final Map<Resource, Integer> stock = new EnumMap<>(Resource.class);
     public final List<PlacedBuilding> buildings = new ArrayList<>();
     public final List<Resident> residents = new ArrayList<>();
+    public final Map<BlockPos, VillageRepairs.Repair> repairs = new java.util.LinkedHashMap<>();
     public int planIndex;
     public ResourceLocation lordChoice;
     public int prosperity = 50;
@@ -157,6 +158,7 @@ public final class Village {
         ListTag bl = new ListTag();
         for (PlacedBuilding b : buildings) bl.add(b.save());
         t.put("buildings", bl);
+        t.put("repairs", VillageRepairs.save(this));
         ListTag rl = new ListTag();
         for (Resident r : residents) rl.add(r.save());
         t.put("residents", rl);
@@ -220,6 +222,7 @@ public final class Village {
         for (Resource r : Resource.values()) v.stock.put(r, st.getInt(r.id()));
         for (Tag x : t.getList("buildings", Tag.TAG_COMPOUND)) v.buildings.add(PlacedBuilding.load((CompoundTag) x));
         for (Tag x : t.getList("residents", Tag.TAG_COMPOUND)) v.residents.add(Resident.load((CompoundTag) x));
+        VillageRepairs.load(v, t.getList("repairs", Tag.TAG_COMPOUND));
         v.planIndex = t.getInt("plan");
         if (t.contains("lordChoice")) v.lordChoice = ResourceLocation.tryParse(t.getString("lordChoice"));
         v.prosperity = t.getInt("prosperity");
