@@ -1,0 +1,25 @@
+{
+  "title": "Cocina de More Delight",
+  "category": "ascension:farming",
+  "description": "Prueba una comida elaborada. Los retos culinarios son opcionales.",
+  "objectives": [
+    {
+      "item": "moredelight:carrot_soup",
+      "type": "eat",
+      "count": 2
+    }
+  ],
+  "icon": "moredelight:carrot_soup",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_olla_colocada"
+  ],
+  "sort": 638,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "villager",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:lantern",
+  "likes": [
+    "minecraft:lantern",
+    "minecraft:gold_nugget",
+    "minecraft:honey_bottle",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:torch"
+    },
+    {
+      "type": "hunt",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "entity": "minecraft:cave_spider"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "items": [
+          "minecraft:gold_ingot*2"
+        ]
+      },
+      "item": "minecraft:lantern"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

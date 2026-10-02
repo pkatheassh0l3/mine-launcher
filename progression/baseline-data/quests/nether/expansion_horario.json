@@ -1,0 +1,25 @@
+{
+  "title": "Un servicio regular",
+  "category": "ascension:automation",
+  "description": "Programa el horario para conectar granjas, fábrica y almacén.",
+  "objectives": [
+    {
+      "item": "create:schedule",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:schedule",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_estacion"
+  ],
+  "sort": 664,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

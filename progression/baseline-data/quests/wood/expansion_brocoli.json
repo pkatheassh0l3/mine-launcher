@@ -1,0 +1,25 @@
+{
+  "title": "Una huerta más variada",
+  "category": "ascension:farming",
+  "description": "Conserva semillas para producir tus propias verduras.",
+  "objectives": [
+    {
+      "item": "veggiesdelight:broccoli",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "veggiesdelight:broccoli",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/pack_veggies"
+  ],
+  "sort": 605,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

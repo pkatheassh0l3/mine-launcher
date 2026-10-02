@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "mage",
+    "merchant",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:green_stained_glass",
+  "likes": [
+    "minecraft:emerald",
+    "minecraft:paper",
+    "minecraft:phantom_membrane",
+    "minecraft:green_stained_glass"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:green_stained_glass"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:paper"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 80,
+        "xp": 130,
+        "items": [
+          "minecraft:emerald*3"
+        ]
+      },
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

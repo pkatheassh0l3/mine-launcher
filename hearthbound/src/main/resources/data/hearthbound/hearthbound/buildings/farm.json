@@ -1,0 +1,18 @@
+{
+  "kind": "farm",
+  "width": 9,
+  "depth": 9,
+  "floors": 1,
+  "cost": {
+    "wood": 10
+  },
+  "produces": {
+    "food": 4
+  },
+  "roles": [
+    "farmer"
+  ],
+  "icon": "minecraft:wheat",
+  "min_tier": 0,
+  "residents": 0
+}

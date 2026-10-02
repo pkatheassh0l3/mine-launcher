@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "guard",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:bow",
+  "likes": [
+    "minecraft:arrow",
+    "minecraft:feather",
+    "minecraft:cooked_beef",
+    "minecraft:bread"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "entity": "minecraft:pillager"
+    },
+    {
+      "type": "deliver",
+      "count": 20,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:bow",
+          "name": "hearthbound.keepsake.chiv_robin",
+          "enchant": "minecraft:power=2,minecraft:punch=1"
+        }
+      },
+      "item": "minecraft:arrow"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

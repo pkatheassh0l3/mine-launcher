@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "farmer",
+    "villager",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:carrot",
+  "likes": [
+    "minecraft:carrot",
+    "minecraft:golden_carrot",
+    "minecraft:melon_slice",
+    "minecraft:dandelion"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:carrot"
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:phantom"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 45,
+        "xp": 100,
+        "items": [
+          "minecraft:golden_carrot*3"
+        ]
+      },
+      "item": "minecraft:melon_slice"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

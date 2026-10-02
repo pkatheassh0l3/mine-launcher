@@ -1,0 +1,25 @@
+{
+  "title": "Energía a vapor",
+  "category": "ascension:automation",
+  "description": "Combina depósitos, agua, calor y motores según Ponder. La misión no mide la potencia de la instalación.",
+  "objectives": [
+    {
+      "item": "create:steam_engine",
+      "type": "obtain",
+      "count": 2
+    }
+  ],
+  "icon": "create:steam_engine",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_laton"
+  ],
+  "sort": 661,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

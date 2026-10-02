@@ -1,0 +1,67 @@
+{
+  "roles": [
+    "guard",
+    "merchant",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:map",
+  "likes": [
+    "minecraft:map",
+    "minecraft:compass",
+    "minecraft:diamond",
+    "minecraft:cooked_beef",
+    "minecraft:spyglass"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 30,
+        "xp": 50
+      },
+      "item": "minecraft:map"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 85
+      },
+      "entity": "minecraft:husk"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 120,
+        "xp": 160,
+        "keepsake": {
+          "item": "minecraft:crossbow",
+          "name": "hearthbound.keepsake.novel_quatermain",
+          "enchant": "minecraft:piercing=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:diamond"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

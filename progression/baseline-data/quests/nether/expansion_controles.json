@@ -1,0 +1,25 @@
+{
+  "title": "Puesto de conducción",
+  "category": "ascension:automation",
+  "description": "Añade controles al vehículo y consulta Ponder para terminar el tren.",
+  "objectives": [
+    {
+      "item": "create:controls",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:controls",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_estacion"
+  ],
+  "sort": 665,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

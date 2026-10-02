@@ -1,0 +1,67 @@
+{
+  "roles": [
+    "villager",
+    "farmer",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:bread",
+  "likes": [
+    "minecraft:bread",
+    "minecraft:cooked_beef",
+    "minecraft:baked_potato",
+    "minecraft:pumpkin_pie",
+    "minecraft:carrot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 60,
+        "items": [
+          "minecraft:saddle*1"
+        ]
+      },
+      "item": "minecraft:carrot"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "items": [
+          "minecraft:emerald*3"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:stone",
+  "icon": "minecraft:stone_pickaxe",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Desbloqueas cocina básica y cuchillos de piedra. Los hitos de la era te enseñan a preparar ingredientes y materiales antes de pasar a las máquinas."
+}

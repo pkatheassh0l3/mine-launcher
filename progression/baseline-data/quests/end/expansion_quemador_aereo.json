@@ -1,0 +1,25 @@
+{
+  "title": "Sustentación con calor",
+  "category": "ascension:automation",
+  "description": "Completa el equipo necesario para experimentar con dirigibles.",
+  "objectives": [
+    {
+      "item": "aeronautics:adjustable_burner",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "aeronautics:adjustable_burner",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/pack_envolvente"
+  ],
+  "sort": 673,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ]
+}

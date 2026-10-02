@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "farmer",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:hay_block",
+  "likes": [
+    "minecraft:wheat",
+    "minecraft:book",
+    "minecraft:hay_block",
+    "minecraft:paper"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 24,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:wheat"
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 85
+      },
+      "entity": "minecraft:phantom"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "items": [
+          "minecraft:bone_meal*16"
+        ]
+      },
+      "item": "minecraft:book"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

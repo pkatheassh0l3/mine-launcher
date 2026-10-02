@@ -1,0 +1,26 @@
+{
+  "objectives": [
+    {
+      "item": "create:precision_mechanism",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "create:precision_mechanism",
+  "age": "ascension:nether",
+  "description": "Consigue create:precision_mechanism para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Mecanismos de precisión",
+  "gate": true,
+  "requires": [
+    "ascension:nether/expansion_laton"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Tu primer semillero",
+  "category": "ascension:farming",
+  "description": "Guarda semillas antes de depender de los platos elaborados.",
+  "objectives": [
+    {
+      "item": "minecraft:wheat_seeds",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "minecraft:wheat_seeds",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/crafting_table"
+  ],
+  "sort": 601,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

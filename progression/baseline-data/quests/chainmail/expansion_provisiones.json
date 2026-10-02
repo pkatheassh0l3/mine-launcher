@@ -1,0 +1,26 @@
+{
+  "title": "Provisiones de viaje",
+  "category": "ascension:survival",
+  "description": "Reserva comida sencilla para las expediciones; no hace falta cocinar platos raros para avanzar. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "item": "minecraft:bread",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "minecraft:bread",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:chainmail/pack_mochila"
+  ],
+  "sort": 625,
+  "age": "ascension:chainmail",
+  "rewards": [
+    {
+      "amount": 100,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Compañeros bien protegidos",
+  "category": "ascension:animals",
+  "description": "Esta mejora queda bloqueada hasta la era del diamante.",
+  "objectives": [
+    {
+      "item": "crittersandcompanions:diamond_dragonfly_armor",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "crittersandcompanions:diamond_dragonfly_armor",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_armadura_libelula"
+  ],
+  "sort": 654,
+  "age": "ascension:diamond",
+  "rewards": [
+    {
+      "amount": 140,
+      "type": "xp"
+    }
+  ]
+}

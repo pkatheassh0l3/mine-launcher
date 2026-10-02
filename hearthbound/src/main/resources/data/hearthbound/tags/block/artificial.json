@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:planks", "#minecraft:wool", "#minecraft:wool_carpets", "#minecraft:beds", "#minecraft:doors",
+    "#minecraft:trapdoors", "#minecraft:wooden_fences", "#minecraft:fence_gates", "#minecraft:walls", "#minecraft:stairs",
+    "#minecraft:slabs", "#minecraft:buttons", "#minecraft:pressure_plates", "#minecraft:rails", "#minecraft:all_signs",
+    "#minecraft:banners", "#minecraft:candles", "#minecraft:anvil", "#minecraft:shulker_boxes", "#minecraft:campfires",
+    "#minecraft:flower_pots", "#minecraft:stone_bricks",
+    {"id": "#c:glass_blocks", "required": false}, {"id": "#c:glass_panes", "required": false},
+    {"id": "#c:concretes", "required": false}, {"id": "#c:glazed_terracottas", "required": false},
+    {"id": "#c:chests", "required": false}, {"id": "#c:barrels", "required": false},
+    {"id": "#c:bookshelves", "required": false}, {"id": "#c:villager_job_sites", "required": false},
+    {"id": "#c:storage_blocks", "required": false}, {"id": "#c:stripped_logs", "required": false},
+    {"id": "#c:stripped_woods", "required": false},
+    "minecraft:bricks", "minecraft:torch", "minecraft:wall_torch", "minecraft:soul_torch", "minecraft:soul_wall_torch",
+    "minecraft:lantern", "minecraft:soul_lantern", "minecraft:crafting_table", "minecraft:furnace", "minecraft:blast_furnace",
+    "minecraft:smoker", "minecraft:enchanting_table", "minecraft:beacon", "minecraft:ladder", "minecraft:scaffolding",
+    "minecraft:iron_bars", "minecraft:chain", "minecraft:redstone_wire", "minecraft:redstone_lamp", "minecraft:hopper",
+    "minecraft:dispenser", "minecraft:dropper", "minecraft:piston", "minecraft:sticky_piston", "minecraft:observer",
+    "minecraft:lever", "minecraft:repeater", "minecraft:comparator", "minecraft:jukebox", "minecraft:note_block",
+    "minecraft:target", "minecraft:sea_lantern", "minecraft:glowstone", "minecraft:quartz_block", "minecraft:smooth_stone",
+    "minecraft:polished_andesite", "minecraft:polished_diorite", "minecraft:polished_granite", "minecraft:polished_deepslate",
+    "minecraft:deepslate_bricks", "minecraft:deepslate_tiles", "minecraft:mud_bricks", "minecraft:prismarine_bricks",
+    "minecraft:end_stone_bricks", "minecraft:nether_bricks", "minecraft:red_nether_bricks", "minecraft:cut_sandstone",
+    "minecraft:smooth_sandstone", "minecraft:cut_red_sandstone", "minecraft:smooth_red_sandstone", "minecraft:hay_block",
+    "hearthbound:village_hearth"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:wood",
+  "icon": "minecraft:oak_log",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Empieza por refugio, comida y cultivos. Puedes explorar toda la fauna. Las bibliotecas, Jade, JEI, inventarios, tumbas, chat y shaders permanecen disponibles desde el principio."
+}

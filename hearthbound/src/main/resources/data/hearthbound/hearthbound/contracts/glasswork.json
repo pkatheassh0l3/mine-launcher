@@ -1,0 +1,20 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.glasswork",
+  "item": "minecraft:glass",
+  "count": [
+    16,
+    32
+  ],
+  "reward": {
+    "coins": [
+      12,
+      18
+    ],
+    "reputation": 14,
+    "xp": 35
+  },
+  "rank": "acquaintance",
+  "tier": 1,
+  "weight": 6
+}

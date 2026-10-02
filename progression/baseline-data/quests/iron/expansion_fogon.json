@@ -1,0 +1,25 @@
+{
+  "title": "Cocina permanente",
+  "category": "ascension:farming",
+  "description": "Construye una cocina segura y coloca la olla encima.",
+  "objectives": [
+    {
+      "block": "farmersdelight:stove",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "farmersdelight:stove",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/expansion_ladrillos"
+  ],
+  "sort": 636,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

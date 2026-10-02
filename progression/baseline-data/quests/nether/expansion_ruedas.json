@@ -1,0 +1,25 @@
+{
+  "title": "Preparar un todoterreno",
+  "category": "ascension:automation",
+  "description": "Combina neumáticos, soportes y control para construir un vehículo terrestre.",
+  "objectives": [
+    {
+      "item": "offroad:tire",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "offroad:tire",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/pack_carretera"
+  ],
+  "sort": 667,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

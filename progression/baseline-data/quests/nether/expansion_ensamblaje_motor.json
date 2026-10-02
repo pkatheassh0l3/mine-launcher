@@ -1,0 +1,25 @@
+{
+  "title": "Fabricar motores",
+  "category": "ascension:automation",
+  "description": "Completa la secuencia de ensamblaje indicada por JEI.",
+  "objectives": [
+    {
+      "item": "simulated:engine_assembly",
+      "type": "obtain",
+      "count": 2
+    }
+  ],
+  "icon": "simulated:engine_assembly",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/pack_motor"
+  ],
+  "sort": 669,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

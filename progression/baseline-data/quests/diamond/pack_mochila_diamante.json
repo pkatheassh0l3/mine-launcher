@@ -1,0 +1,26 @@
+{
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:diamond_backpack",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "sophisticatedbackpacks:diamond_backpack",
+  "age": "ascension:diamond",
+  "description": "Consigue sophisticatedbackpacks:diamond_backpack para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:crafting",
+  "sort": 500,
+  "title": "Equipaje de diamante",
+  "gate": true,
+  "requires": [
+    "ascension:diamond/expansion_mochila_oro"
+  ]
+}

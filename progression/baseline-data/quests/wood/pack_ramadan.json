@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "ramadandelight:date",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "ramadandelight:date",
+  "age": "ascension:wood",
+  "description": "Consigue ramadandelight:date para explorar el contenido de esta era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Sabores de Ramadan"
+}

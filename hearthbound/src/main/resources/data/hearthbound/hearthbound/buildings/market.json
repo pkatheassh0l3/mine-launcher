@@ -1,0 +1,20 @@
+{
+  "kind": "market",
+  "width": 9,
+  "depth": 9,
+  "floors": 1,
+  "cost": {
+    "wood": 25,
+    "stone": 15,
+    "goods": 5
+  },
+  "produces": {
+    "goods": 1
+  },
+  "roles": [
+    "merchant"
+  ],
+  "icon": "minecraft:emerald",
+  "min_tier": 0,
+  "residents": 0
+}

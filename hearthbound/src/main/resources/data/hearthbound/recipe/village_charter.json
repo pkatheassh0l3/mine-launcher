@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["GEG", "PBP", "GPG"],
+  "key": {
+    "G": {"item": "minecraft:gold_ingot"},
+    "E": {"item": "minecraft:emerald"},
+    "P": {"item": "minecraft:paper"},
+    "B": {"item": "minecraft:writable_book"}
+  },
+  "result": {"id": "hearthbound:village_charter", "count": 1}
+}

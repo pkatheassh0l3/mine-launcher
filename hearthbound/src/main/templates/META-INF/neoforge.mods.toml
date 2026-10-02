@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL=""
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+logoFile="hearthbound_logo.png"
+description='''
+Living villages that grow on their own, with original cultures, settlers with jobs,
+reputation ranks, contracts, trading, companions and a light RPG layer (levels,
+backgrounds and skills). Fully data-driven and deeply configurable.
+Optional integration with Ascension: Vanilla Ages for age-based progression.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# Optional: when Ascension is installed, Hearthbound adds objectives, rewards,
+# quests and age-based gating. Load after it so its API is ready.
+[[dependencies.${mod_id}]]
+    modId="ascension"
+    type="optional"
+    versionRange="[1.0.0,)"
+    ordering="AFTER"
+    side="BOTH"

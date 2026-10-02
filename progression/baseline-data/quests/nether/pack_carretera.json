@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "offroad:wheel_mount",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "offroad:wheel_mount",
+  "age": "ascension:nether",
+  "description": "Consigue offroad:wheel_mount para explorar el contenido de esta era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Vehículos terrestres"
+}

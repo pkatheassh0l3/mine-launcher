@@ -1,0 +1,211 @@
+{
+  "name": "hearthbound.project.weavery",
+  "description": "hearthbound.project.weavery.desc",
+  "icon": "minecraft:loom",
+  "sort": 100,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:loom",
+          "count": 1,
+          "icon": "minecraft:loom"
+        },
+        {
+          "block": "#minecraft:wool",
+          "count": 16,
+          "icon": "minecraft:white_wool"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:white_wool",
+          "count": 8,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:red_wool",
+          "count": 8,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:blue_wool",
+          "count": 8,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:white_bed",
+          "count": 1,
+          "price": 10,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:shears",
+          "count": 1,
+          "price": 12,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:white_wool",
+          "count": 16,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:string",
+          "count": 16,
+          "price": 4,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:loom",
+          "count": 2,
+          "icon": "minecraft:loom"
+        },
+        {
+          "block": "#minecraft:wool",
+          "count": 32,
+          "icon": "minecraft:white_wool"
+        },
+        {
+          "block": "#minecraft:wool_carpets",
+          "count": 8,
+          "icon": "minecraft:red_carpet"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:painting",
+          "count": 3,
+          "price": 12,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:red_carpet",
+          "count": 8,
+          "price": 8,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:flower_banner_pattern",
+          "count": 1,
+          "price": 30,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:black_wool",
+          "count": 8,
+          "price": 6,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:yellow_wool",
+          "count": 8,
+          "price": 6,
+          "rank": "friend"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:loom",
+          "count": 3,
+          "icon": "minecraft:loom"
+        },
+        {
+          "block": "#minecraft:wool",
+          "count": 64,
+          "icon": "minecraft:white_wool"
+        },
+        {
+          "block": "#minecraft:banners",
+          "count": 4,
+          "icon": "minecraft:white_banner"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:creeper_banner_pattern",
+          "count": 1,
+          "price": 60,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:skull_banner_pattern",
+          "count": 1,
+          "price": 70,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:guster_banner_pattern",
+          "count": 1,
+          "price": 80,
+          "rank": "ally",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:purple_bed",
+          "count": 1,
+          "price": 14,
+          "rank": "friend"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

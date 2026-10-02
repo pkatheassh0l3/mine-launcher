@@ -1,0 +1,26 @@
+{
+  "title": "La mesa de preparación",
+  "category": "ascension:farming",
+  "description": "Coloca la tabla. Con un cuchillo podrás preparar ingredientes y obtener subproductos. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "block": "farmersdelight:cutting_board",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "farmersdelight:cutting_board",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/pack_tabla"
+  ],
+  "sort": 610,
+  "age": "ascension:stone",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

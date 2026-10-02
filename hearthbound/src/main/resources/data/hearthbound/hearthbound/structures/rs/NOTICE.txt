@@ -1,0 +1,4 @@
+These village building templates come from "Repurposed Structures" by TelepathicGrunt
+(https://github.com/TelepathicGrunt/RepurposedStructures, branch 1.21-Arch), licensed under the
+GNU LGPL v3.0 (see LICENSE-LGPL-3.0.txt). They are included unmodified; Hearthbound only reads,
+rotates and places them at runtime.

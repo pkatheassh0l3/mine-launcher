@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "mage",
+    "elder",
+    "builder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:amethyst_shard",
+  "likes": [
+    "minecraft:amethyst_shard",
+    "minecraft:book",
+    "minecraft:glowstone_dust",
+    "minecraft:ender_pearl"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "type": "deliver",
+      "count": 24,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 90,
+        "xp": 150,
+        "keepsake": {
+          "item": "minecraft:spyglass",
+          "name": "hearthbound.keepsake.chiv_merlin"
+        }
+      },
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

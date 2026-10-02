@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "elder",
+    "priest",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:gold_nugget",
+  "likes": [
+    "minecraft:gold_nugget",
+    "minecraft:feather",
+    "#minecraft:wool",
+    "minecraft:bread"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "items": [
+          "minecraft:gold_nugget*9"
+        ]
+      },
+      "item": "#minecraft:wool"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

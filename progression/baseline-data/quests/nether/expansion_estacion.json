@@ -1,0 +1,26 @@
+{
+  "title": "Estación de tren",
+  "category": "ascension:automation",
+  "description": "La estación permite ensamblar y gestionar trenes sobre las vías. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "item": "create:track_station",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:track_station",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_vias_colocadas"
+  ],
+  "sort": 663,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "villager",
+    "farmer",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:chest",
+  "likes": [
+    "#minecraft:logs",
+    "minecraft:bread",
+    "minecraft:gold_nugget",
+    "minecraft:barrel"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "entity": "minecraft:pillager"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "items": [
+          "minecraft:emerald*3"
+        ]
+      },
+      "entity": "minecraft:vindicator"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

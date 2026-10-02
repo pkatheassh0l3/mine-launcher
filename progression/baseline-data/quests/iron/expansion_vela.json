@@ -1,0 +1,25 @@
+{
+  "title": "Navegación a vela",
+  "category": "ascension:exploration",
+  "description": "Completa tu equipamiento de navegación siguiendo las mecánicas de Whaleborne.",
+  "objectives": [
+    {
+      "item": "whaleborne:sail",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "whaleborne:sail",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/pack_navegar"
+  ],
+  "sort": 646,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

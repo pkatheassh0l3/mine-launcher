@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "farmer",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:milk_bucket",
+  "likes": [
+    "minecraft:milk_bucket",
+    "minecraft:egg",
+    "minecraft:wheat",
+    "minecraft:cake"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 70
+      },
+      "item": "minecraft:egg"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 100,
+        "items": [
+          "minecraft:emerald*2"
+        ]
+      },
+      "item": "minecraft:cake"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "veggiesdelight:bellpepper",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "veggiesdelight:bellpepper",
+  "age": "ascension:wood",
+  "description": "Consigue veggiesdelight:bellpepper para explorar el contenido de esta era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Nuevas verduras"
+}

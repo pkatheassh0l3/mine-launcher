@@ -1,0 +1,19 @@
+{
+  "type": "defend",
+  "title": "hearthbound.contract.siege_breakers",
+  "count": [
+    12,
+    20
+  ],
+  "reward": {
+    "coins": [
+      30,
+      45
+    ],
+    "reputation": 26,
+    "xp": 90
+  },
+  "rank": "friend",
+  "tier": 2,
+  "weight": 5
+}

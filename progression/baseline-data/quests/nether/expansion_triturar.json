@@ -1,0 +1,25 @@
+{
+  "title": "Trituración industrial",
+  "category": "ascension:automation",
+  "description": "Las ruedas requieren fabricación mecánica; por eso pertenecen a esta era.",
+  "objectives": [
+    {
+      "item": "create:crushing_wheel",
+      "type": "obtain",
+      "count": 2
+    }
+  ],
+  "icon": "create:crushing_wheel",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_fabricadores"
+  ],
+  "sort": 660,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

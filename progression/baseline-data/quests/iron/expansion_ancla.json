@@ -1,0 +1,25 @@
+{
+  "title": "Controlar la embarcación",
+  "category": "ascension:exploration",
+  "description": "Prepara el ancla antes de un viaje largo.",
+  "objectives": [
+    {
+      "item": "whaleborne:anchor",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "whaleborne:anchor",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_vela"
+  ],
+  "sort": 647,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

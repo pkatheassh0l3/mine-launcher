@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "villager",
+    "merchant",
+    "builder",
+    "farmer",
+    "innkeeper",
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 10,
+  "icon": "minecraft:poppy",
+  "likes": [
+    "#minecraft:small_flowers",
+    "minecraft:cake",
+    "minecraft:honey_bottle",
+    "minecraft:gold_nugget"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 40
+      },
+      "item": "#minecraft:small_flowers"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 25,
+        "xp": 70
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 40,
+        "xp": 120,
+        "items": [
+          "minecraft:golden_apple*1",
+          "minecraft:cake*1"
+        ]
+      },
+      "item": "minecraft:diamond"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

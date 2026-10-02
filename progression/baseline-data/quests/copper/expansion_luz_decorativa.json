@@ -1,0 +1,22 @@
+{
+  "title": "Faroles de Ramadan",
+  "category": "ascension:building",
+  "description": "Añade iluminación decorativa a tu primer taller.",
+  "objectives": [
+    {
+      "item": "ramadandelight:copper_fanous",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "ramadandelight:copper_fanous",
+  "difficulty": "ascension:common",
+  "sort": 622,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ]
+}

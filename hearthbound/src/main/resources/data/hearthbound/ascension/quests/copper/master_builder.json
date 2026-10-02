@@ -1,0 +1,22 @@
+{
+  "age": "ascension:copper",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:bricks",
+  "sort": 505,
+  "objectives": [
+    {
+      "type": "hearthbound:projects",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 30
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

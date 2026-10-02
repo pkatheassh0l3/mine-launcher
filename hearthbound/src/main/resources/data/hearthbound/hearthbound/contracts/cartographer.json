@@ -1,0 +1,22 @@
+{
+  "type": "explore",
+  "title": "hearthbound.contract.cartographer",
+  "count": [
+    2,
+    3
+  ],
+  "reward": {
+    "coins": [
+      24,
+      34
+    ],
+    "reputation": 20,
+    "xp": 120,
+    "items": [
+      "minecraft:compass*1"
+    ]
+  },
+  "rank": "friend",
+  "tier": 2,
+  "weight": 4
+}

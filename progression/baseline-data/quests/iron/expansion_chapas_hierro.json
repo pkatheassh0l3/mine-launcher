@@ -1,0 +1,26 @@
+{
+  "title": "Laminado de hierro",
+  "category": "ascension:automation",
+  "description": "Produce chapas de hierro con la prensa. Son un material clave para la fábrica. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "item": "create:iron_sheet",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "create:iron_sheet",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_deposito"
+  ],
+  "sort": 629,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

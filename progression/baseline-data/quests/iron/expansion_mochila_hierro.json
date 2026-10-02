@@ -1,0 +1,25 @@
+{
+  "title": "Equipaje resistente",
+  "category": "ascension:crafting",
+  "description": "Mejora la mochila cuando aumente la cantidad de recursos de tus expediciones.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:iron_backpack",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:iron_backpack",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:chainmail/pack_mochila"
+  ],
+  "sort": 641,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

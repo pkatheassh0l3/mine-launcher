@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "guard",
+    "villager",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:yellow_wool",
+  "likes": [
+    "#minecraft:logs",
+    "#minecraft:wool",
+    "minecraft:gold_ingot",
+    "minecraft:cooked_mutton"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 5,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 100,
+        "xp": 160,
+        "keepsake": {
+          "item": "minecraft:shield",
+          "name": "hearthbound.keepsake.myth_jason",
+          "enchant": "minecraft:unbreaking=3"
+        }
+      },
+      "entity": "minecraft:blaze"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

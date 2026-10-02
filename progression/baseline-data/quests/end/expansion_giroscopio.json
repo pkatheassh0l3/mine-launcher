@@ -1,0 +1,25 @@
+{
+  "title": "Estabilidad en movimiento",
+  "category": "ascension:automation",
+  "description": "Prepara la instrumentación antes de pasar a los sistemas de propulsión avanzada.",
+  "objectives": [
+    {
+      "item": "simulated:gyroscopic_mechanism",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "simulated:gyroscopic_mechanism",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/pack_aeronautica"
+  ],
+  "sort": 675,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ]
+}

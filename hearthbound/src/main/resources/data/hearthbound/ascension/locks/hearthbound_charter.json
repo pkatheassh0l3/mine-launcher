@@ -1,0 +1,9 @@
+{
+  "age": "ascension:diamond",
+  "items": [
+    "hearthbound:village_charter"
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

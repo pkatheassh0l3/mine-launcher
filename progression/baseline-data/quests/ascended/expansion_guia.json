@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:ascended",
+  "icon": "minecraft:elytra",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Completa la aviación avanzada y los retos de logística. La progresión no regala objetos creativos ni añade recetas para objetos que solo existen en creativo."
+}

@@ -1,0 +1,58 @@
+{
+  "roles": [
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 12,
+  "icon": "minecraft:gold_ingot",
+  "likes": [
+    "minecraft:gold_ingot",
+    "minecraft:emerald",
+    "minecraft:paper",
+    "minecraft:book"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 40,
+        "xp": 50
+      },
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 70
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 120,
+        "xp": 120,
+        "items": [
+          "minecraft:gold_block*1"
+        ]
+      },
+      "item": "minecraft:emerald"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

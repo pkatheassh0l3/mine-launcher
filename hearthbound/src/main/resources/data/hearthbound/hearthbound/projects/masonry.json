@@ -1,0 +1,198 @@
+{
+  "name": "hearthbound.project.masonry",
+  "description": "hearthbound.project.masonry.desc",
+  "icon": "minecraft:stonecutter",
+  "sort": 90,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:stonecutter",
+          "count": 1,
+          "icon": "minecraft:stonecutter"
+        },
+        {
+          "block": "minecraft:stone_bricks",
+          "count": 24,
+          "icon": "minecraft:stone_bricks"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:bricks",
+          "count": 16,
+          "price": 8,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:polished_andesite",
+          "count": 16,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:polished_granite",
+          "count": 16,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:polished_diorite",
+          "count": 16,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:clay_ball",
+          "count": 16,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:cobblestone",
+          "count": 64,
+          "price": 4,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:stonecutter",
+          "count": 2,
+          "icon": "minecraft:stonecutter"
+        },
+        {
+          "block": "minecraft:stone_bricks",
+          "count": 48,
+          "icon": "minecraft:stone_bricks"
+        },
+        {
+          "block": "minecraft:chiseled_stone_bricks",
+          "count": 4,
+          "icon": "minecraft:chiseled_stone_bricks"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:terracotta",
+          "count": 16,
+          "price": 10,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:white_glazed_terracotta",
+          "count": 8,
+          "price": 12,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:dripstone_block",
+          "count": 16,
+          "price": 10,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:mud_bricks",
+          "count": 16,
+          "price": 8,
+          "rank": "friend"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:stonecutter",
+          "count": 3,
+          "icon": "minecraft:stonecutter"
+        },
+        {
+          "block": "minecraft:polished_deepslate",
+          "count": 32,
+          "icon": "minecraft:polished_deepslate"
+        },
+        {
+          "block": "minecraft:quartz_block",
+          "count": 8,
+          "icon": "minecraft:quartz_block"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:quartz_block",
+          "count": 16,
+          "price": 30,
+          "rank": "ally",
+          "age": "ascension:nether"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:quartz_pillar",
+          "count": 8,
+          "price": 18,
+          "rank": "ally",
+          "age": "ascension:nether"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:calcite",
+          "count": 16,
+          "price": 14,
+          "rank": "ally"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:quartz",
+          "count": 12,
+          "price": 10,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

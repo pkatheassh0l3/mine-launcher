@@ -1,0 +1,25 @@
+{
+  "title": "Chasis con física",
+  "category": "ascension:automation",
+  "description": "Prepara una estructura con el ensamblador físico. La colocación no garantiza que el vehículo esté terminado.",
+  "objectives": [
+    {
+      "block": "simulated:physics_assembler",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "simulated:physics_assembler",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/pack_fisica"
+  ],
+  "sort": 666,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

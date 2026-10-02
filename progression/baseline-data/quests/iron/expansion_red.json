@@ -1,0 +1,22 @@
+{
+  "title": "Observación de fauna",
+  "category": "ascension:animals",
+  "description": "Explora las posibilidades de captura de Naturalist. No todos los animales admiten el mismo manejo.",
+  "objectives": [
+    {
+      "item": "naturalist:capture_net",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "naturalist:capture_net",
+  "difficulty": "ascension:common",
+  "sort": 648,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

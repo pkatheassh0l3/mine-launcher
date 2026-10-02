@@ -1,0 +1,23 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.dwarf_ore",
+  "item": "minecraft:raw_iron",
+  "count": [
+    8,
+    16
+  ],
+  "reward": {
+    "coins": [
+      16,
+      24
+    ],
+    "reputation": 16,
+    "xp": 40
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 10,
+  "cultures": [
+    "durnhal"
+  ]
+}

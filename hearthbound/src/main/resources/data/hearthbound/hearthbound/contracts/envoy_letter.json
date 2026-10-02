@@ -1,0 +1,19 @@
+{
+  "type": "envoy",
+  "title": "hearthbound.contract.envoy_letter",
+  "count": [
+    1,
+    1
+  ],
+  "reward": {
+    "coins": [
+      12,
+      18
+    ],
+    "reputation": 12,
+    "xp": 50
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 8
+}

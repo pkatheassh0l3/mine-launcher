@@ -1,0 +1,60 @@
+{
+  "roles": [
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 14,
+  "icon": "minecraft:rabbit_stew",
+  "likes": [
+    "minecraft:honey_bottle",
+    "minecraft:sweet_berries",
+    "minecraft:rabbit",
+    "minecraft:mushroom_stew"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 25,
+        "xp": 60
+      },
+      "item": "minecraft:rabbit"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 40,
+        "xp": 100,
+        "items": [
+          "minecraft:rabbit_stew*4",
+          "minecraft:golden_carrot*8"
+        ]
+      },
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

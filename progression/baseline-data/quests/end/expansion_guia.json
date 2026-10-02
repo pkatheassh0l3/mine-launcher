@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:end",
+  "icon": "minecraft:ender_eye",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Desarrolla Aeronautics con hélices, envolventes y navegación. Los hitos piden materiales y dispositivos reales, pero no verifican que una aeronave vuele correctamente."
+}

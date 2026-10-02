@@ -1,0 +1,25 @@
+{
+  "title": "Primer sistema de propulsión",
+  "category": "ascension:automation",
+  "description": "Monta las hélices sobre el sistema compatible descrito en Ponder.",
+  "objectives": [
+    {
+      "item": "aeronautics:wooden_propeller",
+      "type": "obtain",
+      "count": 2
+    }
+  ],
+  "icon": "aeronautics:wooden_propeller",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/pack_aeronautica"
+  ],
+  "sort": 672,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Procesado con aire",
+  "category": "ascension:automation",
+  "description": "El agua, el fuego y la lava cambian el procesado del ventilador. Cada montaje se explica en Ponder.",
+  "objectives": [
+    {
+      "item": "create:encased_fan",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:encased_fan",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_chapas_hierro"
+  ],
+  "sort": 634,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

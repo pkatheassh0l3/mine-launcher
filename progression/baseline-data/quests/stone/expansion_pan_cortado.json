@@ -1,0 +1,25 @@
+{
+  "title": "Preparar bocadillos",
+  "category": "ascension:farming",
+  "description": "Consulta el corte del pan en JEI. La receta utiliza la tabla de preparación.",
+  "objectives": [
+    {
+      "item": "moredelight:bread_slice",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "moredelight:bread_slice",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/expansion_tabla_colocada"
+  ],
+  "sort": 612,
+  "age": "ascension:stone",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ]
+}

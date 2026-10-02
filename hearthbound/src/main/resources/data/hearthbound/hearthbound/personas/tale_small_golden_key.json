@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "villager",
+    "innkeeper",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:tripwire_hook",
+  "likes": [
+    "minecraft:iron_ingot",
+    "minecraft:lantern",
+    "#minecraft:small_flowers",
+    "minecraft:book"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 80
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 90,
+        "xp": 150,
+        "items": [
+          "minecraft:gold_ingot*2"
+        ]
+      },
+      "entity": "minecraft:vindicator"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "age": "ascension:iron",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:white_banner",
+  "sort": 513,
+  "objectives": [
+    {
+      "type": "hearthbound:reputation",
+      "rank": "ally",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:skill_point",
+      "amount": 1
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

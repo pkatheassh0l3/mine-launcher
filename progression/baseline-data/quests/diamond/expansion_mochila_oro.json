@@ -1,0 +1,25 @@
+{
+  "title": "Capacidad intermedia",
+  "category": "ascension:crafting",
+  "description": "Prepara la mejora previa a la mochila de diamante si la receta activa la requiere.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:gold_backpack",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:gold_backpack",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_mochila_hierro"
+  ],
+  "sort": 650,
+  "age": "ascension:diamond",
+  "rewards": [
+    {
+      "amount": 140,
+      "type": "xp"
+    }
+  ]
+}

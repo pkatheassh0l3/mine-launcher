@@ -1,0 +1,23 @@
+{
+  "objectives": [
+    {
+      "item": "farmersdelight:flint_knife",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "farmersdelight:flint_knife",
+  "age": "ascension:stone",
+  "description": "Consigue farmersdelight:flint_knife para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Cocina de piedra",
+  "gate": true
+}

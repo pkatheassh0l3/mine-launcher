@@ -1,0 +1,25 @@
+{
+  "title": "Utensilios resistentes",
+  "category": "ascension:farming",
+  "description": "Mejora tu cuchillo sin perder la organización de la cocina.",
+  "objectives": [
+    {
+      "item": "farmersdelight:netherite_knife",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "farmersdelight:netherite_knife",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:diamond/pack_cuchillo_diamante"
+  ],
+  "sort": 671,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "name": "hearthbound.project.butcher",
+  "description": "hearthbound.project.butcher.desc",
+  "icon": "minecraft:smoker",
+  "sort": 11,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 0,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:smoker",
+          "count": 1,
+          "icon": "minecraft:smoker"
+        },
+        {
+          "block": "minecraft:barrel",
+          "count": 2,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "#minecraft:logs",
+          "count": 12,
+          "icon": "minecraft:oak_log"
+        }
+      ],
+      "reward": {
+        "reputation": 40,
+        "coins": 20,
+        "xp": 90
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_porkchop",
+          "count": 4,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_chicken",
+          "count": 4,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_mutton",
+          "count": 4,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:chicken",
+          "count": 8,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:porkchop",
+          "count": 6,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:mutton",
+          "count": 6,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:rabbit",
+          "count": 4,
+          "price": 4,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:smoker",
+          "count": 2,
+          "icon": "minecraft:smoker"
+        },
+        {
+          "block": "minecraft:barrel",
+          "count": 4,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "#minecraft:campfires",
+          "count": 1,
+          "icon": "minecraft:campfire"
+        },
+        {
+          "block": "minecraft:chain",
+          "count": 4,
+          "icon": "minecraft:chain"
+        }
+      ],
+      "reward": {
+        "reputation": 70,
+        "coins": 40,
+        "xp": 160
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:rabbit_stew",
+          "count": 1,
+          "price": 5,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_beef",
+          "count": 8,
+          "price": 9,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:dried_kelp_block",
+          "count": 4,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:beef",
+          "count": 6,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:sweet_berries",
+          "count": 16,
+          "price": 4,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:smoker",
+          "count": 4,
+          "icon": "minecraft:smoker"
+        },
+        {
+          "block": "minecraft:barrel",
+          "count": 8,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "#minecraft:campfires",
+          "count": 2,
+          "icon": "minecraft:campfire"
+        },
+        {
+          "block": "minecraft:chain",
+          "count": 12,
+          "icon": "minecraft:chain"
+        }
+      ],
+      "reward": {
+        "reputation": 110,
+        "coins": 70,
+        "xp": 260
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_beef",
+          "count": 24,
+          "price": 22,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:rabbit_foot",
+          "count": 1,
+          "price": 18,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:leather",
+          "count": 8,
+          "price": 12,
+          "rank": "friend"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

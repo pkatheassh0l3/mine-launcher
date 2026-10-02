@@ -1,0 +1,25 @@
+{
+  "title": "Producción de precisión",
+  "category": "ascension:automation",
+  "description": "La fabricación secuenciada necesita varios pasos. Revisa la secuencia completa antes de automatizarla.",
+  "objectives": [
+    {
+      "item": "create:precision_mechanism",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "create:precision_mechanism",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/pack_precision"
+  ],
+  "sort": 658,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

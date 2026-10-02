@@ -1,0 +1,25 @@
+{
+  "title": "Un plato de Ramadan",
+  "category": "ascension:farming",
+  "description": "Prepara una receta de Ramadan Delight con la olla y los ingredientes indicados en JEI.",
+  "objectives": [
+    {
+      "item": "ramadandelight:chorba",
+      "type": "eat",
+      "count": 2
+    }
+  ],
+  "icon": "ramadandelight:chorba",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_olla_colocada"
+  ],
+  "sort": 640,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

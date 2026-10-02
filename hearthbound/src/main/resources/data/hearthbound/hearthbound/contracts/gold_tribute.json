@@ -1,0 +1,20 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.gold_tribute",
+  "item": "minecraft:gold_ingot",
+  "count": [
+    4,
+    8
+  ],
+  "reward": {
+    "coins": [
+      24,
+      34
+    ],
+    "reputation": 20,
+    "xp": 50
+  },
+  "rank": "friend",
+  "tier": 2,
+  "weight": 5
+}

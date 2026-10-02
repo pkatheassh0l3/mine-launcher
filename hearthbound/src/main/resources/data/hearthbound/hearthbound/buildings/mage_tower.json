@@ -1,0 +1,20 @@
+{
+  "kind": "mage_tower",
+  "width": 7,
+  "depth": 7,
+  "floors": 3,
+  "cost": {
+    "stone": 45,
+    "goods": 20
+  },
+  "produces": {
+    "goods": 1
+  },
+  "roles": [
+    "mage"
+  ],
+  "icon": "minecraft:enchanting_table",
+  "min_tier": 2,
+  "residents": 1,
+  "age": "ascension:iron"
+}

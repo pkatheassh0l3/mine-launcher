@@ -1,0 +1,25 @@
+{
+  "title": "Cultivos de Ramadan Delight",
+  "category": "ascension:farming",
+  "description": "Colecciona cultivos de esta expansión. Esta rama es opcional y no bloquea el avance.",
+  "objectives": [
+    {
+      "item": "ramadandelight:chickpea",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "ramadandelight:chickpea",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/pack_ramadan"
+  ],
+  "sort": 604,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

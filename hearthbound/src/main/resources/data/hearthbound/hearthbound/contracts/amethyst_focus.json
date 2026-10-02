@@ -1,0 +1,20 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.amethyst_focus",
+  "item": "minecraft:amethyst_shard",
+  "count": [
+    6,
+    12
+  ],
+  "reward": {
+    "coins": [
+      20,
+      30
+    ],
+    "reputation": 18,
+    "xp": 45
+  },
+  "rank": "friend",
+  "tier": 2,
+  "weight": 5
+}

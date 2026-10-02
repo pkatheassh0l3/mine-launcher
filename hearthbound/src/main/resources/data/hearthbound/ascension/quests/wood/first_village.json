@@ -1,0 +1,22 @@
+{
+  "age": "ascension:wood",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:campfire",
+  "sort": 501,
+  "objectives": [
+    {
+      "type": "hearthbound:discover",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 15
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "roles": [
+    "builder"
+  ],
+  "gender": "any",
+  "weight": 14,
+  "icon": "minecraft:bricks",
+  "likes": [
+    "minecraft:stone_bricks",
+    "minecraft:glass",
+    "minecraft:lantern",
+    "#minecraft:logs"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 50
+      },
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 25,
+        "xp": 60
+      },
+      "item": "minecraft:glass"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 45,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:iron_axe",
+          "name": "hearthbound.keepsake.architect_axe",
+          "enchant": "minecraft:efficiency=3,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:lantern"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

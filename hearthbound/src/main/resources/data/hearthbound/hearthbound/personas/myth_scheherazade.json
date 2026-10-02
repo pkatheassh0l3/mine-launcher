@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "innkeeper",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:writable_book",
+  "likes": [
+    "#minecraft:candles",
+    "minecraft:book",
+    "minecraft:honey_bottle",
+    "minecraft:sweet_berries",
+    "minecraft:paper"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:candles"
+    },
+    {
+      "type": "deliver",
+      "count": 2,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:writable_book"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "items": [
+          "minecraft:book*2"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

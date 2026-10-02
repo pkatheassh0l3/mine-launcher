@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "farmer",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:cherry_sapling",
+  "likes": [
+    "#minecraft:saplings",
+    "#minecraft:small_flowers",
+    "minecraft:apple",
+    "minecraft:cookie"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:saplings"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 85
+      },
+      "entity": "minecraft:stray"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "keepsake": {
+          "item": "minecraft:iron_axe",
+          "name": "hearthbound.keepsake.novel_selfish_giant",
+          "enchant": "minecraft:efficiency=3,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:cookie"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

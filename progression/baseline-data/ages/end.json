@@ -1,0 +1,25 @@
+{
+  "order": 7,
+  "title": "ascension.age.end",
+  "subtitle": "ascension.age.end.subtitle",
+  "icon": "minecraft:ender_eye",
+  "color": "#CDB8F5",
+  "locks": {
+    "dimensions": [
+      "minecraft:the_end"
+    ],
+    "items": [
+      "minecraft:ender_eye",
+      "minecraft:ender_chest",
+      "@aeronautics",
+      "simulated:navigation_table",
+      "simulated:altitude_sensor",
+      "simulated:gimbal_sensor",
+      "simulated:gyroscopic_mechanism",
+      "simulated:incomplete_gyroscopic_mechanism",
+      "sophisticatedbackpacks:inception_upgrade",
+      "sophisticatedbackpacks:advanced_mob_catcher_upgrade",
+      "sophisticatedbackpacks:xp_pump_upgrade"
+    ]
+  }
+}

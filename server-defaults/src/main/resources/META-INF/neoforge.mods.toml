@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ascension_server_defaults"
+version="1.0.0"
+displayName="Ascension Server Defaults"
+description='''Adds the Ascension server while preserving the player's existing server list.'''
+[[dependencies.ascension_server_defaults]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.ascension_server_defaults]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="CLIENT"

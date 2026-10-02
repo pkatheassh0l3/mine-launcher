@@ -1,0 +1,25 @@
+{
+  "title": "Logística de expediciones",
+  "category": "ascension:crafting",
+  "description": "Revisa las reglas de anidación de mochilas antes de preparar expediciones largas.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:inception_upgrade",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:inception_upgrade",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_mochila_netherita"
+  ],
+  "sort": 678,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ]
+}

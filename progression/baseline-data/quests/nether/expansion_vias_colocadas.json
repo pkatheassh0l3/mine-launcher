@@ -1,0 +1,25 @@
+{
+  "title": "Una línea de ferrocarril",
+  "category": "ascension:automation",
+  "description": "Coloca una primera línea de vías para unir instalaciones.",
+  "objectives": [
+    {
+      "block": "create:track",
+      "type": "place",
+      "count": 16
+    }
+  ],
+  "icon": "create:track",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/pack_ferrocarril"
+  ],
+  "sort": 662,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

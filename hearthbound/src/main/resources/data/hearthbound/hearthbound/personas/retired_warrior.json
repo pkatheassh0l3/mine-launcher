@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "guard",
+    "elder",
+    "villager",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 10,
+  "icon": "minecraft:iron_sword",
+  "likes": [
+    "minecraft:iron_ingot",
+    "minecraft:beef",
+    "minecraft:cooked_beef",
+    "minecraft:shield"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 10,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 60
+      },
+      "entity": "minecraft:skeleton"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 70
+      },
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "hunt",
+      "count": 5,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 140,
+        "keepsake": {
+          "item": "minecraft:iron_sword",
+          "name": "hearthbound.keepsake.veteran_blade",
+          "enchant": "minecraft:sharpness=3,minecraft:unbreaking=2"
+        }
+      },
+      "entity": "minecraft:pillager"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

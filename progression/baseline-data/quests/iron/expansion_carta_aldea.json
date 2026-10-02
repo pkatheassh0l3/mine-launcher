@@ -1,0 +1,25 @@
+{
+  "title": "Organizar la aldea",
+  "category": "ascension:community",
+  "description": "Consulta los requisitos de Hearthbound y desarrolla la comunidad a tu ritmo.",
+  "objectives": [
+    {
+      "item": "hearthbound:village_charter",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "hearthbound:village_charter",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/pack_asentamiento"
+  ],
+  "sort": 645,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

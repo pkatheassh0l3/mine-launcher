@@ -10,32 +10,32 @@
   "tiers": {
     "baja": {
       "name": "Ascension - Bajos-recursos",
-      "package": "paquetes-base/Ascension-Bajos-recursos.mrpack",
-      "sha256": "A1B2B791D6AECAA9A2E28D459CD119ADDDC3FB704AF775C233B86A9DCC705557",
+      "package": "paquetes-base-crecimiento/Ascension-Bajos-recursos.mrpack",
+      "sha256": "D86279D60200FBDA16EFD7B7F931782A933166108D6045ECCD29D538DA95E2B6",
       "memoryMB": 4096
     },
     "intermedia": {
       "name": "Ascension - Intermedia 8 GB",
-      "package": "paquetes-base/Ascension-Intermedia-8GB.mrpack",
-      "sha256": "40AC89DABC947EE11825DA3F2909B6CCD4E3672754763C789A442F483B8F2D49",
+      "package": "paquetes-base-crecimiento/Ascension-Intermedia-8GB.mrpack",
+      "sha256": "0F18AE2268339F1ED5A5C0D5C1C2146303B401DC2B6B48B0FE58F92198E4A72C",
       "memoryMB": 4096
     },
     "media": {
       "name": "Ascension - Gama-media",
-      "package": "paquetes-base/Ascension-Gama-media.mrpack",
-      "sha256": "81CC7242ECDF5C8D0B45DB279D2D56E411B16A0750153DFCC4E15F0EC619C8D9",
+      "package": "paquetes-base-crecimiento/Ascension-Gama-media.mrpack",
+      "sha256": "7A3EE7F06C42946F99786A88F938C43593A194CC53FC17C6C25D69E24965FC5B",
       "memoryMB": 6144
     },
     "alta": {
       "name": "Ascension - RTX-3060",
-      "package": "paquetes-base/Ascension-RTX-3060.mrpack",
-      "sha256": "D3CFFC355FBDA3BE1AE770BEDC11077DD6C9AAD7AAD76536BE8E9131F5F3446F",
+      "package": "paquetes-base-crecimiento/Ascension-RTX-3060.mrpack",
+      "sha256": "46A66B4C2AA7452D79514EB38607182E847B96D423CB8913B6AA538CA8B54216",
       "memoryMB": 8192
     },
     "patata": {
       "name": "Ascension - PC patata",
-      "package": "paquetes-base/Ascension-PC-patata.mrpack",
-      "sha256": "20EFB30C29CA15E28E3D288A0AECD4D003907CA2987B09A8C4B422C9E47EF857",
+      "package": "paquetes-base-crecimiento/Ascension-PC-patata.mrpack",
+      "sha256": "EC1A1CCB988570B12F1E40158952FD34900913B8637879A7425A5BD1DD9D7C56",
       "memoryMB": 4096
     }
   }

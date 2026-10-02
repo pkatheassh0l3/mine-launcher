@@ -1,0 +1,22 @@
+{
+  "title": "Prepararse para pescar",
+  "category": "ascension:fishing",
+  "description": "Usa JEI y Jade para conocer los peces añadidos. La fauna rara siempre es opcional.",
+  "objectives": [
+    {
+      "item": "minecraft:fishing_rod",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "minecraft:fishing_rod",
+  "difficulty": "ascension:common",
+  "sort": 609,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

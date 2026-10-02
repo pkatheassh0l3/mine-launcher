@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "villager",
+    "innkeeper",
+    "farmer",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 10,
+  "icon": "minecraft:fishing_rod",
+  "likes": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:string",
+    "minecraft:kelp"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 40
+      },
+      "item": "minecraft:cod"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 20,
+        "xp": 60
+      },
+      "item": "minecraft:salmon"
+    },
+    {
+      "type": "deliver",
+      "count": 2,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 40,
+        "xp": 110,
+        "keepsake": {
+          "item": "minecraft:fishing_rod",
+          "name": "hearthbound.keepsake.lake_rod",
+          "enchant": "minecraft:luck_of_the_sea=3,minecraft:lure=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:pufferfish"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

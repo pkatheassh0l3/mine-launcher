@@ -1,0 +1,59 @@
+{
+  "roles": [],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:emerald",
+  "likes": [
+    "minecraft:cod",
+    "minecraft:emerald",
+    "minecraft:note_block",
+    "minecraft:milk_bucket"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "entity": "minecraft:silverfish"
+    },
+    {
+      "type": "deliver",
+      "count": 5,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:emerald"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "items": [
+          "minecraft:experience_bottle*3"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

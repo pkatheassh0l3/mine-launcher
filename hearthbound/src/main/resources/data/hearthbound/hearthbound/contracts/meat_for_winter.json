@@ -1,0 +1,20 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.meat_for_winter",
+  "item": "minecraft:cooked_beef",
+  "count": [
+    6,
+    12
+  ],
+  "reward": {
+    "coins": [
+      10,
+      16
+    ],
+    "reputation": 12,
+    "xp": 30
+  },
+  "rank": "acquaintance",
+  "tier": 0,
+  "weight": 6
+}

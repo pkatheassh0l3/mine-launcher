@@ -1,0 +1,25 @@
+{
+  "type": "hunt",
+  "title": "hearthbound.contract.witch_hunt",
+  "entity": "minecraft:witch",
+  "count": [
+    1,
+    3
+  ],
+  "reward": {
+    "coins": [
+      20,
+      30
+    ],
+    "reputation": 18,
+    "xp": 50
+  },
+  "rank": "acquaintance",
+  "tier": 1,
+  "weight": 4,
+  "cultures": [
+    "valdoran",
+    "sylvaran",
+    "hrimfell"
+  ]
+}

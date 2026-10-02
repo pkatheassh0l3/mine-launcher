@@ -1,0 +1,22 @@
+{
+  "age": "ascension:diamond",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:lantern",
+  "sort": 516,
+  "objectives": [
+    {
+      "type": "hearthbound:village_tier",
+      "count": 3
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 100
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

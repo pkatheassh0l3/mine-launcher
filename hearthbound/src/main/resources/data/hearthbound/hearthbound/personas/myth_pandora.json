@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "villager",
+    "mage",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:decorated_pot",
+  "likes": [
+    "minecraft:glowstone_dust",
+    "minecraft:honey_bottle",
+    "#minecraft:small_flowers",
+    "minecraft:clay_ball"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "entity": "minecraft:cave_spider"
+    },
+    {
+      "type": "hunt",
+      "count": 5,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      },
+      "entity": "minecraft:phantom"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:lantern",
+          "name": "hearthbound.keepsake.myth_pandora"
+        }
+      },
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

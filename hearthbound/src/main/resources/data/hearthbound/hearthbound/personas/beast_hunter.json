@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "guard",
+    "villager",
+    "farmer"
+  ],
+  "gender": "any",
+  "weight": 8,
+  "icon": "minecraft:bow",
+  "likes": [
+    "minecraft:arrow",
+    "minecraft:rabbit",
+    "minecraft:cooked_rabbit",
+    "minecraft:leather"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 50
+      },
+      "entity": "minecraft:spider"
+    },
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 25,
+        "xp": 60
+      },
+      "item": "minecraft:leather"
+    },
+    {
+      "type": "hunt",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:bow",
+          "name": "hearthbound.keepsake.hunter_bow",
+          "enchant": "minecraft:power=3,minecraft:unbreaking=2"
+        }
+      },
+      "entity": "minecraft:witch"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

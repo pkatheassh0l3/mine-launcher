@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "hearthbound:village_hearth",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "hearthbound:village_hearth",
+  "age": "ascension:iron",
+  "description": "Consigue hearthbound:village_hearth para explorar el contenido de esta era.",
+  "category": "ascension:building",
+  "sort": 500,
+  "title": "Un hogar para la comunidad"
+}

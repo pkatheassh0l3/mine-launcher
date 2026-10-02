@@ -1,0 +1,62 @@
+{
+  "roles": [
+    "merchant",
+    "elder",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:clock",
+  "likes": [
+    "minecraft:clock",
+    "minecraft:cookie",
+    "minecraft:map",
+    "minecraft:paper"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:clock"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      }
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "items": [
+          "minecraft:emerald*3"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

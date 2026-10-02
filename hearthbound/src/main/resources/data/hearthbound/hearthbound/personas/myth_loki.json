@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "mage",
+    "merchant",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:fire_charge",
+  "likes": [
+    "minecraft:gold_nugget",
+    "minecraft:sweet_berries",
+    "minecraft:fire_charge",
+    "minecraft:rabbit_foot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:string"
+    },
+    {
+      "type": "deliver",
+      "count": 18,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:name_tag",
+          "name": "hearthbound.keepsake.myth_loki"
+        }
+      },
+      "entity": "minecraft:witch"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "elder",
+    "mage",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 10,
+  "icon": "minecraft:book",
+  "likes": [
+    "minecraft:book",
+    "minecraft:paper",
+    "minecraft:ink_sac",
+    "minecraft:feather"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 60
+      },
+      "item": "minecraft:book"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 25,
+        "xp": 70
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 150,
+        "items": [
+          "minecraft:experience_bottle*12"
+        ],
+        "keepsake": {
+          "item": "minecraft:writable_book",
+          "name": "hearthbound.keepsake.exile_journal"
+        }
+      },
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

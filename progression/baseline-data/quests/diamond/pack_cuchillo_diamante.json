@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "farmersdelight:diamond_knife",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "farmersdelight:diamond_knife",
+  "age": "ascension:diamond",
+  "description": "Consigue farmersdelight:diamond_knife para explorar el contenido de esta era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Cocina de precisión"
+}

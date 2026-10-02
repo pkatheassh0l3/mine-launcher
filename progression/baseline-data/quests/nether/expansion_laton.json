@@ -1,0 +1,22 @@
+{
+  "title": "La aleación industrial",
+  "category": "ascension:automation",
+  "description": "Mezcla cobre y zinc con calor. Primero necesitas un quemador de blaze utilizable.",
+  "objectives": [
+    {
+      "item": "create:brass_ingot",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "create:brass_ingot",
+  "difficulty": "ascension:rare",
+  "sort": 656,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

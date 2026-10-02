@@ -1,0 +1,25 @@
+{
+  "title": "Una olla en funcionamiento",
+  "category": "ascension:farming",
+  "description": "Coloca la olla sobre una fuente de calor y revisa las recetas de JEI.",
+  "objectives": [
+    {
+      "block": "farmersdelight:cooking_pot",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "farmersdelight:cooking_pot",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/pack_cocina"
+  ],
+  "sort": 637,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Proteger una compañera",
+  "category": "ascension:animals",
+  "description": "La protección de criaturas respeta las mismas eras que el equipo del jugador.",
+  "objectives": [
+    {
+      "item": "crittersandcompanions:iron_dragonfly_armor",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "crittersandcompanions:iron_dragonfly_armor",
+  "difficulty": "ascension:common",
+  "sort": 649,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

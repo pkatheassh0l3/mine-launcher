@@ -1,0 +1,25 @@
+{
+  "title": "Mezclar ingredientes",
+  "category": "ascension:automation",
+  "description": "La mezcladora trabaja sobre una cuenca. Algunas recetas requieren calor, disponible más adelante.",
+  "objectives": [
+    {
+      "item": "create:mechanical_mixer",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:mechanical_mixer",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_chapas_hierro"
+  ],
+  "sort": 631,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Herramienta del mecánico",
+  "category": "ascension:crafting",
+  "description": "La llave permite orientar y desmontar componentes de Create.",
+  "objectives": [
+    {
+      "item": "create:wrench",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:wrench",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:copper/expansion_aleacion"
+  ],
+  "sort": 620,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ]
+}

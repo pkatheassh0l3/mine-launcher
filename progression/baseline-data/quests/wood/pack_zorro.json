@@ -1,0 +1,22 @@
+{
+  "age": "ascension:wood",
+  "difficulty": "ascension:rare",
+  "description": "Domestica un zorro con Tameable Foxes.",
+  "category": "ascension:animals",
+  "sort": 510,
+  "icon": "minecraft:sweet_berries",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ],
+  "title": "Un zorro como compañero",
+  "objectives": [
+    {
+      "count": 1,
+      "type": "tame",
+      "entity": "minecraft:fox"
+    }
+  ]
+}

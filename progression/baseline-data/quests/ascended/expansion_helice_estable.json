@@ -1,0 +1,25 @@
+{
+  "title": "Propulsión estabilizada",
+  "category": "ascension:mastery",
+  "description": "Combina las tecnologías de las eras anteriores en una aeronave avanzada.",
+  "objectives": [
+    {
+      "item": "aeronautics:gyroscopic_propeller_bearing",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "aeronautics:gyroscopic_propeller_bearing",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/expansion_giroscopio"
+  ],
+  "sort": 679,
+  "age": "ascension:ascended",
+  "rewards": [
+    {
+      "amount": 200,
+      "type": "xp"
+    }
+  ]
+}

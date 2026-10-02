@@ -1,0 +1,20 @@
+{
+  "kind": "tavern",
+  "width": 11,
+  "depth": 9,
+  "floors": 2,
+  "cost": {
+    "wood": 45,
+    "stone": 25,
+    "food": 15
+  },
+  "produces": {
+    "food": 1
+  },
+  "roles": [
+    "innkeeper"
+  ],
+  "icon": "minecraft:honey_bottle",
+  "min_tier": 1,
+  "residents": 2
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:iron",
+  "icon": "minecraft:iron_pickaxe",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Abre el taller: prensa, laminado, mezcladora y molino. Ya puedes desarrollar Hearthbound, navegar con Whaleborne y automatizar la cocina."
+}

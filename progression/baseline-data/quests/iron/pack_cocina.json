@@ -1,0 +1,26 @@
+{
+  "objectives": [
+    {
+      "item": "farmersdelight:cooking_pot",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "farmersdelight:cooking_pot",
+  "age": "ascension:iron",
+  "description": "Consigue farmersdelight:cooking_pot para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Cocina de hierro",
+  "gate": true,
+  "requires": [
+    "ascension:iron/expansion_fogon"
+  ]
+}

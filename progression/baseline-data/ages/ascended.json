@@ -1,0 +1,27 @@
+{
+  "order": 8,
+  "title": "ascension.age.ascended",
+  "subtitle": "ascension.age.ascended.subtitle",
+  "icon": "minecraft:elytra",
+  "color": "#F5C451",
+  "locks": {
+    "items": [
+      "minecraft:elytra",
+      "minecraft:beacon",
+      "minecraft:conduit",
+      "minecraft:end_crystal",
+      "minecraft:*shulker_box",
+      "minecraft:mace",
+      "aeronautics:levitite",
+      "aeronautics:levitite_blend_bucket",
+      "aeronautics:pearlescent_levitite",
+      "aeronautics:smart_propeller",
+      "aeronautics:gyroscopic_propeller_bearing",
+      "sophisticatedbackpacks:stack_upgrade_omega_tier",
+      "create:creative_*",
+      "simulated:creative_*",
+      "sophisticatedbackpacks:infinity_upgrade",
+      "sophisticatedbackpacks:survival_infinity_upgrade"
+    ]
+  }
+}

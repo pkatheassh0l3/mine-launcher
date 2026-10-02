@@ -1,0 +1,253 @@
+{
+  "name": "hearthbound.project.armory",
+  "description": "hearthbound.project.armory.desc",
+  "icon": "minecraft:blast_furnace",
+  "sort": 30,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:blast_furnace",
+          "count": 1,
+          "icon": "minecraft:blast_furnace"
+        },
+        {
+          "block": "#minecraft:anvil",
+          "count": 1,
+          "icon": "minecraft:anvil"
+        },
+        {
+          "block": "minecraft:iron_bars",
+          "count": 6,
+          "icon": "minecraft:iron_bars"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:chainmail_helmet",
+          "count": 1,
+          "price": 20,
+          "rank": "acquaintance",
+          "age": "ascension:chainmail"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:chainmail_chestplate",
+          "count": 1,
+          "price": 32,
+          "rank": "acquaintance",
+          "age": "ascension:chainmail"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:chainmail_leggings",
+          "count": 1,
+          "price": 28,
+          "rank": "acquaintance",
+          "age": "ascension:chainmail"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:chainmail_boots",
+          "count": 1,
+          "price": 18,
+          "rank": "acquaintance",
+          "age": "ascension:chainmail"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:shield",
+          "count": 1,
+          "price": 18,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:coal",
+          "count": 12,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:iron_ingot",
+          "count": 4,
+          "price": 14,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:blast_furnace",
+          "count": 2,
+          "icon": "minecraft:blast_furnace"
+        },
+        {
+          "block": "#minecraft:anvil",
+          "count": 1,
+          "icon": "minecraft:anvil"
+        },
+        {
+          "block": "minecraft:iron_bars",
+          "count": 12,
+          "icon": "minecraft:iron_bars"
+        },
+        {
+          "block": "minecraft:iron_block",
+          "count": 1,
+          "icon": "minecraft:iron_block"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:iron_helmet",
+          "count": 1,
+          "price": 50,
+          "rank": "friend",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:iron_chestplate",
+          "count": 1,
+          "price": 85,
+          "rank": "friend",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:iron_leggings",
+          "count": 1,
+          "price": 75,
+          "rank": "friend",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:iron_boots",
+          "count": 1,
+          "price": 45,
+          "rank": "friend",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:iron_ingot",
+          "count": 8,
+          "price": 26,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:blast_furnace",
+          "count": 3,
+          "icon": "minecraft:blast_furnace"
+        },
+        {
+          "block": "#minecraft:anvil",
+          "count": 2,
+          "icon": "minecraft:anvil"
+        },
+        {
+          "block": "minecraft:iron_block",
+          "count": 3,
+          "icon": "minecraft:iron_block"
+        },
+        {
+          "block": "minecraft:chain",
+          "count": 6,
+          "icon": "minecraft:chain"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:iron_chestplate",
+          "count": 1,
+          "price": 140,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:protection=3,minecraft:unbreaking=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_helmet",
+          "count": 1,
+          "price": 260,
+          "rank": "ally",
+          "age": "ascension:diamond"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_chestplate",
+          "count": 1,
+          "price": 420,
+          "rank": "hero",
+          "age": "ascension:diamond"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_leggings",
+          "count": 1,
+          "price": 370,
+          "rank": "hero",
+          "age": "ascension:diamond"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_boots",
+          "count": 1,
+          "price": 240,
+          "rank": "ally",
+          "age": "ascension:diamond"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:diamond",
+          "count": 1,
+          "price": 60,
+          "rank": "ally"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

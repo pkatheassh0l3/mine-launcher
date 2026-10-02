@@ -1,0 +1,62 @@
+{
+  "roles": [],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:nautilus_shell",
+  "likes": [
+    "minecraft:kelp",
+    "minecraft:prismarine_shard",
+    "minecraft:tropical_fish",
+    "minecraft:nautilus_shell"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:kelp"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      },
+      "entity": "minecraft:drowned"
+    },
+    {
+      "type": "deliver",
+      "count": 2,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 80,
+        "xp": 140,
+        "keepsake": {
+          "item": "minecraft:turtle_helmet",
+          "name": "hearthbound.keepsake.tale_voice_for_legs",
+          "enchant": "minecraft:respiration=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:nautilus_shell"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

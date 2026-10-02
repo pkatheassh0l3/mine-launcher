@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "naturalist:duck_egg",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "naturalist:duck_egg",
+  "age": "ascension:wood",
+  "description": "Consigue naturalist:duck_egg para explorar el contenido de esta era.",
+  "category": "ascension:animals",
+  "sort": 500,
+  "title": "Exploración naturalista"
+}

@@ -1,0 +1,68 @@
+{
+  "roles": [
+    "elder",
+    "villager",
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:book",
+  "likes": [
+    "minecraft:book",
+    "minecraft:bread",
+    "minecraft:iron_ingot",
+    "#minecraft:small_flowers"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:bucket"
+    },
+    {
+      "type": "hunt",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 80,
+        "items": [
+          "minecraft:ender_pearl*1"
+        ]
+      },
+      "entity": "minecraft:enderman"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:shield",
+          "name": "hearthbound.keepsake.chiv_quixote",
+          "enchant": "minecraft:unbreaking=2"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

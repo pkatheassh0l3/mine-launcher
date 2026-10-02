@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "mage",
+    "smith",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:heart_of_the_sea",
+  "likes": [
+    "minecraft:nautilus_shell",
+    "minecraft:prismarine_shard",
+    "minecraft:kelp",
+    "minecraft:copper_ingot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 2,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "item": "minecraft:nautilus_shell"
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 100
+      },
+      "entity": "minecraft:guardian"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 90,
+        "xp": 150,
+        "keepsake": {
+          "item": "minecraft:turtle_helmet",
+          "name": "hearthbound.keepsake.myth_nemo",
+          "enchant": "minecraft:respiration=2,minecraft:aqua_affinity=1,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:prismarine_shard"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

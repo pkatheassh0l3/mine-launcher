@@ -1,0 +1,25 @@
+{
+  "title": "La huerta de Farmer's Delight",
+  "category": "ascension:farming",
+  "description": "Explora en busca de cultivos silvestres y reserva parte de la cosecha para replantar.",
+  "objectives": [
+    {
+      "item": "farmersdelight:cabbage",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "farmersdelight:cabbage",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/pack_hortalizas"
+  ],
+  "sort": 602,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

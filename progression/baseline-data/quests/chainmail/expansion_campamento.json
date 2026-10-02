@@ -1,0 +1,25 @@
+{
+  "title": "Un campamento preparado",
+  "category": "ascension:building",
+  "description": "Prepara un punto de descanso antes de salir de expedición.",
+  "objectives": [
+    {
+      "block": "minecraft:barrel",
+      "type": "place",
+      "count": 4
+    }
+  ],
+  "icon": "minecraft:barrel",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:chainmail/pack_mochila"
+  ],
+  "sort": 624,
+  "age": "ascension:chainmail",
+  "rewards": [
+    {
+      "amount": 100,
+      "type": "xp"
+    }
+  ]
+}

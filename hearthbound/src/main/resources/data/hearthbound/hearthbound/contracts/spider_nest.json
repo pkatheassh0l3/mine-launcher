@@ -1,0 +1,20 @@
+{
+  "type": "hunt",
+  "title": "hearthbound.contract.spider_nest",
+  "entity": "minecraft:spider",
+  "count": [
+    5,
+    10
+  ],
+  "reward": {
+    "coins": [
+      8,
+      14
+    ],
+    "reputation": 12,
+    "xp": 35
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 8
+}

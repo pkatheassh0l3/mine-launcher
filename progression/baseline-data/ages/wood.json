@@ -1,0 +1,28 @@
+{
+  "order": 0,
+  "title": "ascension.age.wood",
+  "subtitle": "ascension.age.wood.subtitle",
+  "icon": "minecraft:oak_log",
+  "color": "#C08A55",
+  "locks": {
+    "items": [
+      "@farmersdelight",
+      "@moredelight",
+      "@ramadandelight",
+      "@veggiesdelight",
+      "@naturalist",
+      "@crittersandcompanions",
+      "@unusualfishmod",
+      "@spawn",
+      "@ribbits",
+      "@tameablefoxes",
+      "@gravestone",
+      "@stackedblocks",
+      "@stackedblocksfarmersdelight",
+      "@patchouli",
+      "@sophisticatedcore",
+      "@kubejs",
+      "@teallib"
+    ]
+  }
+}

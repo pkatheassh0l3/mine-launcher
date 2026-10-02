@@ -1,0 +1,22 @@
+{
+  "age": "ascension:end",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "hearthbound:village_hearth",
+  "sort": 518,
+  "objectives": [
+    {
+      "type": "hearthbound:lord",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 250
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

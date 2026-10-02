@@ -1,0 +1,22 @@
+{
+  "age": "ascension:copper",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:white_banner",
+  "sort": 506,
+  "objectives": [
+    {
+      "type": "hearthbound:citizen",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:reputation",
+      "amount": 20
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

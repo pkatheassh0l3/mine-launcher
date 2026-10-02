@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "farmer",
+    "villager",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:wheat",
+  "likes": [
+    "minecraft:wheat",
+    "minecraft:paper",
+    "#minecraft:small_flowers",
+    "minecraft:honey_bottle"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 24,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:wheat"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 60
+      },
+      "item": "minecraft:paper"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 55,
+        "xp": 100,
+        "items": [
+          "minecraft:writable_book*1"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

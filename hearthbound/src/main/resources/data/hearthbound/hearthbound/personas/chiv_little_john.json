@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "builder",
+    "guard",
+    "smith"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:stick",
+  "likes": [
+    "#minecraft:logs",
+    "minecraft:cooked_beef",
+    "minecraft:mutton",
+    "minecraft:bread"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:vindicator"
+    },
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 55,
+        "xp": 110,
+        "items": [
+          "minecraft:cake*1"
+        ]
+      },
+      "item": "minecraft:cooked_beef"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

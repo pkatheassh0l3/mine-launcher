@@ -1,0 +1,20 @@
+{
+  "type": "hunt",
+  "title": "hearthbound.contract.zombie_cull",
+  "entity": "minecraft:zombie",
+  "count": [
+    6,
+    12
+  ],
+  "reward": {
+    "coins": [
+      8,
+      14
+    ],
+    "reputation": 12,
+    "xp": 35
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 10
+}

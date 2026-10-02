@@ -1,0 +1,25 @@
+{
+  "title": "Reposición de suministros",
+  "category": "ascension:crafting",
+  "description": "Organiza la reposición de bloques y herramientas durante la construcción.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:refill_upgrade",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:refill_upgrade",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_mochila_hierro"
+  ],
+  "sort": 643,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

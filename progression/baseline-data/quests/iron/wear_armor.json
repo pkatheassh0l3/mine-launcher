@@ -1,0 +1,37 @@
+{
+  "age": "ascension:iron",
+  "category": "ascension:mastery",
+  "difficulty": "ascension:epic",
+  "sort": 300,
+  "gate": false,
+  "icon": "minecraft:iron_chestplate",
+  "objectives": [
+    {
+      "type": "break",
+      "item": "minecraft:iron_helmet",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:iron_chestplate",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:iron_leggings",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:iron_boots",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "item": "minecraft:diamond",
+      "count": 4
+    }
+  ]
+}

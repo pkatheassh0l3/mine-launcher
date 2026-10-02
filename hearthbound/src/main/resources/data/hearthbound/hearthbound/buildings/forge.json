@@ -1,0 +1,19 @@
+{
+  "kind": "forge",
+  "width": 9,
+  "depth": 7,
+  "floors": 1,
+  "cost": {
+    "wood": 20,
+    "stone": 30
+  },
+  "produces": {
+    "goods": 2
+  },
+  "roles": [
+    "smith"
+  ],
+  "icon": "minecraft:anvil",
+  "min_tier": 0,
+  "residents": 0
+}

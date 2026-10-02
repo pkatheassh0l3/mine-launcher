@@ -1,0 +1,25 @@
+{
+  "title": "Control de dirección",
+  "category": "ascension:automation",
+  "description": "Añade dirección a tu vehículo y prueba el montaje en una zona despejada.",
+  "objectives": [
+    {
+      "item": "simulated:steering_wheel",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "simulated:steering_wheel",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_ruedas"
+  ],
+  "sort": 668,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

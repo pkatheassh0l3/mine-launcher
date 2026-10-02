@@ -1,0 +1,19 @@
+{
+  "type": "defend",
+  "title": "hearthbound.contract.hold_the_line",
+  "count": [
+    5,
+    10
+  ],
+  "reward": {
+    "coins": [
+      12,
+      20
+    ],
+    "reputation": 16,
+    "xp": 50
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 7
+}

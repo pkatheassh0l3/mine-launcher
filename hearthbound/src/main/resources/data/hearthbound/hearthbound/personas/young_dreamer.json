@@ -1,0 +1,61 @@
+{
+  "roles": [
+    "villager",
+    "farmer",
+    "builder",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 12,
+  "icon": "minecraft:compass",
+  "likes": [
+    "minecraft:map",
+    "minecraft:compass",
+    "minecraft:feather",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 50
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 20,
+        "xp": 60
+      },
+      "item": "minecraft:compass"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 30,
+        "xp": 100,
+        "keepsake": {
+          "item": "minecraft:spyglass",
+          "name": "hearthbound.keepsake.dreamer_spyglass"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

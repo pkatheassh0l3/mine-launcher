@@ -1,0 +1,25 @@
+{
+  "title": "Suministros de More Delight",
+  "category": "ascension:farming",
+  "description": "Prepara una despensa de ingredientes para bocadillos.",
+  "objectives": [
+    {
+      "item": "moredelight:bread_slice",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "moredelight:bread_slice",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/expansion_pan_cortado"
+  ],
+  "sort": 626,
+  "age": "ascension:chainmail",
+  "rewards": [
+    {
+      "amount": 100,
+      "type": "xp"
+    }
+  ]
+}

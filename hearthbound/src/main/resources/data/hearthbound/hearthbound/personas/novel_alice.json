@@ -1,0 +1,59 @@
+{
+  "roles": [],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:cookie",
+  "likes": [
+    "minecraft:cookie",
+    "minecraft:cake",
+    "minecraft:honey_bottle",
+    "#minecraft:small_flowers"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:cookie"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "items": [
+          "minecraft:cake*1"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

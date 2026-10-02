@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "elder",
+    "villager",
+    "mage",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:carved_pumpkin",
+  "likes": [
+    "minecraft:pumpkin_pie",
+    "minecraft:book",
+    "minecraft:cookie",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:book"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:pumpkin_pie"
+    },
+    {
+      "type": "defend",
+      "count": 10,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:iron_helmet",
+          "name": "hearthbound.keepsake.myth_ichabod",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=2"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

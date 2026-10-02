@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "farmer",
+    "builder",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:wheat",
+  "likes": [
+    "minecraft:wheat",
+    "minecraft:cocoa_beans",
+    "minecraft:clay_ball",
+    "#minecraft:logs"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 24,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:iron_hoe",
+          "name": "hearthbound.keepsake.myth_crusoe",
+          "enchant": "minecraft:efficiency=2,minecraft:unbreaking=3"
+        }
+      },
+      "item": "minecraft:clock"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

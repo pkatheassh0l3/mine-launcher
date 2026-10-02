@@ -1,0 +1,22 @@
+{
+  "title": "El primer material de Create",
+  "category": "ascension:automation",
+  "description": "Combina andesita y pepitas siguiendo JEI. El hierro como material se conserva accesible antes de las herramientas de hierro.",
+  "objectives": [
+    {
+      "item": "create:andesite_alloy",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "create:andesite_alloy",
+  "difficulty": "ascension:common",
+  "sort": 616,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ]
+}

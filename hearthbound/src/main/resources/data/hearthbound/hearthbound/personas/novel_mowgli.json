@@ -1,0 +1,67 @@
+{
+  "roles": [
+    "guard",
+    "farmer",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:bone",
+  "likes": [
+    "minecraft:bone",
+    "minecraft:honeycomb",
+    "minecraft:sweet_berries",
+    "minecraft:cooked_beef",
+    "minecraft:torch"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:bone"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:torch"
+    },
+    {
+      "type": "hunt",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 100,
+        "xp": 150,
+        "keepsake": {
+          "item": "minecraft:bow",
+          "name": "hearthbound.keepsake.novel_mowgli",
+          "enchant": "minecraft:power=2,minecraft:unbreaking=2"
+        }
+      },
+      "entity": "minecraft:ravager"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

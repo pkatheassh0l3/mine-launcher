@@ -1,0 +1,15 @@
+{
+  "kind": "house",
+  "width": 7,
+  "depth": 7,
+  "floors": 1,
+  "cost": {
+    "wood": 25,
+    "stone": 10,
+    "food": 5
+  },
+  "produces": {},
+  "roles": [],
+  "icon": "minecraft:oak_door",
+  "min_tier": 0
+}

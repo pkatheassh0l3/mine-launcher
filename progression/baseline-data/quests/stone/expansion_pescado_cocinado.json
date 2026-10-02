@@ -1,0 +1,25 @@
+{
+  "title": "De la pesca a la mesa",
+  "category": "ascension:fishing",
+  "description": "Cocina pescado antes de comerlo. No necesitas encontrar ninguna especie rara.",
+  "objectives": [
+    {
+      "item": "minecraft:cooked_cod",
+      "type": "eat",
+      "count": 3
+    }
+  ],
+  "icon": "minecraft:cooked_cod",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/expansion_pesca_base"
+  ],
+  "sort": 615,
+  "age": "ascension:stone",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ]
+}

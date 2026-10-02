@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "farmer",
+    "innkeeper",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:wheat",
+  "likes": [
+    "minecraft:bread",
+    "minecraft:wheat",
+    "minecraft:note_block",
+    "minecraft:honey_bottle"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:wheat"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 55,
+        "xp": 110,
+        "items": [
+          "minecraft:honey_bottle*2"
+        ]
+      },
+      "item": "minecraft:pumpkin_pie"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

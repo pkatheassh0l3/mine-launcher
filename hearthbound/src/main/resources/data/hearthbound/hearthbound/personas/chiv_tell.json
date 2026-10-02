@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "guard",
+    "farmer",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:apple",
+  "likes": [
+    "minecraft:apple",
+    "minecraft:arrow",
+    "minecraft:milk_bucket",
+    "minecraft:cooked_beef"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:apple"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:arrow"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:crossbow",
+          "name": "hearthbound.keepsake.chiv_tell",
+          "enchant": "minecraft:quick_charge=2,minecraft:piercing=1"
+        }
+      },
+      "entity": "minecraft:pillager"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

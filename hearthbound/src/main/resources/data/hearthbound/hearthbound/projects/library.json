@@ -1,0 +1,355 @@
+{
+  "name": "hearthbound.project.library",
+  "description": "hearthbound.project.library.desc",
+  "icon": "minecraft:bookshelf",
+  "sort": 20,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:bookshelf",
+          "count": 15,
+          "icon": "minecraft:bookshelf"
+        },
+        {
+          "block": "minecraft:lectern",
+          "count": 1,
+          "icon": "minecraft:lectern"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 30,
+          "rank": "acquaintance",
+          "enchant": "minecraft:efficiency=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 30,
+          "rank": "acquaintance",
+          "enchant": "minecraft:unbreaking=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 32,
+          "rank": "acquaintance",
+          "enchant": "minecraft:protection=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 32,
+          "rank": "acquaintance",
+          "enchant": "minecraft:sharpness=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 30,
+          "rank": "acquaintance",
+          "enchant": "minecraft:power=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 28,
+          "rank": "acquaintance",
+          "enchant": "minecraft:feather_falling=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:book",
+          "count": 2,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:lantern",
+          "count": 2,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:paper",
+          "count": 24,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:book",
+          "count": 4,
+          "price": 8,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:bookshelf",
+          "count": 30,
+          "icon": "minecraft:bookshelf"
+        },
+        {
+          "block": "minecraft:lectern",
+          "count": 2,
+          "icon": "minecraft:lectern"
+        },
+        {
+          "block": "#minecraft:candles",
+          "count": 4,
+          "icon": "minecraft:candle"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 60,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:efficiency=3"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 55,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:unbreaking=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 60,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:protection=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 60,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:sharpness=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 70,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:fortune=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 70,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:looting=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 75,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:silk_touch=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 50,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:respiration=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:name_tag",
+          "count": 1,
+          "price": 25,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:clock",
+          "count": 1,
+          "price": 20,
+          "rank": "friend"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:bookshelf",
+          "count": 50,
+          "icon": "minecraft:bookshelf"
+        },
+        {
+          "block": "minecraft:chiseled_bookshelf",
+          "count": 4,
+          "icon": "minecraft:chiseled_bookshelf"
+        },
+        {
+          "block": "minecraft:lectern",
+          "count": 3,
+          "icon": "minecraft:lectern"
+        },
+        {
+          "block": "#minecraft:candles",
+          "count": 8,
+          "icon": "minecraft:candle"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 120,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:efficiency=4"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 110,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:unbreaking=3"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 120,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:protection=3"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 130,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:sharpness=4"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 150,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:fortune=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 150,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:looting=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 140,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:infinity=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 120,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:feather_falling=4"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 260,
+          "rank": "hero",
+          "age": "ascension:diamond",
+          "enchant": "minecraft:mending=1"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "price": 240,
+          "rank": "hero",
+          "age": "ascension:diamond",
+          "enchant": "minecraft:fortune=3"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

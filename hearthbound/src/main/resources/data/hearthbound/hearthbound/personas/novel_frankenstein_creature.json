@@ -1,0 +1,63 @@
+{
+  "roles": [],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:book",
+  "likes": [
+    "minecraft:book",
+    "minecraft:bread",
+    "minecraft:apple",
+    "#minecraft:small_flowers",
+    "minecraft:lantern"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:book"
+    },
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "keepsake": {
+          "item": "minecraft:leather_chestplate",
+          "name": "hearthbound.keepsake.novel_frankenstein_creature",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "#minecraft:small_flowers"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

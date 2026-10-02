@@ -1,0 +1,20 @@
+{
+  "kind": "hall",
+  "width": 11,
+  "depth": 9,
+  "floors": 1,
+  "cost": {
+    "wood": 20,
+    "stone": 15
+  },
+  "produces": {
+    "goods": 1
+  },
+  "roles": [
+    "elder",
+    "builder"
+  ],
+  "icon": "minecraft:bell",
+  "min_tier": 0,
+  "residents": 2
+}

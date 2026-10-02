@@ -1,0 +1,22 @@
+{
+  "age": "ascension:iron",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:bell",
+  "sort": 514,
+  "objectives": [
+    {
+      "type": "hearthbound:village_tier",
+      "count": 2
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 60
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

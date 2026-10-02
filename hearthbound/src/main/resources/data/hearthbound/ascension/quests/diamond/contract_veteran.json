@@ -1,0 +1,22 @@
+{
+  "age": "ascension:diamond",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:writable_book",
+  "sort": 515,
+  "objectives": [
+    {
+      "type": "hearthbound:contracts",
+      "count": 20
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:skill_point",
+      "amount": 1
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

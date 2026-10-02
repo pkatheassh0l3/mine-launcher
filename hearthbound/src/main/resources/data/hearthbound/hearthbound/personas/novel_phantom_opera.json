@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "villager",
+    "innkeeper",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:note_block",
+  "likes": [
+    "minecraft:note_block",
+    "#minecraft:candles",
+    "minecraft:paper",
+    "minecraft:poppy"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:note_block"
+    },
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "#minecraft:candles"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "items": [
+          "minecraft:note_block*2"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

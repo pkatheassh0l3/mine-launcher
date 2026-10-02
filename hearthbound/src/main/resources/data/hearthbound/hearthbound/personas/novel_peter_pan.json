@@ -1,0 +1,59 @@
+{
+  "roles": [],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:feather",
+  "likes": [
+    "minecraft:feather",
+    "minecraft:cookie",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 30,
+        "xp": 50
+      },
+      "entity": "minecraft:pillager"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:feather"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "items": [
+          "minecraft:glow_berries*8"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

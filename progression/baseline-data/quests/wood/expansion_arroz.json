@@ -1,0 +1,22 @@
+{
+  "title": "Arroz para la despensa",
+  "category": "ascension:farming",
+  "description": "El arroz amplía las recetas de Farmer's Delight y sus expansiones.",
+  "objectives": [
+    {
+      "item": "farmersdelight:rice",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "farmersdelight:rice",
+  "difficulty": "ascension:common",
+  "sort": 603,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

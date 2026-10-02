@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "farmersdelight:cutting_board",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "farmersdelight:cutting_board",
+  "age": "ascension:stone",
+  "description": "Consigue farmersdelight:cutting_board para explorar el contenido de esta era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Preparar ingredientes"
+}

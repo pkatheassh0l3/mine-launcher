@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "elder",
+    "innkeeper",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:chain",
+  "likes": [
+    "minecraft:chain",
+    "minecraft:red_dye",
+    "minecraft:cherry_sapling",
+    "#minecraft:candles"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:chain"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:red_dye"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "items": [
+          "minecraft:experience_bottle*3"
+        ]
+      },
+      "item": "minecraft:cherry_sapling"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

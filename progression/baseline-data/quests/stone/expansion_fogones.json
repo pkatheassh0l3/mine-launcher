@@ -1,0 +1,25 @@
+{
+  "title": "Cocinar sin máquinas",
+  "category": "ascension:survival",
+  "description": "La hoguera permite cocinar mientras preparas una cocina más completa.",
+  "objectives": [
+    {
+      "block": "minecraft:campfire",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "minecraft:campfire",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/furnace"
+  ],
+  "sort": 614,
+  "age": "ascension:stone",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "mage",
+    "priest",
+    "farmer"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:prismarine_shard",
+  "likes": [
+    "minecraft:kelp",
+    "minecraft:salmon",
+    "minecraft:blue_orchid",
+    "minecraft:prismarine_shard"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 5,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "entity": "minecraft:drowned"
+    },
+    {
+      "type": "deliver",
+      "count": 2,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:fishing_rod",
+          "name": "hearthbound.keepsake.chiv_lady_lake",
+          "enchant": "minecraft:luck_of_the_sea=2,minecraft:lure=2"
+        }
+      },
+      "item": "minecraft:iron_sword"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

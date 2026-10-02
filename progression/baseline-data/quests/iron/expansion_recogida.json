@@ -1,0 +1,25 @@
+{
+  "title": "Recogida automática",
+  "category": "ascension:crafting",
+  "description": "Configura filtros para no llenar la mochila con objetos que no te interesen.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:pickup_upgrade",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:pickup_upgrade",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_mochila_hierro"
+  ],
+  "sort": 642,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

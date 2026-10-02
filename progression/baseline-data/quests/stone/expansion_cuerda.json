@@ -1,0 +1,25 @@
+{
+  "title": "Aprovechar la paja",
+  "category": "ascension:crafting",
+  "description": "Corta hierba con cuchillo para conseguir paja y fabricar cuerdas.",
+  "objectives": [
+    {
+      "item": "farmersdelight:rope",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "farmersdelight:rope",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/pack_cuchillo"
+  ],
+  "sort": 611,
+  "age": "ascension:stone",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ]
+}

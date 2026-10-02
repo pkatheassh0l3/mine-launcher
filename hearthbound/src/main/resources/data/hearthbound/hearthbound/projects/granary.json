@@ -1,0 +1,225 @@
+{
+  "name": "hearthbound.project.granary",
+  "description": "hearthbound.project.granary.desc",
+  "icon": "minecraft:hay_block",
+  "sort": 10,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 0,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:composter",
+          "count": 1,
+          "icon": "minecraft:composter"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 8,
+          "icon": "minecraft:hay_block"
+        },
+        {
+          "block": "#minecraft:crops",
+          "count": 12,
+          "icon": "minecraft:wheat"
+        }
+      ],
+      "reward": {
+        "reputation": 40,
+        "coins": 20,
+        "xp": 90
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:bread",
+          "count": 6,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:pumpkin_pie",
+          "count": 2,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:cookie",
+          "count": 8,
+          "price": 3,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:carrot",
+          "count": 16,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:potato",
+          "count": 16,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:beetroot",
+          "count": 16,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:pumpkin",
+          "count": 6,
+          "price": 5,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:composter",
+          "count": 3,
+          "icon": "minecraft:composter"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 16,
+          "icon": "minecraft:hay_block"
+        },
+        {
+          "block": "#minecraft:crops",
+          "count": 32,
+          "icon": "minecraft:wheat"
+        },
+        {
+          "block": "minecraft:barrel",
+          "count": 4,
+          "icon": "minecraft:barrel"
+        }
+      ],
+      "reward": {
+        "reputation": 70,
+        "coins": 40,
+        "xp": 160
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:cake",
+          "count": 1,
+          "price": 10,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:golden_carrot",
+          "count": 4,
+          "price": 12,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:apple",
+          "count": 6,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:melon",
+          "count": 4,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:sugar_cane",
+          "count": 16,
+          "price": 5,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:composter",
+          "count": 4,
+          "icon": "minecraft:composter"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 32,
+          "icon": "minecraft:hay_block"
+        },
+        {
+          "block": "#minecraft:crops",
+          "count": 64,
+          "icon": "minecraft:wheat"
+        },
+        {
+          "block": "minecraft:beehive",
+          "count": 2,
+          "icon": "minecraft:beehive"
+        }
+      ],
+      "reward": {
+        "reputation": 110,
+        "coins": 70,
+        "xp": 260
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:glistering_melon_slice",
+          "count": 2,
+          "price": 14,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:honey_bottle",
+          "count": 3,
+          "price": 9,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:golden_carrot",
+          "count": 12,
+          "price": 30,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:honeycomb",
+          "count": 4,
+          "price": 10,
+          "rank": "ally"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

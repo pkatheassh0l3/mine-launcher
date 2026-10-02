@@ -6,6 +6,8 @@ if ($Version -notmatch '^\d+\.\d+\.\d+(\.\d+)?$') { throw 'La versión debe tene
 if (-not $OutputDirectory) { $OutputDirectory = Join-Path $PSScriptRoot "salida/v$Version" }
 $repo = (Get-Content (Join-Path $PSScriptRoot 'repo.txt') -Raw).Trim()
 $utf8 = New-Object Text.UTF8Encoding($false)
+$profileIcon = Join-Path $PSScriptRoot '../instalador/instance_icon.png'
+if (-not (Test-Path -LiteralPath $profileIcon)) { throw 'Falta la imagen del perfil.' }
 function Add-Json($zip, $path, $value) {
     $old = $zip.GetEntry($path)
     if ($old) { $old.Delete() }
@@ -29,6 +31,12 @@ foreach ($tier in $cfg.tiers.PSObject.Properties) {
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot $tier.Value.package) -Destination $out
     $zip = [IO.Compression.ZipFile]::Open($out, 'Update')
     try {
+        # Modrinth importa icon.png directamente; el override permite también los importadores anteriores.
+        foreach ($iconEntry in @('icon.png', 'overrides/icon.png')) {
+            $oldIcon = $zip.GetEntry($iconEntry)
+            if ($oldIcon) { $oldIcon.Delete() }
+            [void][IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $profileIcon, $iconEntry)
+        }
         $reader = New-Object IO.StreamReader($zip.GetEntry('modrinth.index.json').Open())
         try { $index = $reader.ReadToEnd() | ConvertFrom-Json } finally { $reader.Dispose() }
         $index.name = $tier.Value.name
@@ -52,5 +60,6 @@ $release = [ordered]@{
 [IO.File]::WriteAllText((Join-Path $OutputDirectory 'versiones.json'), ($release | ConvertTo-Json -Depth 10), $utf8)
 Get-ChildItem -LiteralPath $OutputDirectory -File | Where-Object Extension -in '.mrpack','.exe' | Get-FileHash -Algorithm SHA256 | ForEach-Object { "$($_.Hash)  $([IO.Path]::GetFileName($_.Path))" } | Set-Content (Join-Path $OutputDirectory 'SHA256SUMS.txt') -Encoding ASCII
 Write-Host 'Preparación terminada. No se ha publicado en GitHub.'
+
 
 

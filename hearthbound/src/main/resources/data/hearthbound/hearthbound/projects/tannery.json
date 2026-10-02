@@ -1,0 +1,199 @@
+{
+  "name": "hearthbound.project.tannery",
+  "description": "hearthbound.project.tannery.desc",
+  "icon": "minecraft:cauldron",
+  "sort": 80,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:cauldron",
+          "count": 2,
+          "icon": "minecraft:cauldron"
+        },
+        {
+          "block": "minecraft:barrel",
+          "count": 2,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "#minecraft:wool",
+          "count": 4,
+          "icon": "minecraft:white_wool"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:leather_helmet",
+          "count": 1,
+          "price": 8,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:leather_chestplate",
+          "count": 1,
+          "price": 12,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:leather_leggings",
+          "count": 1,
+          "price": 10,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:leather_boots",
+          "count": 1,
+          "price": 7,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:leather",
+          "count": 6,
+          "price": 8,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:rabbit_hide",
+          "count": 8,
+          "price": 6,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:cauldron",
+          "count": 3,
+          "icon": "minecraft:cauldron"
+        },
+        {
+          "block": "minecraft:barrel",
+          "count": 4,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 4,
+          "icon": "minecraft:hay_block"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:saddle",
+          "count": 1,
+          "price": 40,
+          "rank": "friend",
+          "age": "ascension:copper"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:leather_horse_armor",
+          "count": 1,
+          "price": 30,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:lead",
+          "count": 2,
+          "price": 14,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:leather_chestplate",
+          "count": 1,
+          "price": 40,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:protection=2"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:cauldron",
+          "count": 4,
+          "icon": "minecraft:cauldron"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 8,
+          "icon": "minecraft:hay_block"
+        },
+        {
+          "block": "#minecraft:wool_carpets",
+          "count": 8,
+          "icon": "minecraft:red_carpet"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:iron_horse_armor",
+          "count": 1,
+          "price": 110,
+          "rank": "ally",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:golden_horse_armor",
+          "count": 1,
+          "price": 140,
+          "rank": "ally",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:bundle",
+          "count": 1,
+          "price": 30,
+          "rank": "ally"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

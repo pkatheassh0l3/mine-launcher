@@ -1,0 +1,25 @@
+{
+  "title": "Una cuenca para procesar",
+  "category": "ascension:automation",
+  "description": "Prepara la cuenca bajo la mezcladora o la prensa según la receta.",
+  "objectives": [
+    {
+      "block": "create:basin",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "create:basin",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_mezcladora"
+  ],
+  "sort": 632,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

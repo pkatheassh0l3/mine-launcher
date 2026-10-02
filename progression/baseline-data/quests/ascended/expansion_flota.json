@@ -1,0 +1,25 @@
+{
+  "title": "Preparar una flota",
+  "category": "ascension:mastery",
+  "description": "Un reto opcional para ampliar tu infraestructura aérea.",
+  "objectives": [
+    {
+      "item": "aeronautics:smart_propeller",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "aeronautics:smart_propeller",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:ascended/pack_nave_avanzada"
+  ],
+  "sort": 682,
+  "age": "ascension:ascended",
+  "rewards": [
+    {
+      "amount": 200,
+      "type": "xp"
+    }
+  ]
+}

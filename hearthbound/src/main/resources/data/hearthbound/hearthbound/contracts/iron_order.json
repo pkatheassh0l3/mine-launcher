@@ -1,0 +1,21 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.iron_order",
+  "item": "minecraft:iron_ingot",
+  "count": [
+    4,
+    8
+  ],
+  "reward": {
+    "coins": [
+      18,
+      26
+    ],
+    "reputation": 18,
+    "xp": 45
+  },
+  "rank": "acquaintance",
+  "tier": 1,
+  "weight": 7,
+  "age": "ascension:iron"
+}

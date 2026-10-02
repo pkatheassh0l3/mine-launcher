@@ -1,0 +1,25 @@
+{
+  "title": "Sustentación de largo alcance",
+  "category": "ascension:mastery",
+  "description": "Produce materiales de levitación avanzada sin depender de recompensas gratuitas.",
+  "objectives": [
+    {
+      "item": "aeronautics:pearlescent_levitite",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "aeronautics:pearlescent_levitite",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:ascended/pack_levitita"
+  ],
+  "sort": 681,
+  "age": "ascension:ascended",
+  "rewards": [
+    {
+      "amount": 200,
+      "type": "xp"
+    }
+  ]
+}

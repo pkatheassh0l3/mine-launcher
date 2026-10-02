@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "villager",
+    "builder",
+    "farmer",
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:iron_sword",
+  "likes": [
+    "minecraft:iron_ingot",
+    "#minecraft:logs",
+    "minecraft:bread",
+    "minecraft:shield"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "defend",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:iron_sword",
+          "name": "hearthbound.keepsake.chiv_arthur",
+          "enchant": "minecraft:sharpness=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

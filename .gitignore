@@ -4,3 +4,5 @@ publicar/salida/
 instalador/*.syso
 
 /publicar/copias-instalador/
+/server-defaults/build/
+/progression/ascension.jar

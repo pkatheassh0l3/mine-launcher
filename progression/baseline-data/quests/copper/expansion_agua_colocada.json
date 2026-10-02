@@ -1,0 +1,26 @@
+{
+  "title": "Una fuente de movimiento",
+  "category": "ascension:automation",
+  "description": "Coloca una rueda y haz pasar agua por ella. La misión detecta la colocación; consulta Ponder para el montaje. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "block": "create:water_wheel",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "create:water_wheel",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:copper/pack_rueda"
+  ],
+  "sort": 618,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

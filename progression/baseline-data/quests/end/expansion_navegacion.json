@@ -1,0 +1,25 @@
+{
+  "title": "Planificar la ruta",
+  "category": "ascension:automation",
+  "description": "Organiza tus recorridos con los sistemas de navegación de Simulated.",
+  "objectives": [
+    {
+      "item": "simulated:navigation_table",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "simulated:navigation_table",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/expansion_altimetro"
+  ],
+  "sort": 677,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ]
+}

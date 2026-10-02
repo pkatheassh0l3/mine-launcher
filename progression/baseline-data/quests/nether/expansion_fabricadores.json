@@ -1,0 +1,25 @@
+{
+  "title": "Fabricación mecánica",
+  "category": "ascension:automation",
+  "description": "Con 21 fabricadores puedes montar la receta de las ruedas de trituración.",
+  "objectives": [
+    {
+      "item": "create:mechanical_crafter",
+      "type": "obtain",
+      "count": 21
+    }
+  ],
+  "icon": "create:mechanical_crafter",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_laton"
+  ],
+  "sort": 659,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

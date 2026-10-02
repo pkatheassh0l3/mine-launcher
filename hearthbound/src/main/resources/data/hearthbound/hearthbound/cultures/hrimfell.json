@@ -1,0 +1,650 @@
+{
+  "name": "hearthbound.culture.hrimfell",
+  "description": "hearthbound.culture.hrimfell.desc",
+  "people": "hearthbound.culture.hrimfell.people",
+  "color": "#8FD3F0",
+  "icon": "minecraft:snowball",
+  "weight": 10,
+  "roof": "steep",
+  "model": {
+    "scale": 1.0,
+    "ears": false,
+    "skin": "hrimfell"
+  },
+  "biomes": [
+    "minecraft:snowy_plains",
+    "minecraft:snowy_taiga",
+    "minecraft:grove",
+    "minecraft:ice_spikes",
+    "minecraft:snowy_slopes"
+  ],
+  "palette": {
+    "foundation": "minecraft:cobblestone",
+    "floor": "minecraft:spruce_planks",
+    "wall": "minecraft:spruce_planks",
+    "pillar": "minecraft:spruce_log",
+    "trim": "minecraft:polished_andesite",
+    "roof_stairs": "minecraft:spruce_stairs",
+    "roof_slab": "minecraft:spruce_slab",
+    "roof_block": "minecraft:spruce_planks",
+    "window": "minecraft:glass_pane",
+    "door": "minecraft:spruce_door",
+    "fence": "minecraft:spruce_fence",
+    "gate": "minecraft:spruce_fence_gate",
+    "light": "minecraft:lantern",
+    "accent": "minecraft:red_wool",
+    "carpet": "minecraft:red_carpet",
+    "banner_block": "minecraft:red_wool",
+    "bed": "minecraft:red_bed",
+    "crop": "minecraft:beetroots",
+    "table": "minecraft:spruce_pressure_plate",
+    "seat": "minecraft:spruce_stairs",
+    "decor": "minecraft:potted_fern",
+    "plaza": "minecraft:polished_andesite",
+    "path": "minecraft:dirt_path",
+    "special_window": "minecraft:light_blue_stained_glass_pane"
+  },
+  "names": {
+    "village_prefix": [
+      "Frost",
+      "Hrim",
+      "Isen",
+      "Kald",
+      "Skjold",
+      "Snae",
+      "Vind",
+      "Ulf",
+      "Orn",
+      "Bjarn"
+    ],
+    "village_suffix": [
+      "heim",
+      "vik",
+      "fjord",
+      "by",
+      "stad",
+      "holt"
+    ],
+    "male": [
+      "Arne",
+      "Bjorn",
+      "Eirik",
+      "Gunnar",
+      "Halvard",
+      "Ivar",
+      "Leif",
+      "Ragnar",
+      "Sigurd",
+      "Torvald",
+      "Ulf"
+    ],
+    "female": [
+      "Astrid",
+      "Freya",
+      "Gudrun",
+      "Helga",
+      "Ingrid",
+      "Liv",
+      "Ragnhild",
+      "Sigrid",
+      "Solveig",
+      "Thyra"
+    ],
+    "family": [
+      "Frostborn",
+      "Ironside",
+      "Ravenhelm",
+      "Snowmane",
+      "Stormcaller",
+      "Wolfsbane"
+    ]
+  },
+  "plan": [
+    "hall",
+    "house",
+    "tavern",
+    "farm",
+    "house",
+    "forge",
+    "watchtower",
+    "house",
+    "market",
+    "house",
+    "shrine",
+    "storehouse",
+    "manor",
+    "watchtower",
+    "mage_tower",
+    "farm",
+    "manor",
+    "house",
+    "tavern",
+    "house"
+  ],
+  "trades": [
+    {
+      "type": "sell",
+      "item": "minecraft:bread",
+      "count": 4,
+      "price": 3,
+      "role": "farmer",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:granary",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:baked_potato",
+      "count": 6,
+      "price": 3,
+      "role": "farmer",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:granary",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:cooked_beef",
+      "count": 4,
+      "price": 5,
+      "role": "innkeeper",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:butcher",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:torch",
+      "count": 16,
+      "price": 4,
+      "role": "merchant",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:cartographer",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:bundle",
+      "count": 1,
+      "price": 12,
+      "role": "merchant",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:tannery",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:map",
+      "count": 1,
+      "price": 10,
+      "role": "merchant",
+      "rank": "acquaintance",
+      "tier": 0,
+      "building": "hearthbound:cartographer",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:saddle",
+      "count": 1,
+      "price": 45,
+      "role": "merchant",
+      "rank": "friend",
+      "tier": 1,
+      "building": "hearthbound:tannery",
+      "building_level": 2
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:name_tag",
+      "count": 1,
+      "price": 30,
+      "role": "merchant",
+      "rank": "friend",
+      "tier": 1,
+      "building": "hearthbound:library",
+      "building_level": 2
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:stone_pickaxe",
+      "count": 1,
+      "price": 6,
+      "role": "smith",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:toolsmith",
+      "building_level": 1,
+      "age": "ascension:stone"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:stone_sword",
+      "count": 1,
+      "price": 6,
+      "role": "smith",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:weaponsmith",
+      "building_level": 1,
+      "age": "ascension:stone"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:leather_chestplate",
+      "count": 1,
+      "price": 10,
+      "role": "smith",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:tannery",
+      "building_level": 1,
+      "age": "ascension:stone"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:shield",
+      "count": 1,
+      "price": 20,
+      "role": "smith",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:armory",
+      "building_level": 1,
+      "age": "ascension:chainmail"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:chainmail_chestplate",
+      "count": 1,
+      "price": 35,
+      "role": "smith",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:armory",
+      "building_level": 1,
+      "age": "ascension:chainmail"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:chainmail_helmet",
+      "count": 1,
+      "price": 22,
+      "role": "smith",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:armory",
+      "building_level": 1,
+      "age": "ascension:chainmail"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:iron_pickaxe",
+      "count": 1,
+      "price": 60,
+      "role": "smith",
+      "rank": "friend",
+      "tier": 2,
+      "building": "hearthbound:toolsmith",
+      "building_level": 2,
+      "age": "ascension:iron"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:iron_sword",
+      "count": 1,
+      "price": 55,
+      "role": "smith",
+      "rank": "friend",
+      "tier": 2,
+      "building": "hearthbound:weaponsmith",
+      "building_level": 2,
+      "age": "ascension:iron"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:iron_chestplate",
+      "count": 1,
+      "price": 90,
+      "role": "smith",
+      "rank": "friend",
+      "tier": 2,
+      "building": "hearthbound:armory",
+      "building_level": 2,
+      "age": "ascension:iron"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:diamond_sword",
+      "count": 1,
+      "price": 380,
+      "role": "smith",
+      "rank": "ally",
+      "tier": 3,
+      "building": "hearthbound:weaponsmith",
+      "building_level": 3,
+      "age": "ascension:diamond"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:experience_bottle",
+      "count": 2,
+      "price": 14,
+      "role": "mage",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:apothecary",
+      "building_level": 2
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:lapis_lazuli",
+      "count": 8,
+      "price": 12,
+      "role": "mage",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:apothecary",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:amethyst_shard",
+      "count": 4,
+      "price": 10,
+      "role": "mage",
+      "rank": "friend",
+      "tier": 1,
+      "building": "hearthbound:apothecary",
+      "building_level": 2
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:ender_pearl",
+      "count": 1,
+      "price": 40,
+      "role": "mage",
+      "rank": "ally",
+      "tier": 3,
+      "building": "hearthbound:apothecary",
+      "building_level": 2,
+      "age": "ascension:nether"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:golden_apple",
+      "count": 1,
+      "price": 90,
+      "role": "priest",
+      "rank": "friend",
+      "tier": 2,
+      "building": "hearthbound:apothecary",
+      "building_level": 3
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:wheat",
+      "count": 16,
+      "price": 4,
+      "role": "farmer",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:granary",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:rotten_flesh",
+      "count": 16,
+      "price": 3,
+      "role": "villager",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:apothecary",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:bone",
+      "count": 8,
+      "price": 3,
+      "role": "villager",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:butcher",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:string",
+      "count": 8,
+      "price": 4,
+      "role": "merchant",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:weavery",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:leather",
+      "count": 4,
+      "price": 6,
+      "role": "smith",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:tannery",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:coal",
+      "count": 8,
+      "price": 5,
+      "role": "smith",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:toolsmith",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:iron_ingot",
+      "count": 4,
+      "price": 14,
+      "role": "smith",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:armory",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:gold_ingot",
+      "count": 2,
+      "price": 10,
+      "role": "merchant",
+      "rank": "acquaintance",
+      "tier": 1,
+      "building": "hearthbound:toolsmith",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:emerald",
+      "count": 1,
+      "price": 10,
+      "role": "merchant",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:cartographer",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:paper",
+      "count": 16,
+      "price": 6,
+      "role": "mage",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:library",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:cooked_salmon",
+      "count": 6,
+      "price": 5,
+      "role": "innkeeper",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:fishery",
+      "building_level": 1
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:leather_boots",
+      "count": 1,
+      "price": 8,
+      "role": "smith",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:tannery",
+      "building_level": 1,
+      "age": "ascension:stone"
+    },
+    {
+      "type": "sell",
+      "item": "minecraft:iron_axe",
+      "count": 1,
+      "price": 55,
+      "role": "smith",
+      "rank": "friend",
+      "tier": 2,
+      "building": "hearthbound:weaponsmith",
+      "building_level": 2,
+      "age": "ascension:iron"
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:cod",
+      "count": 8,
+      "price": 4,
+      "role": "innkeeper",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:fishery",
+      "building_level": 1
+    },
+    {
+      "type": "buy",
+      "item": "minecraft:rabbit_hide",
+      "count": 4,
+      "price": 5,
+      "role": "merchant",
+      "rank": "stranger",
+      "tier": 0,
+      "building": "hearthbound:tannery",
+      "building_level": 1
+    }
+  ],
+  "blessings": [
+    {
+      "effect": "minecraft:luck",
+      "amplifier": 0,
+      "rank": "stranger"
+    },
+    {
+      "effect": "minecraft:regeneration",
+      "amplifier": 0,
+      "rank": "acquaintance"
+    },
+    {
+      "effect": "minecraft:haste",
+      "amplifier": 0,
+      "rank": "friend"
+    },
+    {
+      "effect": "minecraft:resistance",
+      "amplifier": 0,
+      "rank": "ally",
+      "age": "ascension:iron"
+    },
+    {
+      "effect": "minecraft:strength",
+      "amplifier": 0,
+      "rank": "friend",
+      "age": "ascension:iron"
+    }
+  ],
+  "structure_chance": 1.0,
+  "structures": {
+    "forge": [
+      "hearthbound:rs/giant_taiga/armorer_house_1",
+      "hearthbound:rs/giant_taiga/armorer_house_2",
+      "hearthbound:rs/giant_taiga/tool_smith_1",
+      "hearthbound:rs/giant_taiga/weapon_smith_1"
+    ],
+    "market": [
+      "hearthbound:rs/giant_taiga/butcher_shop_1",
+      "hearthbound:rs/giant_taiga/butcher_shop_2",
+      "hearthbound:rs/giant_taiga/cartographer_house_1",
+      "hearthbound:rs/giant_taiga/fletcher_house_1",
+      "hearthbound:rs/giant_taiga/tannery_1"
+    ],
+    "farm": [
+      "hearthbound:rs/giant_taiga/farm_1",
+      "hearthbound:rs/giant_taiga/farm_2"
+    ],
+    "mage_tower": [
+      "hearthbound:rs/giant_taiga/library_1"
+    ],
+    "storehouse": [
+      "hearthbound:rs/giant_taiga/masons_house_1",
+      "hearthbound:rs/giant_taiga/masons_house_2",
+      "hearthbound:rs/giant_taiga/shepherds_house_1"
+    ],
+    "manor": [
+      "hearthbound:rs/giant_taiga/medium_house_1",
+      "hearthbound:rs/giant_taiga/medium_house_2",
+      "hearthbound:rs/giant_taiga/medium_house_3"
+    ],
+    "house": [
+      "hearthbound:rs/giant_taiga/small_house_1",
+      "hearthbound:rs/giant_taiga/small_house_2",
+      "hearthbound:rs/giant_taiga/small_house_3",
+      "hearthbound:rs/giant_taiga/small_house_4",
+      "hearthbound:rs/giant_taiga/small_house_5",
+      "hearthbound:rs/giant_taiga/small_house_6",
+      "hearthbound:rs/giant_taiga/small_house_7",
+      "hearthbound:rs/giant_taiga/small_house_8"
+    ],
+    "shrine": [
+      "hearthbound:rs/giant_taiga/temple_1"
+    ]
+  },
+  "skins": {
+    "farmer": [
+      "default",
+      "default",
+      "hearthbound:textures/entity/settler/extra/farmer_sdzen_7.png"
+    ],
+    "innkeeper": [
+      "default",
+      "hearthbound:textures/entity/settler/extra/bartender_sdzen.png"
+    ]
+  },
+  "relations": {
+    "valdoran": -15,
+    "sylvaran": 0,
+    "durnhal": 20,
+    "solarys": -30,
+    "brumaverde": -20
+  }
+}

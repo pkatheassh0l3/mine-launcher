@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "builder",
+    "smith"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:stone_bricks",
+  "likes": [
+    "minecraft:stone_bricks",
+    "minecraft:honeycomb",
+    "minecraft:feather",
+    "minecraft:iron_ingot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      },
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 80,
+        "xp": 150,
+        "keepsake": {
+          "item": "minecraft:iron_pickaxe",
+          "name": "hearthbound.keepsake.myth_daedalus",
+          "enchant": "minecraft:efficiency=3,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

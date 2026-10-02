@@ -1,0 +1,25 @@
+{
+  "title": "Distribuir la fuerza",
+  "category": "ascension:automation",
+  "description": "Los ejes conectan las máquinas a una fuente de movimiento.",
+  "objectives": [
+    {
+      "item": "create:shaft",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "create:shaft",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:copper/expansion_aleacion"
+  ],
+  "sort": 617,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ]
+}

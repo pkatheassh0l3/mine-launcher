@@ -1,0 +1,22 @@
+{
+  "title": "Flores de los Ribbits",
+  "category": "ascension:exploration",
+  "description": "Explora pantanos sin necesidad de combatir con sus habitantes.",
+  "objectives": [
+    {
+      "item": "ribbits:swamp_daisy",
+      "type": "obtain",
+      "count": 3
+    }
+  ],
+  "icon": "ribbits:swamp_daisy",
+  "difficulty": "ascension:common",
+  "sort": 607,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

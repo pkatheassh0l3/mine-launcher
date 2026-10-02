@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "unusualfishmod:raw_aero_mono",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "unusualfishmod:raw_aero_mono",
+  "age": "ascension:wood",
+  "description": "Consigue unusualfishmod:raw_aero_mono para explorar el contenido de esta era.",
+  "category": "ascension:fishing",
+  "sort": 500,
+  "title": "Pesca poco habitual"
+}

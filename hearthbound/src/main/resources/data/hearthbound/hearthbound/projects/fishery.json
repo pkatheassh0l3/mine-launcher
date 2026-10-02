@@ -1,0 +1,207 @@
+{
+  "name": "hearthbound.project.fishery",
+  "description": "hearthbound.project.fishery.desc",
+  "icon": "minecraft:fishing_rod",
+  "sort": 60,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 0,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:barrel",
+          "count": 2,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "minecraft:water",
+          "count": 12,
+          "icon": "minecraft:water_bucket"
+        },
+        {
+          "block": "#minecraft:campfires",
+          "count": 1,
+          "icon": "minecraft:campfire"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_cod",
+          "count": 6,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:cooked_salmon",
+          "count": 4,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:fishing_rod",
+          "count": 1,
+          "price": 10,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:cod",
+          "count": 12,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:salmon",
+          "count": 8,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:string",
+          "count": 12,
+          "price": 4,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:barrel",
+          "count": 4,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "minecraft:water",
+          "count": 24,
+          "icon": "minecraft:water_bucket"
+        },
+        {
+          "block": "minecraft:lantern",
+          "count": 4,
+          "icon": "minecraft:lantern"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:fishing_rod",
+          "count": 1,
+          "price": 40,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:lure=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:tropical_fish_bucket",
+          "count": 1,
+          "price": 20,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:prismarine_crystals",
+          "count": 4,
+          "price": 18,
+          "rank": "friend"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:pufferfish",
+          "count": 2,
+          "price": 8,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:tropical_fish",
+          "count": 4,
+          "price": 8,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:barrel",
+          "count": 6,
+          "icon": "minecraft:barrel"
+        },
+        {
+          "block": "minecraft:water",
+          "count": 48,
+          "icon": "minecraft:water_bucket"
+        },
+        {
+          "block": "minecraft:sea_lantern",
+          "count": 2,
+          "icon": "minecraft:sea_lantern"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:fishing_rod",
+          "count": 1,
+          "price": 110,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:luck_of_the_sea=3,minecraft:lure=3"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:nautilus_shell",
+          "count": 1,
+          "price": 60,
+          "rank": "ally",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:heart_of_the_sea",
+          "count": 1,
+          "price": 420,
+          "rank": "hero",
+          "age": "ascension:diamond"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "stackedblocks:stacked_oak_logs",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "stackedblocks:stacked_oak_logs",
+  "age": "ascension:wood",
+  "description": "Consigue stackedblocks:stacked_oak_logs para explorar el contenido de esta era.",
+  "category": "ascension:building",
+  "sort": 500,
+  "title": "Almacén decorativo"
+}

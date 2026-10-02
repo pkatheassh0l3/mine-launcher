@@ -1,0 +1,23 @@
+{
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:backpack",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "sophisticatedbackpacks:backpack",
+  "age": "ascension:chainmail",
+  "description": "Consigue sophisticatedbackpacks:backpack para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:exploration",
+  "sort": 500,
+  "title": "Equiparse para viajar",
+  "gate": true
+}

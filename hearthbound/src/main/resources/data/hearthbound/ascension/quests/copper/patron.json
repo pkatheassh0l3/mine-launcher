@@ -1,0 +1,22 @@
+{
+  "age": "ascension:copper",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:chest",
+  "sort": 508,
+  "objectives": [
+    {
+      "type": "hearthbound:donate",
+      "count": 100
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 30
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

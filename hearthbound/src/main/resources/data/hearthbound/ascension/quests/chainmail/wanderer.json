@@ -1,0 +1,22 @@
+{
+  "age": "ascension:chainmail",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:filled_map",
+  "sort": 510,
+  "objectives": [
+    {
+      "type": "hearthbound:discover",
+      "count": 3
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 40
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

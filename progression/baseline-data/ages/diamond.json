@@ -1,0 +1,34 @@
+{
+  "order": 5,
+  "title": "ascension.age.diamond",
+  "subtitle": "ascension.age.diamond.subtitle",
+  "icon": "minecraft:diamond_pickaxe",
+  "color": "#5BE3EE",
+  "locks": {
+    "items": [
+      "minecraft:diamond_pickaxe",
+      "minecraft:diamond_axe",
+      "minecraft:diamond_sword",
+      "minecraft:diamond_shovel",
+      "minecraft:diamond_hoe",
+      "minecraft:diamond_helmet",
+      "minecraft:diamond_chestplate",
+      "minecraft:diamond_leggings",
+      "minecraft:diamond_boots",
+      "minecraft:diamond_horse_armor",
+      "minecraft:enchanting_table",
+      "minecraft:jukebox",
+      "farmersdelight:diamond_knife",
+      "sophisticatedbackpacks:diamond_backpack",
+      "sophisticatedbackpacks:advanced_*",
+      "sophisticatedbackpacks:stack_upgrade_tier_2",
+      "sophisticatedbackpacks:stack_upgrade_tier_3",
+      "create:extendo_grip",
+      "create:potato_cannon",
+      "crittersandcompanions:diamond_dragonfly_armor",
+      "crittersandcompanions:pearl_necklace_2",
+      "sophisticatedbackpacks:stack_upgrade_*_to_tier_2_conversion",
+      "sophisticatedbackpacks:stack_upgrade_*_to_tier_3_conversion"
+    ]
+  }
+}

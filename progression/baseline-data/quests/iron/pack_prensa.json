@@ -1,0 +1,26 @@
+{
+  "objectives": [
+    {
+      "item": "create:mechanical_press",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "create:mechanical_press",
+  "age": "ascension:iron",
+  "description": "Consigue create:mechanical_press para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Primer taller industrial",
+  "gate": true,
+  "requires": [
+    "ascension:copper/expansion_agua_colocada"
+  ]
+}

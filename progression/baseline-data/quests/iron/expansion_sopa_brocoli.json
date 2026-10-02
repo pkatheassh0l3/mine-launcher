@@ -1,0 +1,25 @@
+{
+  "title": "Cocina de Veggies Delight",
+  "category": "ascension:farming",
+  "description": "Aprovecha tu huerta ampliada para producir comidas nutritivas.",
+  "objectives": [
+    {
+      "item": "veggiesdelight:broccoli_soup",
+      "type": "eat",
+      "count": 2
+    }
+  ],
+  "icon": "veggiesdelight:broccoli_soup",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_olla_colocada"
+  ],
+  "sort": 639,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "smith",
+    "builder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:iron_axe",
+  "likes": [
+    "minecraft:honeycomb",
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:poppy"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "#minecraft:logs"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 120,
+        "xp": 160,
+        "keepsake": {
+          "item": "minecraft:iron_axe",
+          "name": "hearthbound.keepsake.novel_tin_woodman",
+          "enchant": "minecraft:efficiency=3,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:heart_of_the_sea"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

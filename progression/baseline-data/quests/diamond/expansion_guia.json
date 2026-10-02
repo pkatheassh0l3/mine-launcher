@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:diamond",
+  "icon": "minecraft:diamond_pickaxe",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Mejora el equipo y la logística. No necesitas romper tus herramientas o armaduras para cambiar de era: los objetivos de desgaste son retos opcionales."
+}

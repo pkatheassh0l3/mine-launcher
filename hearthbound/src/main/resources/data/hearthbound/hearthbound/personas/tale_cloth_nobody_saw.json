@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:white_wool",
+  "likes": [
+    "#minecraft:wool",
+    "minecraft:string",
+    "minecraft:gold_nugget",
+    "minecraft:emerald"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:wool"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 90
+      },
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:leather_chestplate",
+          "name": "hearthbound.keepsake.tale_cloth_nobody_saw",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=1"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

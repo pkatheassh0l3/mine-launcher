@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "elder",
+    "villager",
+    "mage"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:clock",
+  "likes": [
+    "minecraft:sweet_berries",
+    "minecraft:clock",
+    "minecraft:rose_bush",
+    "minecraft:cake"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "item": "minecraft:clock"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "items": [
+          "minecraft:cake*1"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

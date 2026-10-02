@@ -1,0 +1,25 @@
+{
+  "title": "Apilar materiales",
+  "category": "ascension:building",
+  "description": "Convierte el almacén en una construcción decorativa usando Stacked Blocks.",
+  "objectives": [
+    {
+      "block": "stackedblocks:stacked_oak_logs",
+      "type": "place",
+      "count": 2
+    }
+  ],
+  "icon": "stackedblocks:stacked_oak_logs",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/pack_stacked"
+  ],
+  "sort": 606,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

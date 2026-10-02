@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "merchant",
+    "villager",
+    "innkeeper",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:compass",
+  "likes": [
+    "minecraft:egg",
+    "minecraft:hay_block",
+    "minecraft:apple",
+    "minecraft:carrot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:egg"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "item": "minecraft:spyglass"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "items": [
+          "minecraft:emerald*2"
+        ]
+      },
+      "item": "minecraft:saddle"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

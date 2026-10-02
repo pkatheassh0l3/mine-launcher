@@ -1,0 +1,25 @@
+{
+  "title": "Recoger con filtros",
+  "category": "ascension:crafting",
+  "description": "Configura el imán avanzado para evitar objetos no deseados.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:advanced_magnet_upgrade",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:advanced_magnet_upgrade",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:diamond/pack_mochila_diamante"
+  ],
+  "sort": 651,
+  "age": "ascension:diamond",
+  "rewards": [
+    {
+      "amount": 140,
+      "type": "xp"
+    }
+  ]
+}

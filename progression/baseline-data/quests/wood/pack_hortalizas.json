@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "farmersdelight:tomato",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "farmersdelight:tomato",
+  "age": "ascension:wood",
+  "description": "Consigue farmersdelight:tomato para explorar el contenido de esta era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Huerta variada"
+}

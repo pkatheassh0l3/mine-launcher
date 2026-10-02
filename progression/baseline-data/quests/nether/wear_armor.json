@@ -1,0 +1,37 @@
+{
+  "age": "ascension:nether",
+  "category": "ascension:mastery",
+  "difficulty": "ascension:epic",
+  "sort": 380,
+  "gate": false,
+  "icon": "minecraft:netherite_chestplate",
+  "objectives": [
+    {
+      "type": "break",
+      "item": "minecraft:netherite_helmet",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:netherite_chestplate",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:netherite_leggings",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:netherite_boots",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "item": "minecraft:ender_pearl",
+      "count": 4
+    }
+  ]
+}

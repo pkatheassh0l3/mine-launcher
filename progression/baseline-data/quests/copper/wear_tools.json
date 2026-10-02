@@ -1,0 +1,40 @@
+{
+  "age": "ascension:copper",
+  "category": "ascension:mastery",
+  "difficulty": "ascension:epic",
+  "sort": 180,
+  "required_mods": [
+    "copperagebackport"
+  ],
+  "gate": false,
+  "icon": "minecraft:copper_pickaxe",
+  "objectives": [
+    {
+      "type": "break",
+      "item": "minecraft:copper_sword",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:copper_pickaxe",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:copper_axe",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:copper_shovel",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "order": 8,
+  "title": "ascension.age.ascended",
+  "subtitle": "ascension.age.ascended.subtitle",
+  "icon": "minecraft:elytra",
+  "color": "#F5C451",
+  "locks": {
+    "items": [
+      "aeronautics:gyroscopic_propeller_bearing",
+      "aeronautics:levitite",
+      "aeronautics:levitite_blend_bucket",
+      "aeronautics:pearlescent_levitite",
+      "aeronautics:smart_propeller",
+      "create:creative_blaze_cake",
+      "create:creative_crate",
+      "create:creative_fluid_tank",
+      "create:creative_motor",
+      "simulated:creative_physics_staff",
+      "sophisticatedbackpacks:infinity_upgrade",
+      "sophisticatedbackpacks:stack_upgrade_omega_tier",
+      "sophisticatedbackpacks:survival_infinity_upgrade",
+      "minecraft:elytra",
+      "minecraft:beacon",
+      "minecraft:conduit",
+      "minecraft:end_crystal",
+      "minecraft:*shulker_box",
+      "minecraft:mace"
+    ]
+  },
+  "showcase": [
+    "minecraft:elytra",
+    "aeronautics:levitite",
+    "aeronautics:pearlescent_levitite",
+    "aeronautics:smart_propeller",
+    "aeronautics:gyroscopic_propeller_bearing",
+    "sophisticatedbackpacks:survival_infinity_upgrade"
+  ]
+}

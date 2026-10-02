@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "spawn:snail_shell",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "spawn:snail_shell",
+  "age": "ascension:wood",
+  "description": "Consigue spawn:snail_shell para explorar el contenido de esta era.",
+  "category": "ascension:exploration",
+  "sort": 500,
+  "title": "Descubrir Spawn"
+}

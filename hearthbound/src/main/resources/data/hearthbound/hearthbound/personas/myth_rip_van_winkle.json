@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "villager",
+    "elder",
+    "farmer"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:red_bed",
+  "likes": [
+    "minecraft:bone",
+    "minecraft:bread",
+    "minecraft:mushroom_stew",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "entity": "minecraft:skeleton"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 110,
+        "items": [
+          "minecraft:cake*1"
+        ]
+      },
+      "item": "minecraft:bone"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

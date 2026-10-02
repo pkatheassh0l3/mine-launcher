@@ -1,0 +1,22 @@
+{
+  "age": "ascension:stone",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:experience_bottle",
+  "sort": 503,
+  "objectives": [
+    {
+      "type": "hearthbound:level",
+      "count": 5
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 25
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

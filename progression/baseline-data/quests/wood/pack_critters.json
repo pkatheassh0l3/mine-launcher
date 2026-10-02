@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "crittersandcompanions:pearl",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "crittersandcompanions:pearl",
+  "age": "ascension:wood",
+  "description": "Consigue crittersandcompanions:pearl para explorar el contenido de esta era.",
+  "category": "ascension:animals",
+  "sort": 500,
+  "title": "Tesoros de los animales"
+}

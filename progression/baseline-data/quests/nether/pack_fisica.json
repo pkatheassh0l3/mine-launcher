@@ -1,0 +1,23 @@
+{
+  "objectives": [
+    {
+      "item": "simulated:physics_assembler",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "simulated:physics_assembler",
+  "age": "ascension:nether",
+  "description": "Consigue simulated:physics_assembler para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Estructuras físicas con Sable",
+  "gate": true
+}

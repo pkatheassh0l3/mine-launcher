@@ -1,0 +1,23 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.north_fish",
+  "item": "minecraft:cod",
+  "count": [
+    8,
+    16
+  ],
+  "reward": {
+    "coins": [
+      8,
+      12
+    ],
+    "reputation": 12,
+    "xp": 30
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 10,
+  "cultures": [
+    "hrimfell"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "roles": [
+    "guard",
+    "villager",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:slime_ball",
+  "likes": [
+    "minecraft:cooked_beef",
+    "minecraft:leather",
+    "minecraft:cake",
+    "minecraft:sweet_berries"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50,
+        "items": [
+          "minecraft:gunpowder*2"
+        ]
+      },
+      "entity": "minecraft:creeper"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 65,
+        "xp": 125,
+        "keepsake": {
+          "item": "minecraft:leather_leggings",
+          "name": "hearthbound.keepsake.chiv_gawain",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:leather"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

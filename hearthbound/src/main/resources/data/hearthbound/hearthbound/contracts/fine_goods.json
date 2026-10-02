@@ -1,0 +1,20 @@
+{
+  "type": "donate",
+  "title": "hearthbound.contract.fine_goods",
+  "resource": "goods",
+  "count": [
+    15,
+    30
+  ],
+  "reward": {
+    "coins": [
+      8,
+      14
+    ],
+    "reputation": 14,
+    "xp": 30
+  },
+  "rank": "acquaintance",
+  "tier": 1,
+  "weight": 5
+}

@@ -1,0 +1,67 @@
+{
+  "roles": [
+    "farmer",
+    "villager",
+    "builder",
+    "smith"
+  ],
+  "gender": "male",
+  "weight": 12,
+  "icon": "minecraft:bread",
+  "likes": [
+    "minecraft:cake",
+    "minecraft:cookie",
+    "minecraft:pumpkin_pie",
+    "minecraft:bread"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40,
+        "items": [
+          "minecraft:emerald*1"
+        ]
+      },
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "hunt",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 60
+      },
+      "entity": "minecraft:zombie"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 40,
+        "xp": 90,
+        "keepsake": {
+          "item": "minecraft:shield",
+          "name": "hearthbound.keepsake.hearth_shield",
+          "enchant": "minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:cake"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

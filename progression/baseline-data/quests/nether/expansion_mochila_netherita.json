@@ -1,0 +1,25 @@
+{
+  "title": "Equipaje de netherita",
+  "category": "ascension:crafting",
+  "description": "La mejora final de material no desbloquea por sí sola las mejoras de End y Ascensión.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:netherite_backpack",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:netherite_backpack",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:diamond/pack_mochila_diamante"
+  ],
+  "sort": 670,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

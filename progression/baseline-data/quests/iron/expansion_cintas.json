@@ -1,0 +1,25 @@
+{
+  "title": "Transporte industrial",
+  "category": "ascension:automation",
+  "description": "Conecta dos ejes alineados con una cinta para mover objetos entre estaciones.",
+  "objectives": [
+    {
+      "item": "create:belt_connector",
+      "type": "obtain",
+      "count": 6
+    }
+  ],
+  "icon": "create:belt_connector",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_chapas_hierro"
+  ],
+  "sort": 635,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "villager",
+    "farmer",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:lily_pad",
+  "likes": [
+    "minecraft:lily_pad",
+    "minecraft:gold_nugget",
+    "minecraft:slime_ball",
+    "minecraft:blue_orchid"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:lily_pad"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:fishing_rod",
+          "name": "hearthbound.keepsake.tale_promise_at_the_well",
+          "enchant": "minecraft:luck_of_the_sea=2,minecraft:lure=2"
+        }
+      },
+      "entity": "minecraft:drowned"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

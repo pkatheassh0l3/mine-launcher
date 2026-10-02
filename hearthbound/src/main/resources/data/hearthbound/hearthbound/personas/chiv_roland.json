@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "guard",
+    "villager",
+    "builder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:bell",
+  "likes": [
+    "minecraft:iron_ingot",
+    "minecraft:bell",
+    "minecraft:bread",
+    "minecraft:shield"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "defend",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:vindicator"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 65,
+        "xp": 125,
+        "keepsake": {
+          "item": "minecraft:iron_sword",
+          "name": "hearthbound.keepsake.chiv_roland",
+          "enchant": "minecraft:unbreaking=3"
+        }
+      },
+      "item": "minecraft:bell"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

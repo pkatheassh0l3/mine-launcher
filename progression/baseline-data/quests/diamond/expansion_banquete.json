@@ -1,0 +1,25 @@
+{
+  "title": "Un banquete de More Delight",
+  "category": "ascension:farming",
+  "description": "Combina varias líneas de producción de tu cocina en una comida completa.",
+  "objectives": [
+    {
+      "item": "moredelight:loaded_hamburger",
+      "type": "eat",
+      "count": 2
+    }
+  ],
+  "icon": "moredelight:loaded_hamburger",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_sopa_zanahoria"
+  ],
+  "sort": 655,
+  "age": "ascension:diamond",
+  "rewards": [
+    {
+      "amount": 140,
+      "type": "xp"
+    }
+  ]
+}

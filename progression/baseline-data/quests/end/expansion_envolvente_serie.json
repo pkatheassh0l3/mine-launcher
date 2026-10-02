@@ -1,0 +1,26 @@
+{
+  "title": "Construir la envolvente",
+  "category": "ascension:automation",
+  "description": "Reúne suficientes bloques para empezar una aeronave. La misión mide materiales, no certifica el vuelo. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "item": "aeronautics:white_envelope",
+      "type": "obtain",
+      "count": 16
+    }
+  ],
+  "icon": "aeronautics:white_envelope",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/pack_envolvente"
+  ],
+  "sort": 674,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

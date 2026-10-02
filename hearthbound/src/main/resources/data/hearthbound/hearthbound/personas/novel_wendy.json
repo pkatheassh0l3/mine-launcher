@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "innkeeper",
+    "villager",
+    "farmer"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:string",
+  "likes": [
+    "minecraft:string",
+    "minecraft:book",
+    "minecraft:cookie",
+    "minecraft:milk_bucket",
+    "#minecraft:candles"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:string"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "items": [
+          "minecraft:cookie*12"
+        ]
+      },
+      "item": "minecraft:writable_book"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

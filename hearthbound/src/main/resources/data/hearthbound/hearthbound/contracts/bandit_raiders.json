@@ -1,0 +1,21 @@
+{
+  "type": "hunt",
+  "title": "hearthbound.contract.bandit_raiders",
+  "entity": "minecraft:pillager",
+  "count": [
+    3,
+    6
+  ],
+  "reward": {
+    "coins": [
+      24,
+      36
+    ],
+    "reputation": 22,
+    "xp": 60
+  },
+  "rank": "friend",
+  "tier": 2,
+  "weight": 5,
+  "age": "ascension:iron"
+}

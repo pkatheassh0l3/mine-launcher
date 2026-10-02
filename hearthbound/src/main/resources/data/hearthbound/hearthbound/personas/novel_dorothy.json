@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "farmer",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:wheat",
+  "likes": [
+    "minecraft:wheat",
+    "minecraft:bread",
+    "minecraft:egg",
+    "minecraft:apple",
+    "#minecraft:small_flowers"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 90
+      },
+      "entity": "minecraft:witch"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:iron_boots",
+          "name": "hearthbound.keepsake.novel_dorothy",
+          "enchant": "minecraft:feather_falling=2,minecraft:unbreaking=2"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

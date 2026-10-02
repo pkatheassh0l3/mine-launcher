@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "farmer",
+    "merchant",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:wheat",
+  "likes": [
+    "minecraft:wheat",
+    "minecraft:gold_nugget",
+    "minecraft:bread",
+    "minecraft:hay_block"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:wheat"
+    },
+    {
+      "type": "deliver",
+      "count": 5,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 90
+      },
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "items": [
+          "minecraft:gold_nugget*9"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

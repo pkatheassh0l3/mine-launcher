@@ -1,0 +1,194 @@
+{
+  "name": "hearthbound.project.fletcher",
+  "description": "hearthbound.project.fletcher.desc",
+  "icon": "minecraft:fletching_table",
+  "sort": 70,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:fletching_table",
+          "count": 1,
+          "icon": "minecraft:fletching_table"
+        },
+        {
+          "block": "minecraft:target",
+          "count": 1,
+          "icon": "minecraft:target"
+        },
+        {
+          "block": "#minecraft:logs",
+          "count": 8,
+          "icon": "minecraft:oak_log"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:arrow",
+          "count": 16,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:bow",
+          "count": 1,
+          "price": 14,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:stick",
+          "count": 32,
+          "price": 4,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:flint",
+          "count": 12,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:feather",
+          "count": 12,
+          "price": 5,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:fletching_table",
+          "count": 2,
+          "icon": "minecraft:fletching_table"
+        },
+        {
+          "block": "minecraft:target",
+          "count": 3,
+          "icon": "minecraft:target"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 4,
+          "icon": "minecraft:hay_block"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:crossbow",
+          "count": 1,
+          "price": 30,
+          "rank": "friend",
+          "age": "ascension:copper"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:bow",
+          "count": 1,
+          "price": 50,
+          "rank": "friend",
+          "age": "ascension:copper",
+          "enchant": "minecraft:power=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:spectral_arrow",
+          "count": 8,
+          "price": 20,
+          "rank": "friend"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:string",
+          "count": 16,
+          "price": 6,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:fletching_table",
+          "count": 3,
+          "icon": "minecraft:fletching_table"
+        },
+        {
+          "block": "minecraft:target",
+          "count": 6,
+          "icon": "minecraft:target"
+        },
+        {
+          "block": "minecraft:hay_block",
+          "count": 8,
+          "icon": "minecraft:hay_block"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:bow",
+          "count": 1,
+          "price": 130,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:power=3,minecraft:unbreaking=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:crossbow",
+          "count": 1,
+          "price": 120,
+          "rank": "ally",
+          "age": "ascension:iron",
+          "enchant": "minecraft:quick_charge=2,minecraft:piercing=2"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:tripwire_hook",
+          "count": 4,
+          "price": 10,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

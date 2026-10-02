@@ -1,0 +1,58 @@
+{
+  "game_versions": [
+    "1.21.1"
+  ],
+  "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+  ],
+  "environment": "server_only_client_optional",
+  "id": "wxGXaJMA",
+  "project_id": "Fb4jn8m6",
+  "author_id": "fYPSlcba",
+  "featured": false,
+  "name": "1.21.1-1.21.1.11",
+  "version_number": "1.21.1-1.21.1.11",
+  "changelog": "[Changelog on GitHub](https://github.com/RakambdaOrg/FallingTree/releases/tag/1.21.1.11)\n\n<!-- Release notes generated using configuration in .github/release.yml at minecraft/1.21.1 -->\n\n## What's Changed\n### 🚀 Features\n* Add Argentine Spanish localization by @Rakambda in https://github.com/RakambdaOrg/FallingTree/pull/929\n\n\n**Full Changelog**: https://github.com/RakambdaOrg/FallingTree/compare/1.21.1.10...1.21.1.11",
+  "changelog_url": null,
+  "date_published": "2025-08-01T07:43:39.995807Z",
+  "downloads": 1106830,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "vSHPLKUJ",
+      "hashes": {
+        "sha512": "21876b270ca40e3ad6168423f2aba04460f590be191c5558d53e4f542993efa6070589029cb3218557309b096cd920e4da65e53f19687b86c638ec6c342d83e5",
+        "sha1": "7e1b3ee0ba89b556d5a468797bb1b5f4e2b8ccb7"
+      },
+      "url": "https://cdn.modrinth.com/data/Fb4jn8m6/versions/wxGXaJMA/FallingTree-1.21.1-1.21.1.11.jar",
+      "filename": "FallingTree-1.21.1-1.21.1.11.jar",
+      "primary": true,
+      "size": 496356,
+      "file_type": null
+    }
+  ],
+  "dependencies": [
+    {
+      "version_id": null,
+      "project_id": "mOgUt4GM",
+      "file_name": null,
+      "dependency_type": "optional"
+    },
+    {
+      "version_id": null,
+      "project_id": "P7dR8mSH",
+      "file_name": null,
+      "dependency_type": "optional"
+    },
+    {
+      "version_id": null,
+      "project_id": "9s6osm5g",
+      "file_name": null,
+      "dependency_type": "optional"
+    }
+  ]
+}

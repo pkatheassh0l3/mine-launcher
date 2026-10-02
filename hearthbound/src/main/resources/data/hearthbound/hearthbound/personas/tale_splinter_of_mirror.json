@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "villager",
+    "farmer",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:rose_bush",
+  "likes": [
+    "minecraft:rose_bush",
+    "minecraft:poppy",
+    "#minecraft:wool",
+    "minecraft:bread"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:rose_bush"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      },
+      "entity": "minecraft:stray"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:leather_chestplate",
+          "name": "hearthbound.keepsake.tale_splinter_of_mirror",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=2"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

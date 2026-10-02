@@ -1,0 +1,40 @@
+{
+  "age": "ascension:copper",
+  "category": "ascension:mastery",
+  "difficulty": "ascension:epic",
+  "sort": 190,
+  "required_mods": [
+    "copperagebackport"
+  ],
+  "gate": false,
+  "icon": "minecraft:copper_chestplate",
+  "objectives": [
+    {
+      "type": "break",
+      "item": "minecraft:copper_helmet",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:copper_chestplate",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:copper_leggings",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:copper_boots",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "count": 4
+    }
+  ]
+}

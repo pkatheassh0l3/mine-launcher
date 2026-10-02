@@ -1,0 +1,25 @@
+{
+  "title": "Velocidad y dirección",
+  "category": "ascension:automation",
+  "description": "Alterna engranajes grandes y pequeños para cambiar la velocidad. Evita sobrecargar la red.",
+  "objectives": [
+    {
+      "item": "create:large_cogwheel",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "create:large_cogwheel",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:copper/pack_transmision"
+  ],
+  "sort": 619,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ]
+}

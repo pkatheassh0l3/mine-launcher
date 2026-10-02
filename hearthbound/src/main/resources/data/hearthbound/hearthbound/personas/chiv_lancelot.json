@@ -1,0 +1,61 @@
+{
+  "roles": [
+    "guard",
+    "smith",
+    "priest"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:shield",
+  "likes": [
+    "minecraft:shield",
+    "minecraft:iron_ingot",
+    "#minecraft:candles",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "entity": "minecraft:vindicator"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:pillager"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120
+      },
+      "item": "#minecraft:candles"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

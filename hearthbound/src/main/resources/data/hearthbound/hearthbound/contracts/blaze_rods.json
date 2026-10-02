@@ -1,0 +1,21 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.blaze_rods",
+  "item": "minecraft:blaze_rod",
+  "count": [
+    2,
+    4
+  ],
+  "reward": {
+    "coins": [
+      60,
+      90
+    ],
+    "reputation": 35,
+    "xp": 100
+  },
+  "rank": "ally",
+  "tier": 3,
+  "weight": 3,
+  "age": "ascension:nether"
+}

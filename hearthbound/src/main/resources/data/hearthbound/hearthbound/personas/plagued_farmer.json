@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "farmer"
+  ],
+  "gender": "any",
+  "weight": 12,
+  "icon": "minecraft:wheat",
+  "likes": [
+    "minecraft:bone_meal",
+    "minecraft:wheat_seeds",
+    "minecraft:carrot",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "defend",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 50
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 25,
+        "xp": 50
+      },
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 40,
+        "xp": 100,
+        "items": [
+          "minecraft:golden_carrot*12"
+        ],
+        "keepsake": {
+          "item": "minecraft:iron_hoe",
+          "name": "hearthbound.keepsake.farmer_hoe",
+          "enchant": "minecraft:efficiency=3,minecraft:unbreaking=3"
+        }
+      },
+      "item": "minecraft:pumpkin"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

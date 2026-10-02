@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "guard",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:iron_sword",
+  "likes": [
+    "minecraft:iron_ingot",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:gold_nugget"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 30,
+        "xp": 50
+      },
+      "entity": "minecraft:drowned"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:iron_sword",
+          "name": "hearthbound.keepsake.novel_captain_hook",
+          "enchant": "minecraft:sharpness=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:clock"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

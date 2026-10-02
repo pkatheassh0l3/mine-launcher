@@ -1,0 +1,23 @@
+{
+  "age": "ascension:stone",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:poppy",
+  "sort": 504,
+  "objectives": [
+    {
+      "type": "hearthbound:friends",
+      "count": 1,
+      "bond_level": "2"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:coins",
+      "amount": 20
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

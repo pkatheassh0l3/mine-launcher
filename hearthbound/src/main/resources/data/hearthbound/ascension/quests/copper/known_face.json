@@ -1,0 +1,23 @@
+{
+  "age": "ascension:copper",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:emerald",
+  "sort": 507,
+  "objectives": [
+    {
+      "type": "hearthbound:reputation",
+      "rank": "friend",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:skill_point",
+      "amount": 1
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

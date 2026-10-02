@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "guard",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:red_wool",
+  "likes": [
+    "minecraft:bone",
+    "minecraft:cake",
+    "minecraft:cooked_beef",
+    "minecraft:arrow"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:red_wool"
+    },
+    {
+      "type": "hunt",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "entity": "minecraft:zombie"
+    },
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 55,
+        "xp": 110,
+        "items": [
+          "minecraft:lead*1"
+        ]
+      },
+      "item": "minecraft:bone"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

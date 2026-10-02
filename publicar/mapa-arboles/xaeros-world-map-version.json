@@ -1,0 +1,45 @@
+{
+  "game_versions": [
+    "1.21",
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "environment": "client_only_server_optional",
+  "id": "9Ckiihkz",
+  "project_id": "NcUtCpym",
+  "author_id": "ANNqL3WC",
+  "featured": false,
+  "name": "Xaero's World Map 1.46.0",
+  "version_number": "neoforge-1.21.1-1.46.0",
+  "changelog": "[Read changelogs](https://chocolateminecraft.com/update.php?mod_id=2)",
+  "changelog_url": null,
+  "date_published": "2026-09-10T11:26:22.762444Z",
+  "downloads": 209409,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "gQwBwh94",
+      "hashes": {
+        "sha1": "82b4ae6c0f2e13f02cbdc1325342909ed083fc24",
+        "sha512": "fb14d11d66e0a6441981b18454c86534d8f534cd159ca19fa612950521788d858f37f18fe2093bb9b43ca0a88ae9af578eced5d140ff645a7681d7e452e8a268"
+      },
+      "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/9Ckiihkz/xaeroworldmap-neoforge-1.21.1-1.46.0.jar",
+      "filename": "xaeroworldmap-neoforge-1.21.1-1.46.0.jar",
+      "primary": true,
+      "size": 1422680,
+      "file_type": null
+    }
+  ],
+  "dependencies": [
+    {
+      "version_id": null,
+      "project_id": "gF3BGWvG",
+      "file_name": null,
+      "dependency_type": "optional"
+    }
+  ]
+}

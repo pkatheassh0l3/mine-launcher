@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "farmer",
+    "villager",
+    "innkeeper",
+    "merchant"
+  ],
+  "gender": "female",
+  "weight": 12,
+  "icon": "minecraft:white_wool",
+  "likes": [
+    "#minecraft:wool",
+    "minecraft:honey_bottle",
+    "minecraft:sweet_berries",
+    "#minecraft:small_flowers"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "#minecraft:wool"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 60
+      },
+      "entity": "minecraft:spider"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 40,
+        "xp": 90,
+        "keepsake": {
+          "item": "minecraft:leather_helmet",
+          "name": "hearthbound.keepsake.knitted_hood",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

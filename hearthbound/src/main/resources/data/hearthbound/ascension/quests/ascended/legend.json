@@ -1,0 +1,23 @@
+{
+  "age": "ascension:ascended",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:nether_star",
+  "sort": 519,
+  "objectives": [
+    {
+      "type": "hearthbound:reputation",
+      "rank": "hero",
+      "count": 3
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:skill_point",
+      "amount": 3
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

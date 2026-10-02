@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "elder",
+    "villager",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:note_block",
+  "likes": [
+    "minecraft:carrot",
+    "minecraft:bone",
+    "minecraft:cod",
+    "minecraft:wheat_seeds"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "item": "minecraft:note_block"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 100
+      },
+      "entity": "minecraft:pillager"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 110,
+        "keepsake": {
+          "item": "minecraft:leather_helmet",
+          "name": "hearthbound.keepsake.tale_four_old_musicians",
+          "enchant": "minecraft:protection=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:cake"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

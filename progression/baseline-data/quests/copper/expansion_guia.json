@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:copper",
+  "icon": "minecraft:copper_ingot",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Create empieza con aleación, ejes, engranajes y energía hidráulica. La maquinaria de trabajo llegará con el hierro y los sistemas de latón tras el Nether."
+}

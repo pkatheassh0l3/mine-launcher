@@ -1,0 +1,25 @@
+{
+  "title": "Proteger la transmisión",
+  "category": "ascension:building",
+  "description": "Aplica aleación de andesita a troncos pelados según Ponder.",
+  "objectives": [
+    {
+      "item": "create:andesite_casing",
+      "type": "obtain",
+      "count": 8
+    }
+  ],
+  "icon": "create:andesite_casing",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:copper/expansion_aleacion"
+  ],
+  "sort": 621,
+  "age": "ascension:copper",
+  "rewards": [
+    {
+      "amount": 80,
+      "type": "xp"
+    }
+  ]
+}

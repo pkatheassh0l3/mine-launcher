@@ -1,0 +1,20 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.scribes_books",
+  "item": "minecraft:book",
+  "count": [
+    3,
+    6
+  ],
+  "reward": {
+    "coins": [
+      16,
+      24
+    ],
+    "reputation": 16,
+    "xp": 40
+  },
+  "rank": "friend",
+  "tier": 2,
+  "weight": 5
+}

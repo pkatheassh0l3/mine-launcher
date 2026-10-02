@@ -1,0 +1,29 @@
+{
+  "order": 2,
+  "title": "ascension.age.copper",
+  "subtitle": "ascension.age.copper.subtitle",
+  "icon": "minecraft:copper_ingot",
+  "color": "#E0804F",
+  "locks": {
+    "items": [
+      "minecraft:copper_pickaxe",
+      "minecraft:copper_axe",
+      "minecraft:copper_sword",
+      "minecraft:copper_shovel",
+      "minecraft:copper_hoe",
+      "minecraft:copper_helmet",
+      "minecraft:copper_chestplate",
+      "minecraft:copper_leggings",
+      "minecraft:copper_boots",
+      "minecraft:copper_horse_armor",
+      "minecraft:lightning_rod",
+      "minecraft:brush",
+      "@copperagebackport",
+      "minecraft:copper_chest",
+      "minecraft:copper_torch",
+      "minecraft:copper_bars",
+      "minecraft:copper_chain",
+      "@create"
+    ]
+  }
+}

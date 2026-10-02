@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "moredelight:wooden_knife",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "moredelight:wooden_knife",
+  "age": "ascension:wood",
+  "description": "Consigue moredelight:wooden_knife para explorar el contenido de esta era.",
+  "category": "ascension:farming",
+  "sort": 500,
+  "title": "Una despensa variada"
+}

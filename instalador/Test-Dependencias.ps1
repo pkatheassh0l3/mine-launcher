@@ -24,7 +24,20 @@ try{foreach($entry in @($pack.Entries | Where-Object FullName -match '^overrides
  $s=[IO.MemoryStream]::new();$e=$entry.Open();try{$e.CopyTo($s)}finally{$e.Dispose()};$s.Position=0
  $jar=[IO.Compression.ZipArchive]::new($s,[IO.Compression.ZipArchiveMode]::Read)
  try{Inspect-Jar $jar $entry.Name}finally{$jar.Dispose();$s.Dispose()}
-}}finally{$pack.Dispose()}
+}
+ $reader=[IO.StreamReader]::new($pack.GetEntry('modrinth.index.json').Open())
+ try{$index=$reader.ReadToEnd()|ConvertFrom-Json}finally{$reader.Dispose()}
+ $cache=Join-Path $env:TEMP 'ascension-dependency-cache'
+ [void](New-Item -ItemType Directory -Path $cache -Force)
+ foreach($file in @($index.files|Where-Object {$_.path -match '^mods/.*\.jar$' -and $_.env.client -ne 'unsupported'})){
+  if($file.hashes.sha512 -notmatch '^[a-fA-F0-9]{128}$'){throw 'Falta SHA512 válido para una dependencia'}
+  $local=Join-Path $cache ($file.hashes.sha512+'.jar')
+  if(!(Test-Path $local) -or (Get-FileHash $local -Algorithm SHA512).Hash -ne $file.hashes.sha512){Invoke-WebRequest $file.downloads[0] -OutFile $local}
+  if((Get-FileHash $local -Algorithm SHA512).Hash -ne $file.hashes.sha512){throw 'Descarga de dependencia dañada'}
+  $jar=[IO.Compression.ZipFile]::OpenRead($local)
+  try{Inspect-Jar $jar $file.path}finally{$jar.Dispose()}
+ }
+}finally{$pack.Dispose()}
 $missing=@($required | Where-Object {!$ids.ContainsKey($_.Id)})
 if($missing.Count){$missing | ForEach-Object {Write-Host "FALTA $($_.Id) requerido por $($_.Source)"};throw 'Dependencias obligatorias ausentes'}
 Write-Host "PASS $(Split-Path $Package -Leaf): $($ids.Count) IDs presentes; $($required.Count) dependencias obligatorias de cliente resueltas."

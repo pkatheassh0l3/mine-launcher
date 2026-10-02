@@ -1,0 +1,60 @@
+{
+  "roles": [
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 8,
+  "icon": "minecraft:lantern",
+  "likes": [
+    "minecraft:torch",
+    "minecraft:lantern",
+    "minecraft:coal",
+    "minecraft:cooked_chicken"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "defend",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 60
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 20,
+        "xp": 50
+      },
+      "item": "minecraft:torch"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 45,
+        "xp": 110,
+        "keepsake": {
+          "item": "minecraft:crossbow",
+          "name": "hearthbound.keepsake.watch_crossbow",
+          "enchant": "minecraft:quick_charge=2,minecraft:unbreaking=2"
+        }
+      },
+      "entity": "minecraft:creeper"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

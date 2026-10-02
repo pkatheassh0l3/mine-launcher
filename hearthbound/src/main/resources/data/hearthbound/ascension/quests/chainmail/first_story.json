@@ -1,0 +1,22 @@
+{
+  "age": "ascension:chainmail",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:writable_book",
+  "sort": 511,
+  "objectives": [
+    {
+      "type": "hearthbound:stories",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:skill_point",
+      "amount": 1
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

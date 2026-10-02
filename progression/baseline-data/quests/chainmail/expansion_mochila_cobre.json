@@ -1,0 +1,25 @@
+{
+  "title": "Una mochila más amplia",
+  "category": "ascension:crafting",
+  "description": "Amplía la mochila básica conservando sus contenidos. Comprueba la receta de mejora en JEI.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:copper_backpack",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:copper_backpack",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:chainmail/pack_mochila"
+  ],
+  "sort": 623,
+  "age": "ascension:chainmail",
+  "rewards": [
+    {
+      "amount": 100,
+      "type": "xp"
+    }
+  ]
+}

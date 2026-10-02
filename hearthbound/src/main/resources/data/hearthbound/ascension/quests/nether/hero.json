@@ -1,0 +1,23 @@
+{
+  "age": "ascension:nether",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:golden_helmet",
+  "sort": 517,
+  "objectives": [
+    {
+      "type": "hearthbound:reputation",
+      "rank": "hero",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:skill_point",
+      "amount": 2
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

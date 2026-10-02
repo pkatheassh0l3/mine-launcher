@@ -1,0 +1,22 @@
+{
+  "order": 3,
+  "title": "ascension.age.chainmail",
+  "subtitle": "ascension.age.chainmail.subtitle",
+  "icon": "minecraft:chainmail_chestplate",
+  "color": "#9DA8B6",
+  "locks": {
+    "items": [
+      "minecraft:chainmail_helmet",
+      "minecraft:chainmail_chestplate",
+      "minecraft:chainmail_leggings",
+      "minecraft:chainmail_boots",
+      "minecraft:shield",
+      "minecraft:bucket",
+      "minecraft:water_bucket",
+      "minecraft:lava_bucket",
+      "minecraft:shears",
+      "minecraft:flint_and_steel",
+      "@sophisticatedbackpacks"
+    ]
+  }
+}

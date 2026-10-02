@@ -1,0 +1,21 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.warm_wool",
+  "item": "#minecraft:wool",
+  "display_item": "minecraft:white_wool",
+  "count": [
+    8,
+    16
+  ],
+  "reward": {
+    "coins": [
+      8,
+      12
+    ],
+    "reputation": 10,
+    "xp": 25
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 8
+}

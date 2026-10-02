@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:chainmail",
+  "icon": "minecraft:chainmail_chestplate",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "Prepara una mochila y suministros. La cota de malla y el equipo básico siguen las recetas de Ascension; las mejoras automáticas esperan a la era del hierro."
+}

@@ -1,0 +1,37 @@
+{
+  "age": "ascension:diamond",
+  "category": "ascension:mastery",
+  "difficulty": "ascension:epic",
+  "sort": 320,
+  "gate": false,
+  "icon": "minecraft:diamond_pickaxe",
+  "objectives": [
+    {
+      "type": "break",
+      "item": "minecraft:diamond_sword",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:diamond_pickaxe",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:diamond_axe",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:diamond_shovel",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "item": "minecraft:obsidian",
+      "count": 4
+    }
+  ]
+}

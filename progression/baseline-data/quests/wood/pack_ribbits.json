@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "ribbits:maraca",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "ribbits:maraca",
+  "age": "ascension:wood",
+  "description": "Consigue ribbits:maraca para explorar el contenido de esta era.",
+  "category": "ascension:exploration",
+  "sort": 500,
+  "title": "Música de los pantanos"
+}

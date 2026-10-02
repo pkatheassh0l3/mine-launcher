@@ -1,0 +1,22 @@
+{
+  "age": "ascension:iron",
+  "category": "hearthbound:villages",
+  "difficulty": "ascension:rare",
+  "icon": "minecraft:iron_sword",
+  "sort": 512,
+  "objectives": [
+    {
+      "type": "hearthbound:hire",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "hearthbound:rpg_xp",
+      "amount": 150
+    }
+  ],
+  "required_mods": [
+    "hearthbound"
+  ]
+}

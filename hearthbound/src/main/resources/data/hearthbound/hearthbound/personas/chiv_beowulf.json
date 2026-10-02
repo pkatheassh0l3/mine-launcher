@@ -1,0 +1,69 @@
+{
+  "roles": [
+    "guard",
+    "smith",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:iron_helmet",
+  "likes": [
+    "minecraft:cooked_beef",
+    "minecraft:gold_ingot",
+    "minecraft:honey_bottle",
+    "minecraft:iron_ingot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 10,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "entity": "minecraft:zombie"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 95
+      },
+      "entity": "minecraft:drowned"
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 110,
+        "xp": 160,
+        "items": [
+          "minecraft:gold_ingot*3"
+        ],
+        "keepsake": {
+          "item": "minecraft:iron_helmet",
+          "name": "hearthbound.keepsake.chiv_beowulf",
+          "enchant": "minecraft:respiration=2,minecraft:aqua_affinity=1"
+        }
+      },
+      "entity": "minecraft:blaze"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "objectives": [
+    {
+      "item": "create:water_wheel",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "create:water_wheel",
+  "age": "ascension:copper",
+  "description": "Consigue create:water_wheel para explorar el contenido de esta era. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "La fuerza del agua",
+  "gate": true,
+  "requires": [
+    "ascension:copper/expansion_ejes"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.witch_eyes",
+  "item": "minecraft:spider_eye",
+  "count": [
+    4,
+    8
+  ],
+  "reward": {
+    "coins": [
+      10,
+      16
+    ],
+    "reputation": 14,
+    "xp": 35
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 10,
+  "cultures": [
+    "brumaverde"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "age": "ascension:wood",
+  "difficulty": "ascension:common",
+  "description": "Gravestone protege tu inventario cuando mueres. El obituario ayuda a localizar la tumba.",
+  "category": "ascension:survival",
+  "sort": 520,
+  "icon": "gravestone:obituary",
+  "rewards": [
+    {
+      "amount": 20,
+      "type": "xp"
+    }
+  ],
+  "title": "Recuperar lo perdido",
+  "objectives": [
+    {
+      "item": "gravestone:obituary",
+      "count": 1,
+      "type": "obtain"
+    }
+  ]
+}

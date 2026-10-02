@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "builder",
+    "villager",
+    "mage"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:ladder",
+  "likes": [
+    "minecraft:carrot",
+    "minecraft:beetroot",
+    "minecraft:string",
+    "minecraft:ladder"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:ladder"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:witch"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:spyglass",
+          "name": "hearthbound.keepsake.tale_tower_without_door"
+        }
+      },
+      "item": "minecraft:bell"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

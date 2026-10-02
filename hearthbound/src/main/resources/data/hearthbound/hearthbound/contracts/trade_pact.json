@@ -1,0 +1,19 @@
+{
+  "type": "envoy",
+  "title": "hearthbound.contract.trade_pact",
+  "count": [
+    1,
+    1
+  ],
+  "reward": {
+    "coins": [
+      24,
+      34
+    ],
+    "reputation": 20,
+    "xp": 90
+  },
+  "rank": "friend",
+  "tier": 1,
+  "weight": 5
+}

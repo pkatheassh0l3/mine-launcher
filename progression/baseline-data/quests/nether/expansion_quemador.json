@@ -1,0 +1,22 @@
+{
+  "title": "Calor controlado",
+  "category": "ascension:automation",
+  "description": "Captura un blaze con un quemador vacío. El quemador vacío debe poder fabricarse antes de este paso.",
+  "objectives": [
+    {
+      "item": "create:blaze_burner",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:blaze_burner",
+  "difficulty": "ascension:rare",
+  "sort": 657,
+  "age": "ascension:nether",
+  "rewards": [
+    {
+      "amount": 160,
+      "type": "xp"
+    }
+  ]
+}

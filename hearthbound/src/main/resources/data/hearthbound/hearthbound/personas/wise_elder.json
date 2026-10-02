@@ -1,0 +1,61 @@
+{
+  "roles": [
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 12,
+  "icon": "minecraft:lectern",
+  "likes": [
+    "minecraft:book",
+    "minecraft:honey_bottle",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries"
+  ],
+  "talk_lines": 4,
+  "stages": [
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 60
+      }
+    },
+    {
+      "type": "defend",
+      "count": 10,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 80
+      }
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 130,
+        "items": [
+          "minecraft:experience_bottle*8"
+        ],
+        "keepsake": {
+          "item": "minecraft:golden_chestplate",
+          "name": "hearthbound.keepsake.founder_mantle",
+          "enchant": "minecraft:protection=3,minecraft:unbreaking=3"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "explore",
+  "title": "hearthbound.contract.letter_to_neighbours",
+  "count": [
+    1,
+    1
+  ],
+  "reward": {
+    "coins": [
+      10,
+      16
+    ],
+    "reputation": 12,
+    "xp": 60,
+    "items": [
+      "minecraft:map*1"
+    ]
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 6
+}

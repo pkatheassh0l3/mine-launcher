@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "railways:black_conductor_cap",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "railways:black_conductor_cap",
+  "age": "ascension:nether",
+  "description": "Fabrica una gorra de maquinista negra para explorar Steam n Rails.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Steam n Rails"
+}

@@ -1,0 +1,9 @@
+{
+  "title": "ascension.category.hearthbound_villages",
+  "icon": "hearthbound:village_hearth",
+  "color": "#E0B25A",
+  "sort": 20,
+  "required_mods": [
+    "hearthbound"
+  ]
+}

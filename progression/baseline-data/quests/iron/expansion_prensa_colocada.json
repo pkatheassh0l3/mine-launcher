@@ -1,0 +1,25 @@
+{
+  "title": "Montar una prensa",
+  "category": "ascension:automation",
+  "description": "Conecta la prensa a tu transmisión. Coloca un depósito debajo para trabajar materiales.",
+  "objectives": [
+    {
+      "block": "create:mechanical_press",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "create:mechanical_press",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/pack_prensa"
+  ],
+  "sort": 627,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

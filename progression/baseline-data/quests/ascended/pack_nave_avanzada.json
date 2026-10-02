@@ -1,0 +1,25 @@
+{
+  "objectives": [
+    {
+      "item": "aeronautics:smart_propeller",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "aeronautics:smart_propeller",
+  "age": "ascension:ascended",
+  "description": "Consigue aeronautics:smart_propeller para explorar el contenido de esta era.",
+  "category": "ascension:mastery",
+  "sort": 500,
+  "title": "Propulsión avanzada",
+  "requires": [
+    "ascension:ascended/expansion_helice_estable"
+  ]
+}

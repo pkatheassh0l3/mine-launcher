@@ -1,0 +1,23 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.desert_cactus",
+  "item": "minecraft:cactus",
+  "count": [
+    16,
+    32
+  ],
+  "reward": {
+    "coins": [
+      6,
+      10
+    ],
+    "reputation": 10,
+    "xp": 25
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 10,
+  "cultures": [
+    "solarys"
+  ]
+}

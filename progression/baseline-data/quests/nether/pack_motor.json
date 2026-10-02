@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "simulated:engine_assembly",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "simulated:engine_assembly",
+  "age": "ascension:nether",
+  "description": "Consigue simulated:engine_assembly para explorar el contenido de esta era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Motores portátiles"
+}

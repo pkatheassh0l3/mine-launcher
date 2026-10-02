@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "villager",
+    "merchant",
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:leather_boots",
+  "likes": [
+    "minecraft:paper",
+    "minecraft:bread",
+    "minecraft:leather",
+    "minecraft:map"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:leather"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 65,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:leather_boots",
+          "name": "hearthbound.keepsake.tale_seven_league_boots",
+          "enchant": "minecraft:feather_falling=2,minecraft:unbreaking=2"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

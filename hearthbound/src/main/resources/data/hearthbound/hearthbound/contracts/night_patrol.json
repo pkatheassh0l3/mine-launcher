@@ -1,0 +1,20 @@
+{
+  "type": "hunt",
+  "title": "hearthbound.contract.night_patrol",
+  "entity": "monster",
+  "count": [
+    10,
+    20
+  ],
+  "reward": {
+    "coins": [
+      12,
+      20
+    ],
+    "reputation": 15,
+    "xp": 45
+  },
+  "rank": "acquaintance",
+  "tier": 0,
+  "weight": 8
+}

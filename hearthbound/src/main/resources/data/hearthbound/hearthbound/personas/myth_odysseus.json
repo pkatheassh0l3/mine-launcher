@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "guard",
+    "villager",
+    "elder"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:bow",
+  "likes": [
+    "minecraft:bread",
+    "minecraft:mutton",
+    "minecraft:arrow",
+    "minecraft:compass"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      },
+      "entity": "minecraft:witch"
+    },
+    {
+      "type": "envoy",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 140,
+        "keepsake": {
+          "item": "minecraft:bow",
+          "name": "hearthbound.keepsake.myth_odysseus",
+          "enchant": "minecraft:power=2,minecraft:unbreaking=2"
+        }
+      }
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

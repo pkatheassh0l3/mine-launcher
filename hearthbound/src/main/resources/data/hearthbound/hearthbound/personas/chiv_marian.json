@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "merchant",
+    "farmer",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:leather",
+  "likes": [
+    "minecraft:leather",
+    "#minecraft:small_flowers",
+    "minecraft:arrow",
+    "minecraft:apple"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:leather"
+    },
+    {
+      "type": "hunt",
+      "count": 5,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 80
+      },
+      "entity": "minecraft:pillager"
+    },
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 55,
+        "xp": 105,
+        "items": [
+          "minecraft:golden_apple*1"
+        ]
+      },
+      "item": "minecraft:apple"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

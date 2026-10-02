@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:dirt", "#minecraft:sand", "#minecraft:base_stone_overworld", "#minecraft:base_stone_nether",
+    "#minecraft:leaves", "#minecraft:saplings", "#minecraft:flowers", "#minecraft:crops",
+    {"id": "#c:gravels", "required": false}, {"id": "#c:cobblestones", "required": false}, {"id": "#c:netherracks", "required": false},
+    "minecraft:gravel", "minecraft:scaffolding", "minecraft:torch", "minecraft:wall_torch", "minecraft:farmland",
+    "minecraft:snow", "minecraft:snow_block", "minecraft:tnt", "minecraft:fire", "minecraft:water", "minecraft:lava"
+  ]
+}

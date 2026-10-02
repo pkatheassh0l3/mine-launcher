@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "smith",
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:lightning_rod",
+  "likes": [
+    "minecraft:iron_ingot",
+    "minecraft:cooked_beef",
+    "minecraft:honey_bottle",
+    "minecraft:copper_ingot"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 50,
+        "xp": 100
+      },
+      "entity": "minecraft:enderman"
+    },
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "keepsake": {
+          "item": "minecraft:iron_axe",
+          "name": "hearthbound.keepsake.myth_thor",
+          "enchant": "minecraft:sharpness=2,minecraft:unbreaking=2"
+        }
+      },
+      "item": "#minecraft:wool"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "objectives": [
+    {
+      "item": "aeronautics:white_envelope",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "aeronautics:white_envelope",
+  "age": "ascension:end",
+  "description": "Consigue aeronautics:white_envelope para explorar el contenido de esta era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Construir un dirigible",
+  "requires": [
+    "ascension:end/pack_aeronautica"
+  ]
+}

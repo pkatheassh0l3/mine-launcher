@@ -1,0 +1,61 @@
+{
+  "roles": [
+    "mage",
+    "priest",
+    "merchant"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:golden_apple",
+  "likes": [
+    "minecraft:apple",
+    "minecraft:glow_berries",
+    "minecraft:spider_eye",
+    "minecraft:blue_orchid"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:witch"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 80,
+        "xp": 140
+      },
+      "item": "minecraft:golden_apple"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Una estación de trabajo",
+  "category": "ascension:automation",
+  "description": "El depósito mantiene los objetos en su sitio bajo la prensa.",
+  "objectives": [
+    {
+      "block": "create:depot",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "create:depot",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_prensa_colocada"
+  ],
+  "sort": 628,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

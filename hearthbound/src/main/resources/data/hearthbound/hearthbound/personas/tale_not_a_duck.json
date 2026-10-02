@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "farmer",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:feather",
+  "likes": [
+    "minecraft:wheat_seeds",
+    "minecraft:feather",
+    "minecraft:bread",
+    "minecraft:lily_pad"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 30,
+        "xp": 70
+      },
+      "item": "#minecraft:wool"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 100,
+        "items": [
+          "minecraft:egg*4"
+        ]
+      },
+      "item": "minecraft:feather"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

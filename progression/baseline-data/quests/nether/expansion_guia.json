@@ -1,0 +1,15 @@
+{
+  "difficulty": "ascension:common",
+  "title": "Guía de esta era",
+  "age": "ascension:nether",
+  "icon": "minecraft:netherrack",
+  "objectives": [
+    {
+      "text": "He leído las novedades y los objetivos de esta era.",
+      "type": "checkbox"
+    }
+  ],
+  "category": "ascension:mastery",
+  "sort": -50,
+  "description": "El acceso a los blazes permite latón y precisión. Ahora entran trenes, vapor, Sable, Simulated y Offroad. Construye y prueba cada sistema antes de conectarlo a otros."
+}

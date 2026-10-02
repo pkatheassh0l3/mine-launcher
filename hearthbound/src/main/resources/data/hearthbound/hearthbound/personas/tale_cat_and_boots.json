@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "farmer",
+    "merchant",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:leather",
+  "likes": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:milk_bucket",
+    "minecraft:rabbit"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 8,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:leather"
+    },
+    {
+      "type": "deliver",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 70
+      },
+      "item": "minecraft:rabbit"
+    },
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 55,
+        "xp": 110,
+        "items": [
+          "minecraft:emerald*3"
+        ]
+      },
+      "item": "minecraft:cod"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

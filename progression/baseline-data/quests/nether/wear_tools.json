@@ -1,0 +1,37 @@
+{
+  "age": "ascension:nether",
+  "category": "ascension:mastery",
+  "difficulty": "ascension:epic",
+  "sort": 370,
+  "gate": false,
+  "icon": "minecraft:netherite_pickaxe",
+  "objectives": [
+    {
+      "type": "break",
+      "item": "minecraft:netherite_sword",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:netherite_pickaxe",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:netherite_axe",
+      "count": 1
+    },
+    {
+      "type": "break",
+      "item": "minecraft:netherite_shovel",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "item": "minecraft:ender_pearl",
+      "count": 4
+    }
+  ]
+}

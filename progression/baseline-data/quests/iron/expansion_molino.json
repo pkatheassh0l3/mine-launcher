@@ -1,0 +1,25 @@
+{
+  "title": "Moler la cosecha",
+  "category": "ascension:automation",
+  "description": "Automatiza molienda y consulta los subproductos posibles en JEI.",
+  "objectives": [
+    {
+      "item": "create:millstone",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:millstone",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/pack_prensa"
+  ],
+  "sort": 633,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

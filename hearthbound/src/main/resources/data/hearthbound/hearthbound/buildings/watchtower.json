@@ -1,0 +1,17 @@
+{
+  "kind": "tower",
+  "width": 5,
+  "depth": 5,
+  "floors": 3,
+  "cost": {
+    "stone": 40,
+    "wood": 10
+  },
+  "produces": {},
+  "roles": [
+    "guard"
+  ],
+  "icon": "minecraft:iron_sword",
+  "min_tier": 1,
+  "residents": 1
+}

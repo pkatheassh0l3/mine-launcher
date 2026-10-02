@@ -1,0 +1,25 @@
+{
+  "objectives": [
+    {
+      "item": "create:cogwheel",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "create:cogwheel",
+  "age": "ascension:copper",
+  "description": "Consigue create:cogwheel para explorar el contenido de esta era.",
+  "category": "ascension:automation",
+  "sort": 500,
+  "title": "Transmitir movimiento",
+  "requires": [
+    "ascension:copper/expansion_ejes"
+  ]
+}

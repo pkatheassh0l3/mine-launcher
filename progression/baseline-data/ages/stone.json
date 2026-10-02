@@ -1,0 +1,27 @@
+{
+  "order": 1,
+  "title": "ascension.age.stone",
+  "subtitle": "ascension.age.stone.subtitle",
+  "icon": "minecraft:stone_pickaxe",
+  "color": "#A7AEB8",
+  "locks": {
+    "items": [
+      "minecraft:stone_pickaxe",
+      "minecraft:stone_axe",
+      "minecraft:stone_sword",
+      "minecraft:stone_shovel",
+      "minecraft:stone_hoe",
+      "minecraft:furnace",
+      "minecraft:smoker",
+      "minecraft:bow",
+      "minecraft:leather_helmet",
+      "minecraft:leather_chestplate",
+      "minecraft:leather_leggings",
+      "minecraft:leather_boots",
+      "farmersdelight:flint_knife",
+      "farmersdelight:cutting_board",
+      "moredelight:stone_knife",
+      "farmersdelight:stove"
+    ]
+  }
+}

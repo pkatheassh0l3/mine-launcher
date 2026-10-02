@@ -1,0 +1,25 @@
+{
+  "title": "Fundar un asentamiento",
+  "category": "ascension:building",
+  "description": "El hogar es el centro de Hearthbound. Esta rama es opcional para no obligar a fundar una aldea.",
+  "objectives": [
+    {
+      "block": "hearthbound:village_hearth",
+      "type": "place",
+      "count": 1
+    }
+  ],
+  "icon": "hearthbound:village_hearth",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/pack_asentamiento"
+  ],
+  "sort": 644,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

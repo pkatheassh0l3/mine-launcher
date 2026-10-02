@@ -1,0 +1,65 @@
+{
+  "roles": [
+    "merchant",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:string",
+  "likes": [
+    "minecraft:string",
+    "#minecraft:wool",
+    "minecraft:honey_bottle",
+    "minecraft:bread"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:string"
+    },
+    {
+      "type": "hunt",
+      "count": 7,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 75
+      },
+      "entity": "minecraft:spider"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 90,
+        "xp": 150,
+        "keepsake": {
+          "item": "minecraft:iron_sword",
+          "name": "hearthbound.keepsake.tale_seven_at_one_blow",
+          "enchant": "minecraft:sharpness=2,minecraft:unbreaking=2"
+        }
+      },
+      "entity": "minecraft:enderman"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

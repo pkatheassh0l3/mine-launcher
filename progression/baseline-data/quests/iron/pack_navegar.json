@@ -1,0 +1,22 @@
+{
+  "objectives": [
+    {
+      "item": "whaleborne:helm",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "difficulty": "ascension:common",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ],
+  "icon": "whaleborne:helm",
+  "age": "ascension:iron",
+  "description": "Consigue whaleborne:helm para explorar el contenido de esta era.",
+  "category": "ascension:exploration",
+  "sort": 500,
+  "title": "Navegación con Whaleborne"
+}

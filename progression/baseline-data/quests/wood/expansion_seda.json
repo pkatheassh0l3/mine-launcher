@@ -1,0 +1,22 @@
+{
+  "title": "Seda de los pequeños habitantes",
+  "category": "ascension:animals",
+  "description": "Aprovecha los recursos de Critters and Companions para tus próximas expediciones.",
+  "objectives": [
+    {
+      "item": "crittersandcompanions:silk",
+      "type": "obtain",
+      "count": 4
+    }
+  ],
+  "icon": "crittersandcompanions:silk",
+  "difficulty": "ascension:common",
+  "sort": 608,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "shrine",
+  "width": 7,
+  "depth": 9,
+  "floors": 1,
+  "cost": {
+    "stone": 35,
+    "goods": 10
+  },
+  "produces": {},
+  "roles": [
+    "priest"
+  ],
+  "icon": "minecraft:golden_apple",
+  "min_tier": 1,
+  "residents": 1
+}

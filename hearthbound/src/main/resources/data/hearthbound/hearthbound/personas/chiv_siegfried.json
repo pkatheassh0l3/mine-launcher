@@ -1,0 +1,63 @@
+{
+  "roles": [
+    "smith",
+    "guard",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:gold_ingot",
+  "likes": [
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:shield",
+    "minecraft:cooked_beef"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 10,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 50
+      },
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "explore",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      }
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 130,
+        "items": [
+          "minecraft:gold_ingot*4"
+        ]
+      },
+      "item": "minecraft:shield"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

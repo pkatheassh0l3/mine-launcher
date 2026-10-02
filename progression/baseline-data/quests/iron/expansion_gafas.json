@@ -1,0 +1,25 @@
+{
+  "title": "Diagnóstico de maquinaria",
+  "category": "ascension:crafting",
+  "description": "Las gafas muestran información útil sobre velocidad, esfuerzo y máquinas.",
+  "objectives": [
+    {
+      "item": "create:goggles",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "create:goggles",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:iron/expansion_chapas_hierro"
+  ],
+  "sort": 630,
+  "age": "ascension:iron",
+  "rewards": [
+    {
+      "amount": 120,
+      "type": "xp"
+    }
+  ]
+}

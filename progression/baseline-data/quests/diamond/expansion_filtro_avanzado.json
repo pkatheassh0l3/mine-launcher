@@ -1,0 +1,25 @@
+{
+  "title": "Una mochila especializada",
+  "category": "ascension:crafting",
+  "description": "Dedica mochilas separadas a minería, comida o construcción.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:advanced_filter_upgrade",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:advanced_filter_upgrade",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:diamond/pack_mochila_diamante"
+  ],
+  "sort": 653,
+  "age": "ascension:diamond",
+  "rewards": [
+    {
+      "amount": 140,
+      "type": "xp"
+    }
+  ]
+}

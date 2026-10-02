@@ -1,0 +1,25 @@
+{
+  "title": "Capacidad extraordinaria",
+  "category": "ascension:mastery",
+  "description": "Reto opcional de logística final. Consulta los costes reales en JEI.",
+  "objectives": [
+    {
+      "item": "sophisticatedbackpacks:stack_upgrade_omega_tier",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "sophisticatedbackpacks:stack_upgrade_omega_tier",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:nether/expansion_mochila_netherita"
+  ],
+  "sort": 680,
+  "age": "ascension:ascended",
+  "rewards": [
+    {
+      "amount": 200,
+      "type": "xp"
+    }
+  ]
+}

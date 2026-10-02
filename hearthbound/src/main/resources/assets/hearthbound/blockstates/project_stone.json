@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "done=false": {
+      "model": "hearthbound:block/project_stone"
+    },
+    "done=true": {
+      "model": "hearthbound:block/project_stone_done"
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "name": "hearthbound.project.weaponsmith",
+  "description": "hearthbound.project.weaponsmith.desc",
+  "icon": "minecraft:grindstone",
+  "sort": 31,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:grindstone",
+          "count": 1,
+          "icon": "minecraft:grindstone"
+        },
+        {
+          "block": "minecraft:furnace",
+          "count": 1,
+          "icon": "minecraft:furnace"
+        },
+        {
+          "block": "#minecraft:logs",
+          "count": 8,
+          "icon": "minecraft:oak_log"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:stone_sword",
+          "count": 1,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:stone_axe",
+          "count": 1,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:iron_axe",
+          "count": 1,
+          "price": 40,
+          "rank": "acquaintance",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:iron_sword",
+          "count": 1,
+          "price": 45,
+          "rank": "acquaintance",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:coal",
+          "count": 12,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:flint",
+          "count": 16,
+          "price": 5,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:grindstone",
+          "count": 2,
+          "icon": "minecraft:grindstone"
+        },
+        {
+          "block": "#minecraft:anvil",
+          "count": 1,
+          "icon": "minecraft:anvil"
+        },
+        {
+          "block": "minecraft:furnace",
+          "count": 2,
+          "icon": "minecraft:furnace"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:iron_sword",
+          "count": 1,
+          "price": 80,
+          "rank": "friend",
+          "age": "ascension:iron",
+          "enchant": "minecraft:sharpness=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:iron_axe",
+          "count": 1,
+          "price": 75,
+          "rank": "friend",
+          "age": "ascension:iron",
+          "enchant": "minecraft:efficiency=2"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:bell",
+          "count": 1,
+          "price": 40,
+          "rank": "friend"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:iron_ingot",
+          "count": 6,
+          "price": 20,
+          "rank": "stranger"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:grindstone",
+          "count": 3,
+          "icon": "minecraft:grindstone"
+        },
+        {
+          "block": "#minecraft:anvil",
+          "count": 2,
+          "icon": "minecraft:anvil"
+        },
+        {
+          "block": "minecraft:iron_block",
+          "count": 2,
+          "icon": "minecraft:iron_block"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_sword",
+          "count": 1,
+          "price": 330,
+          "rank": "ally",
+          "age": "ascension:diamond"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_axe",
+          "count": 1,
+          "price": 330,
+          "rank": "ally",
+          "age": "ascension:diamond"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:diamond_sword",
+          "count": 1,
+          "price": 480,
+          "rank": "hero",
+          "age": "ascension:diamond",
+          "enchant": "minecraft:sharpness=3,minecraft:unbreaking=2"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:diamond",
+          "count": 1,
+          "price": 60,
+          "rank": "ally"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

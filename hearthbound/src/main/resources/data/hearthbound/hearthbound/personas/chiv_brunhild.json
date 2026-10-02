@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "guard",
+    "elder",
+    "mage"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:magma_cream",
+  "likes": [
+    "minecraft:magma_cream",
+    "minecraft:cobblestone",
+    "#minecraft:candles",
+    "minecraft:mutton"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 4,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 30,
+        "xp": 55
+      },
+      "entity": "minecraft:magma_cube"
+    },
+    {
+      "type": "deliver",
+      "count": 32,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 35,
+        "xp": 80
+      },
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "items": [
+          "minecraft:experience_bottle*4"
+        ]
+      },
+      "item": "#minecraft:candles"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

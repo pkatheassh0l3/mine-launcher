@@ -1,0 +1,26 @@
+{
+  "title": "Un refugio organizado",
+  "category": "ascension:building",
+  "description": "Coloca dos cofres para separar recursos de construcción y alimentos. Hito obligatorio: complétalo para acceder a la siguiente era.",
+  "objectives": [
+    {
+      "block": "minecraft:chest",
+      "type": "place",
+      "count": 2
+    }
+  ],
+  "icon": "minecraft:chest",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:wood/crafting_table"
+  ],
+  "sort": 600,
+  "age": "ascension:wood",
+  "rewards": [
+    {
+      "amount": 40,
+      "type": "xp"
+    }
+  ],
+  "gate": true
+}

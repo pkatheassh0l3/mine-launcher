@@ -1,0 +1,20 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.quarry_stone",
+  "item": "minecraft:cobblestone",
+  "count": [
+    32,
+    64
+  ],
+  "reward": {
+    "coins": [
+      5,
+      9
+    ],
+    "reputation": 8,
+    "xp": 20
+  },
+  "rank": "stranger",
+  "tier": 0,
+  "weight": 10
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Medir la altura",
+  "category": "ascension:automation",
+  "description": "Añade instrumentación a las estructuras móviles.",
+  "objectives": [
+    {
+      "item": "simulated:altitude_sensor",
+      "type": "obtain",
+      "count": 1
+    }
+  ],
+  "icon": "simulated:altitude_sensor",
+  "difficulty": "ascension:rare",
+  "requires": [
+    "ascension:end/expansion_giroscopio"
+  ],
+  "sort": 676,
+  "age": "ascension:end",
+  "rewards": [
+    {
+      "amount": 180,
+      "type": "xp"
+    }
+  ]
+}

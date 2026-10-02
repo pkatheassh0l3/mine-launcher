@@ -1,0 +1,21 @@
+{
+  "type": "deliver",
+  "title": "hearthbound.contract.copper_order",
+  "item": "minecraft:copper_ingot",
+  "count": [
+    8,
+    16
+  ],
+  "reward": {
+    "coins": [
+      12,
+      18
+    ],
+    "reputation": 14,
+    "xp": 35
+  },
+  "rank": "acquaintance",
+  "tier": 1,
+  "weight": 7,
+  "age": "ascension:copper"
+}

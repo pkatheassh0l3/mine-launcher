@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "villager",
+    "builder",
+    "guard"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:feather",
+  "likes": [
+    "minecraft:feather",
+    "minecraft:honeycomb",
+    "minecraft:sunflower",
+    "minecraft:spyglass"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:feather"
+    },
+    {
+      "type": "hunt",
+      "count": 6,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 40,
+        "xp": 85
+      },
+      "entity": "minecraft:phantom"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:leather_boots",
+          "name": "hearthbound.keepsake.myth_icarus",
+          "enchant": "minecraft:feather_falling=3,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:spyglass"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

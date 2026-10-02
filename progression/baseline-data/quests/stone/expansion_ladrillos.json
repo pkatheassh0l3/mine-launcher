@@ -1,0 +1,25 @@
+{
+  "title": "Preparar la futura cocina",
+  "category": "ascension:building",
+  "description": "Cuece arcilla y guarda ladrillos para el fogón y la olla.",
+  "objectives": [
+    {
+      "item": "minecraft:brick",
+      "type": "obtain",
+      "count": 24
+    }
+  ],
+  "icon": "minecraft:brick",
+  "difficulty": "ascension:common",
+  "requires": [
+    "ascension:stone/furnace"
+  ],
+  "sort": 613,
+  "age": "ascension:stone",
+  "rewards": [
+    {
+      "amount": 60,
+      "type": "xp"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "roles": [
+    "merchant",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:clock",
+  "likes": [
+    "minecraft:sugar",
+    "minecraft:cake",
+    "minecraft:cookie",
+    "minecraft:milk_bucket",
+    "minecraft:clock"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 12,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 40
+      },
+      "item": "minecraft:sugar"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 80
+      },
+      "item": "minecraft:clock"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 60,
+        "xp": 110,
+        "keepsake": {
+          "item": "minecraft:leather_helmet",
+          "name": "hearthbound.keepsake.novel_mad_hatter",
+          "enchant": "minecraft:protection=1,minecraft:unbreaking=2"
+        }
+      },
+      "item": "minecraft:cake"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

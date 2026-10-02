@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "guard",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:shield",
+  "likes": [
+    "minecraft:cooked_beef",
+    "minecraft:honey_bottle",
+    "minecraft:mutton",
+    "minecraft:rabbit_stew"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "hunt",
+      "count": 5,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 25,
+        "xp": 45
+      },
+      "entity": "minecraft:zombie"
+    },
+    {
+      "type": "defend",
+      "count": 8,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 85
+      }
+    },
+    {
+      "type": "hunt",
+      "count": 10,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 70,
+        "xp": 120,
+        "keepsake": {
+          "item": "minecraft:shield",
+          "name": "hearthbound.keepsake.novel_cowardly_lion",
+          "enchant": "minecraft:unbreaking=3"
+        }
+      },
+      "entity": "minecraft:spider"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

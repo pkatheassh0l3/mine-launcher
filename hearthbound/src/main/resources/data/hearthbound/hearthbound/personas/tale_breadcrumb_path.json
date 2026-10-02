@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "farmer",
+    "innkeeper",
+    "villager"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:cookie",
+  "likes": [
+    "minecraft:cookie",
+    "minecraft:bread",
+    "minecraft:sugar",
+    "minecraft:honey_bottle"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 16,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 15,
+        "xp": 35
+      },
+      "item": "minecraft:torch"
+    },
+    {
+      "type": "hunt",
+      "count": 3,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 45,
+        "xp": 90
+      },
+      "entity": "minecraft:witch"
+    },
+    {
+      "type": "deliver",
+      "count": 24,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 50,
+        "xp": 100,
+        "items": [
+          "minecraft:cake*1"
+        ]
+      },
+      "item": "minecraft:cookie"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "hearthbound:block/project_stone_top",
+    "bottom": "hearthbound:block/project_stone_side",
+    "side": "hearthbound:block/project_stone_side"
+  }
+}

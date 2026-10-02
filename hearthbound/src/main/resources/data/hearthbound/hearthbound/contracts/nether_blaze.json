@@ -1,0 +1,21 @@
+{
+  "type": "hunt",
+  "title": "hearthbound.contract.nether_blaze",
+  "entity": "minecraft:blaze",
+  "count": [
+    4,
+    8
+  ],
+  "reward": {
+    "coins": [
+      60,
+      90
+    ],
+    "reputation": 35,
+    "xp": 110
+  },
+  "rank": "ally",
+  "tier": 3,
+  "weight": 3,
+  "age": "ascension:nether"
+}

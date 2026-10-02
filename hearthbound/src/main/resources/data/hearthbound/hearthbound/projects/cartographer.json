@@ -1,0 +1,194 @@
+{
+  "name": "hearthbound.project.cartographer",
+  "description": "hearthbound.project.cartographer.desc",
+  "icon": "minecraft:cartography_table",
+  "sort": 40,
+  "levels": [
+    {
+      "size": 9,
+      "max_size": 15,
+      "height": 10,
+      "min_tier": 1,
+      "rank": "acquaintance",
+      "requirements": [
+        {
+          "block": "minecraft:cartography_table",
+          "count": 1,
+          "icon": "minecraft:cartography_table"
+        },
+        {
+          "block": "minecraft:lantern",
+          "count": 2,
+          "icon": "minecraft:lantern"
+        },
+        {
+          "block": "#minecraft:banners",
+          "count": 1,
+          "icon": "minecraft:white_banner"
+        }
+      ],
+      "reward": {
+        "reputation": 50,
+        "coins": 30,
+        "xp": 120
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:map",
+          "count": 2,
+          "price": 10,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:compass",
+          "count": 1,
+          "price": 18,
+          "rank": "stranger"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:paper",
+          "count": 16,
+          "price": 6,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:glass_pane",
+          "count": 12,
+          "price": 5,
+          "rank": "stranger"
+        },
+        {
+          "type": "buy",
+          "item": "minecraft:sugar_cane",
+          "count": 16,
+          "price": 5,
+          "rank": "stranger"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "max_size": 17,
+      "height": 12,
+      "min_tier": 2,
+      "rank": "friend",
+      "requirements": [
+        {
+          "block": "minecraft:cartography_table",
+          "count": 2,
+          "icon": "minecraft:cartography_table"
+        },
+        {
+          "block": "minecraft:lantern",
+          "count": 4,
+          "icon": "minecraft:lantern"
+        },
+        {
+          "block": "#minecraft:banners",
+          "count": 3,
+          "icon": "minecraft:white_banner"
+        },
+        {
+          "block": "minecraft:lectern",
+          "count": 1,
+          "icon": "minecraft:lectern"
+        }
+      ],
+      "reward": {
+        "reputation": 80,
+        "coins": 50,
+        "xp": 200
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:spyglass",
+          "count": 1,
+          "price": 30,
+          "rank": "friend",
+          "age": "ascension:copper"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:item_frame",
+          "count": 4,
+          "price": 10,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:globe_banner_pattern",
+          "count": 1,
+          "price": 40,
+          "rank": "friend"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:clock",
+          "count": 1,
+          "price": 22,
+          "rank": "friend"
+        }
+      ],
+      "age": "ascension:copper"
+    },
+    {
+      "size": 13,
+      "max_size": 21,
+      "height": 14,
+      "min_tier": 3,
+      "rank": "ally",
+      "requirements": [
+        {
+          "block": "minecraft:cartography_table",
+          "count": 3,
+          "icon": "minecraft:cartography_table"
+        },
+        {
+          "block": "#minecraft:banners",
+          "count": 6,
+          "icon": "minecraft:white_banner"
+        },
+        {
+          "block": "minecraft:lodestone",
+          "count": 1,
+          "icon": "minecraft:lodestone"
+        }
+      ],
+      "reward": {
+        "reputation": 130,
+        "coins": 90,
+        "xp": 320
+      },
+      "trades": [
+        {
+          "type": "sell",
+          "item": "minecraft:recovery_compass",
+          "count": 1,
+          "price": 160,
+          "rank": "ally",
+          "age": "ascension:iron"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:glow_item_frame",
+          "count": 4,
+          "price": 20,
+          "rank": "ally"
+        },
+        {
+          "type": "sell",
+          "item": "minecraft:flow_banner_pattern",
+          "count": 1,
+          "price": 90,
+          "rank": "ally"
+        }
+      ],
+      "age": "ascension:iron"
+    }
+  ]
+}

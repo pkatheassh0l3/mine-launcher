@@ -1,0 +1,64 @@
+{
+  "roles": [
+    "villager",
+    "priest",
+    "innkeeper"
+  ],
+  "gender": "any",
+  "weight": 5,
+  "icon": "minecraft:note_block",
+  "likes": [
+    "minecraft:note_block",
+    "#minecraft:small_flowers",
+    "minecraft:honey_bottle",
+    "minecraft:amethyst_shard"
+  ],
+  "talk_lines": 4,
+  "bios": 2,
+  "origin": true,
+  "source": true,
+  "stages": [
+    {
+      "type": "deliver",
+      "count": 3,
+      "min_bond": 0,
+      "reward": {
+        "bond": 15,
+        "coins": 20,
+        "xp": 45
+      },
+      "item": "minecraft:note_block"
+    },
+    {
+      "type": "deliver",
+      "count": 4,
+      "min_bond": 20,
+      "reward": {
+        "bond": 20,
+        "coins": 60,
+        "xp": 110
+      },
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "type": "deliver",
+      "count": 1,
+      "min_bond": 45,
+      "reward": {
+        "bond": 30,
+        "coins": 100,
+        "xp": 160,
+        "items": [
+          "minecraft:golden_apple*1"
+        ]
+      },
+      "item": "minecraft:ghast_tear"
+    }
+  ],
+  "dialogues": [
+    15,
+    15,
+    15,
+    15
+  ]
+}
