@@ -2,7 +2,7 @@ param([string]$Version = '2026.10.1', [string]$OutputDirectory)
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $cfg = Get-Content (Join-Path $PSScriptRoot 'tiers.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-if ($Version -notmatch '^\d+\.\d+\.\d+$') { throw 'La versión debe tener el formato 2026.9.29.' }
+if ($Version -notmatch '^\d+\.\d+\.\d+(\.\d+)?$') { throw 'La versión debe tener el formato 2026.9.29.' }
 if (-not $OutputDirectory) { $OutputDirectory = Join-Path $PSScriptRoot "salida/v$Version" }
 $repo = (Get-Content (Join-Path $PSScriptRoot 'repo.txt') -Raw).Trim()
 $utf8 = New-Object Text.UTF8Encoding($false)
@@ -52,4 +52,5 @@ $release = [ordered]@{
 [IO.File]::WriteAllText((Join-Path $OutputDirectory 'versiones.json'), ($release | ConvertTo-Json -Depth 10), $utf8)
 Get-ChildItem -LiteralPath $OutputDirectory -File | Where-Object Extension -in '.mrpack','.exe' | Get-FileHash -Algorithm SHA256 | ForEach-Object { "$($_.Hash)  $([IO.Path]::GetFileName($_.Path))" } | Set-Content (Join-Path $OutputDirectory 'SHA256SUMS.txt') -Encoding ASCII
 Write-Host 'Preparación terminada. No se ha publicado en GitHub.'
+
 

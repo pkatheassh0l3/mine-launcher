@@ -402,7 +402,6 @@ function Set-LauncherSettings($inst, [bool]$onlyIfDefault) {
                     $ic = [TfcSqlite]::Exec($db, "UPDATE instances SET icon_path = $(Q $icon) WHERE id = $(Q $id)$iconCond")
                     if ($ic -gt 0 -and [int]([TfcSqlite]::Scalar($db, "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='instance_icon_configs'")) -gt 0) {
                         [void][TfcSqlite]::Exec($db, "DELETE FROM instance_icon_configs WHERE instance_id = $(Q $id)")
-                        [void][TfcSqlite]::Exec($db, "INSERT INTO instance_icon_configs (instance_id, background, symbol) VALUES ($(Q $id), $(Q $IconBackground), $(Q $IconSymbol))")
                     }
                 }
             } else {
@@ -991,5 +990,6 @@ if (-not $env:TFC_NO_MAIN) {
         }
     }
 }
+
 
 

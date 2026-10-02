@@ -6,36 +6,36 @@
   "contentRevision": "ascension-eras-2026-09-28",
   "minecraft": "1.21.1",
   "neoforge": "21.1.250",
-  "installerSha256": "310B306FC5FD097589BA2D053D25998A87F25E6310F48C503DB165470BD1FE55",
+  "installerSha256": "6761C9CBF6DDCE75AD5CA9A911869EB4639A918AB544445D88F0CCA47483DC07",
   "tiers": {
     "baja": {
       "name": "Ascension - Bajos-recursos",
       "package": "paquetes-base/Ascension-Bajos-recursos.mrpack",
-      "sha256": "C2F7F5F2EDC07B057C283C686D20604671F9F0F538EE9B23D0BE71913F03AF37",
+      "sha256": "A1B2B791D6AECAA9A2E28D459CD119ADDDC3FB704AF775C233B86A9DCC705557",
       "memoryMB": 4096
     },
     "intermedia": {
       "name": "Ascension - Intermedia 8 GB",
       "package": "paquetes-base/Ascension-Intermedia-8GB.mrpack",
-      "sha256": "951076B987F3A03AFCF7ACB04EF8EA5BD3030B1BF59781C4778311120E2ED665",
+      "sha256": "40AC89DABC947EE11825DA3F2909B6CCD4E3672754763C789A442F483B8F2D49",
       "memoryMB": 4096
     },
     "media": {
       "name": "Ascension - Gama-media",
       "package": "paquetes-base/Ascension-Gama-media.mrpack",
-      "sha256": "871C2C202BEC26A02800AC5BFC68D3C9228346C163AD2EFA70AEF0CBFD0E042B",
+      "sha256": "81CC7242ECDF5C8D0B45DB279D2D56E411B16A0750153DFCC4E15F0EC619C8D9",
       "memoryMB": 6144
     },
     "alta": {
       "name": "Ascension - RTX-3060",
       "package": "paquetes-base/Ascension-RTX-3060.mrpack",
-      "sha256": "DDA4DBBC568A32EB9986C09C032EB03425CD49DD391C56CB820CBDBE7A1D3C7A",
+      "sha256": "D3CFFC355FBDA3BE1AE770BEDC11077DD6C9AAD7AAD76536BE8E9131F5F3446F",
       "memoryMB": 8192
     },
     "patata": {
       "name": "Ascension - PC patata",
       "package": "paquetes-base/Ascension-PC-patata.mrpack",
-      "sha256": "9383FCF0A3E1C776B780EC6EF4CC3A8A50CE9B7DBDCEB24F64B3A2F1F3518BC8",
+      "sha256": "20EFB30C29CA15E28E3D288A0AECD4D003907CA2987B09A8C4B422C9E47EF857",
       "memoryMB": 4096
     }
   }

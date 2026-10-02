@@ -36,3 +36,7 @@ La distribución actual tiene cinco opciones: PC patata, Baja, Intermedia, Media
 
 La carpeta lista para compartir está en `publicar/salida/v2026.10.1`: conserva el ejecutable, versiones.json y los cinco .mrpack juntos. Se ha probado la instalación y actualización con perfiles temporales, conservando mundos y ajustes; no es una prueba de FPS en hardware de gama baja. La release remota no se ha publicado.
 
+
+Edición 2026.10.2: instalador actualizado con el icono personalizado del servidor en las nuevas instalaciones de Modrinth; conserva iconos personales al actualizar. Distribución: publicar/salida/v2026.10.2.
+
+Corrección 2026.10.2.1: Cloth Config 15.0.140 NeoForge incluido en las cinco gamas. Distribución corregida: publicar/salida/v2026.10.2.1. Sustituye a 2026.10.2. Auditoría de dependencias de cliente superada.

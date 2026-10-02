@@ -19,6 +19,9 @@ foreach($tier in $cfg.tiers.PSObject.Properties){
  try{
   foreach($e in @($z.Entries | Where-Object FullName -match '(?i)^overrides/mods/(absolute.?order|chestseparators).*\.jar$')){$e.Delete()}
   [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($z,$AbsoluteOrderJar,('overrides/mods/'+(Split-Path $AbsoluteOrderJar -Leaf)))|Out-Null
+  $cloth=Join-Path $PSScriptRoot 'dependencias/cloth-config-15.0.140-neoforge.jar'
+  foreach($old in @($z.Entries|Where-Object FullName -match '^overrides/mods/cloth-config.*\.jar$')){$old.Delete()}
+  [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($z,$cloth,'overrides/mods/cloth-config-15.0.140-neoforge.jar')|Out-Null
   $index=Read-ZipText $z 'modrinth.index.json'|ConvertFrom-Json
   $index.files=@($index.files|Where-Object path -notmatch '(?i)^mods/(absolute.?order|chestseparators).*\.jar$')
   if($tier.Name -eq 'patata'){
@@ -37,3 +40,4 @@ foreach($tier in $cfg.tiers.PSObject.Properties){
 }
 $cfg.installerSha256=(Get-FileHash (Join-Path $PSScriptRoot 'Instalar-TFC-Create.exe') -Algorithm SHA256).Hash
 [IO.File]::WriteAllText($cfgPath,($cfg|ConvertTo-Json -Depth 15),$utf8)
+
